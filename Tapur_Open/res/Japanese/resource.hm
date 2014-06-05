@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Japanese.rc
+//
+#define HIDC_APP_PLAY                   0x806503fc    // IDD_MSGFORM
+#define HIDC_APP_VPLAY                  0x806503fd    // IDD_MSGFORM

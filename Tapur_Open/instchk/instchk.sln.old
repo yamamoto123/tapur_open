@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "instchk", "instchk.vcproj", "{914850B9-F8CB-4913-880B-0A496209DB59}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{914850B9-F8CB-4913-880B-0A496209DB59}.Debug.ActiveCfg = Debug|Win32
+		{914850B9-F8CB-4913-880B-0A496209DB59}.Debug.Build.0 = Debug|Win32
+		{914850B9-F8CB-4913-880B-0A496209DB59}.Release.ActiveCfg = Release|Win32
+		{914850B9-F8CB-4913-880B-0A496209DB59}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

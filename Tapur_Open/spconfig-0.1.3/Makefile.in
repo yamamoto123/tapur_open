@@ -1,0 +1,115 @@
+# softpixel Project Makefile v0.1.3 2003.05.23
+
+SHELL:=/bin/bash
+
+LIB:=spconfig
+
+LIBOBJS:=debug mem path find load save spconfig stack message mcd
+
+DEBUG:=0# set this to 1 for debug mode, anything else to compile it out
+	# DEBUG=x on the command line after 'make' works too
+DEMOS:=test parse # any other demos
+
+LINK:=m
+DOCS:=   
+CC=@CC@
+#sets the docs to actually build, and some other stuff perhaps
+include Makefile.config
+
+CFLAGS:=-Wall -ffast-math -Os @CFLAGS@
+LFLAGS:=-shared -fPIC -DPIC
+
+ifeq ($(PROFILE),1)
+CFLAGS+=-g -pg
+DEMOAPP=touch
+else
+#OFLAGS+=-fomit-frame-pointer
+DEMOAPP=strip
+endif
+
+ifeq ($(DEBUG),1)
+CFLAGS+=-DSP_DEBUG
+endif
+
+ifeq ($(DEBUG),2)
+CFLAGS+=-DSP_DEBUG
+endif
+
+ifeq ($(MCD),1)
+CFLAGS+=-DUSE_MCD
+endif
+
+ifeq ($(MCD),2)
+CFLAGS+=-DMCD_VERBOSE -DUSE_MCD
+endif
+
+all: demos libs docs
+
+#	.so and lo are wonky.  learn what we're doing first =)
+
+libs: src/lib$(LIB).a #src/lib$(LIB).so src/lib$(LIB).lo
+
+#src/lib$(LIB).so: src/$(LIB).o
+#	#ld -m elf_i386 -o $@ $^
+
+#src/lib$(LIB).lo: src/$(LIB).o
+#	#ld -m elf_i386 -o $@ $^
+
+install: libs
+	if [ ! -d @prefix@/lib ] ; then mkdir -p @prefix@/lib ; fi
+	cp src/lib$(LIB).a @prefix@/lib
+	if [ ! -d @prefix@/include ] ; then mkdir -p @prefix@/include ; fi
+	cp src/spconfig.h @prefix@/include
+
+demos: $(LIBOBJS:%=src/%.o) $(DEMOS:%=demo/%)
+	$(DEMOAPP) $(DEMOS:%=demo/%)
+
+demo/%.o: demo/%.c
+	$(CC) -o $@ $< $(CFLAGS) -Isrc -c
+
+demo/%: demo/%.o $(LIBOBJS:%=src/%.o) #src/$(LIBOBJS).o
+	$(CC) -o $@ $^ $(CFLAGS) -Isrc $(LINK:%=-l%)
+
+src/%.a: $(LIBOBJS:%=src/%.o)
+	$(CC) -o $@ $^ $(LFLAGS) $(LINK:%=-l%)
+
+src/%.o: src/%.c src/$(LIB).h src/debug.h src/stack.h
+	$(CC) -o $@ $< $(CFLAGS) -c
+
+
+docs: $(DOCS) docsrmtemp
+
+%.dvi: %.tex
+	@echo "   * Generating DVI Documentation..."
+	@cd doc ; latex ../$< >/dev/null 2>&1; latex ../$< >/dev/null 2>&1; cd ..
+
+%.pdf: %.dvi
+	@echo "   * Generating PDF Documentation..."
+	@dvipdf $< $@ >/dev/null 2>&1
+
+%.ps: %.dvi
+	@echo "   * Generating PS Documentation..."
+	@dvips -o$@ $< >/dev/null 2>&1
+	
+%.html: %.tex
+	@echo "   * Generating HTML Documentation..."
+	@latex2html $< -split 0 -nonavigation -nosubdir -noinfo -ascii_mode >/dev/null 2>&1
+
+docsrmtemp:
+	@echo "Documentation Complete!"
+	@rm -f doc/API.aux doc/API.log doc/API.toc doc/texput.log
+	@rm -f doc/index.html doc/WARNINGS doc/labels.pl
+docsclean: docsrmtemp
+	rm -f $(DOCS)
+
+clean: docsclean
+	rm -f src/*.o src/*.lo src/*.so src/*.a $(DEMOS:%=demo/%.o) $(DEMOS:%=demo/%)
+	
+distclean: clean
+	rm -f Makefile.config Makefile config.log config.status
+
+uninstall:
+	rm -f @prefix@/lib/lib$(LIB).a
+	rm -f @prefix@/include/spconfig.h
+
+FORCE:

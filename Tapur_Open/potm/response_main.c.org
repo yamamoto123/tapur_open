@@ -1,0 +1,587 @@
+/*
+	
+	response_main.c 
+	2002/03/09 -zdy-
+	
+*/
+#include <stdio.h>
+#include <string.h>
+#include <dirent.h>	// DIR
+#include <time.h>
+#include <signal.h>
+#include "potm.h"
+#include "file_access.h"
+#include "modules.h"
+#include "response_main.h"
+#include "fax.h"
+
+static char errbuf[MAX_LEN];
+
+// static array to realloc memory without free
+static ST_RDFL *st_rdfl;
+static int cnt_rdfl;
+
+
+/********************  utility functions  *****************/
+/*
+	get long Date string
+	return -> 0:ok -1:error
+*/
+int getDateId(char *date_id)
+{
+	time_t ct = time(NULL);
+	struct tm *lst = localtime(&ct);
+
+	sprintf(date_id, "%04d%02d%02d%02d%02d%02d", (1900+lst->tm_year), (1+lst->tm_mon),
+		lst->tm_mday, lst->tm_hour, lst->tm_min, lst->tm_sec);
+
+	return 0;
+}
+
+/********************  local functions  *****************/
+/*
+	sub func for get RSF_RESP setting data
+	return -> 0:ok -1:error
+*/
+static int get_rsf_resp(ST_RSF *pst_rsf, ST_RSF_RESP *pst_rsf_resp, const char *order)
+{
+	ST_RSF_RESP *presp;
+	char tmp_order[MAX_RDF_RESP];
+	int i, len, nest;
+
+	strcpy(tmp_order, order);
+
+	// try to find target setting
+	for (i = nest = 0; i < pst_rsf->resp_cnt; i++) {
+		presp = pst_rsf->resp + i;
+		len = strlen(tmp_order);
+//LOG_ST("i-order:%s, order:%s\n", presp->order, tmp_order);
+		if (strlen(presp->order) != len) continue;
+		if (strcmp(presp->order, tmp_order) == 0) {
+			if (presp->type == RESP_TYPE_LINK) {
+				if (++nest > LINK_ORDER_NEST) break;
+				strcpy(tmp_order, presp->link_order);
+				i = -1;
+				continue;
+			} else {
+				memcpy(pst_rsf_resp, presp, sizeof(ST_RSF_RESP));
+				return 0;
+			}
+		}
+	}
+
+	return -1;
+}
+
+/*
+	get RSF_RESP setting data
+	pst_rsf : RSF setting
+	pst_rsf_resp : buffer to save target Resp
+	order : search response order, maybe changed if its result is default.
+	return -> 0:ok -1:error
+*/
+static int getRSF_RESP(ST_RSF *pst_rsf, ST_RSF_RESP *pst_rsf_resp, char *order)
+{
+	// try to find target setting
+	if (get_rsf_resp(pst_rsf, pst_rsf_resp, order) == 0) return 0;
+
+	// if not find target order, try to find default setting
+	order[strlen(order)-1] = '$';
+	if (get_rsf_resp(pst_rsf, pst_rsf_resp, order) == 0) return 0;
+
+	return -1;
+}
+
+/*
+	Receive the voice call.
+	ret:	0 -> OK (voice call)
+			1 -> OK (fax call)
+		-99 -> no handler
+		-1 -> comm err
+		-2 -> time out
+		-100 -> no data
+		-999 -> other error
+*/
+static int voiceCall(ST_ConfFile *st_confFile, ST_RDF *pst_rdf)
+{
+	ST_RSF_RESP st_rsf_resp;
+	ST_RSF_RESP *pst_rsf_resp = &st_rsf_resp;
+	ST_RDF_RESP *pst_rdf_resp;
+	ST_BIN_FILE *pbinf;
+	char fn[MAX_PATH], fntmp[MAX_PATH];
+	char buf[MAX_LEN], term[2], order[MAX_RDF_RESP],rdf_order[MAX_RDF_RESP];
+	int i;
+	int ret;
+
+	strcpy(order, "$");
+	strcpy(rdf_order, "$");
+	for(i = 0; i < MAX_RDF_RESP; i++) {
+		pst_rdf->resp_cnt = i + 1;
+		pst_rdf_resp = pst_rdf->data.call_resp + i;
+
+		// Reset buffer
+		memset((void *)term, '\0', 2);
+
+		// search RSF response setting
+		if (getRSF_RESP(pst_rdf->st_rsf, pst_rsf_resp, order) < 0) {
+			return -1;
+		}
+		strcpy(pst_rdf_resp->rsf_order, pst_rsf_resp->order);
+		strcpy(order, pst_rsf_resp->order);
+		strcpy(pst_rdf_resp->order, rdf_order);
+
+		// beep
+		if (pst_rsf_resp->beep > 0) {
+			ret = playBeep(st_confFile, pst_rsf_resp->beep);
+			if (ret < 0) return ret;
+		}
+
+		// each response
+		pst_rdf_resp->type = pst_rsf_resp->type;
+		switch (pst_rsf_resp->type) {
+		case RESP_TYPE_RECORD:
+			// record voice
+			sprintf(fn, "%srdf-%s-%s-%s.adpcm", RDF_ADPCM_PATH,
+					pst_rdf->telno, pst_rdf->id_date, pst_rdf_resp->order);
+			ret = recordVoice(st_confFile, pst_rsf_resp->term, fn, term);
+			if (ret < 0) return ret;
+			if (fexist(fn)) {
+				sprintf(fn, "rdf-%s-%s-%s.wav", pst_rdf->telno, pst_rdf->id_date, pst_rdf_resp->order);
+				pbinf = &(pst_rdf_resp->data.record_file);
+				strcpy(pbinf->filename, fn);	// convert from adpcm to wav in "Transfer" process
+				strcpy(pbinf->bin_type, "audio/x-wav");
+			}
+			if (ret == 100 || strlen(term) == 0) return 0;
+			break;
+		case RESP_TYPE_DTMF:
+			// record tone
+			ret = recordTone(st_confFile, pst_rsf_resp->term, buf, term);
+			if (ret < 0) return ret;
+			strncpy(pst_rdf_resp->data.dtmf, buf, MAX_DTMF_LEN-1);
+			if (ret == 100 || strlen(term) == 0) return 0;
+			break;
+		case RESP_TYPE_DISCONNECT:
+			return 0;
+		case RESP_TYPE_PLAY:
+			pbinf = &(pst_rsf_resp->play_file);
+			if (strlen(pbinf->filename) > 0) {
+				strcpy(fntmp, pbinf->filename);
+				delex(fntmp);
+				sprintf(fn, "%s%s.adpcm", RSF_ADPCM_PATH, fntmp);
+				if (i == 0) {	// first response
+					ret = playVoice(st_confFile, fn, pst_rsf_resp->term, term, 1);	// check FAX
+					if (ret == 101) return -100;	//no data
+				} else {
+					ret = playVoice(st_confFile, fn, pst_rsf_resp->term, term, 0);
+				}
+				if (ret == 100 || ret == 101) { // disconnect by caller
+					return 0;
+				} else if (ret != 0) {
+					return ret;
+				}
+			}
+			break;
+		case RESP_TYPE_HANDSET:
+			if (pst_rsf_resp->record_flag > 0) {
+				// record voice
+				sprintf(fn, "%srdf-%s-%s-%s.adpcm", RDF_ADPCM_PATH,
+						pst_rdf->telno, pst_rdf->id_date, pst_rdf_resp->order);
+				ret = useHandset(st_confFile, 1, fn);
+				if (fexist(fn)) {
+					sprintf(fn, "rdf-%s-%s-%s.wav", pst_rdf->telno, pst_rdf->id_date, pst_rdf_resp->order);
+					pbinf = &(pst_rdf_resp->data.record_file);
+					strcpy(pbinf->filename, fn);	// convert from adpcm to wav in "Transfer" process
+					strcpy(pbinf->bin_type, "audio/x-wav");
+				}
+			} else {
+				ret = useHandset(st_confFile, 0, "");
+			}
+			if (ret < 0) return ret;
+			return 0;
+		default:
+			return -1;
+		}
+
+		// get terminate tone & set next order
+		if (strlen(term) == 0) {
+			pst_rdf_resp->term = '\0';
+			strcat(order, "$");
+			strcat(rdf_order, "$");
+		} else {
+			pst_rdf_resp->term = term[0];
+			strcat(order, term);
+			strcat(rdf_order, term);
+		}
+	}
+
+	ret = 0;
+	return ret;
+}
+
+/*
+	get RSF setting data
+	return -> 0:ok -1:error
+*/
+static int getRSF(ST_RSF *pst_rsf, char *caller_id)
+{
+	ST_XmlFile st_xml;
+	ST_XmlFile *pst_xml = &st_xml;
+	char fn[MAX_PATH];
+	int ret = 0;
+
+	memset(pst_xml, '\0', sizeof(ST_XmlFile));
+	if (newXML(pst_xml)) {
+		LOG_ERR("fatal error\n");
+		return -1;
+	}
+
+	// read RSF file, initial setting
+	if (strlen(caller_id) == 0) {
+		sprintf(fn, "%srsf-%s.xml", RSF_PATH, "0");
+	} else {
+		sprintf(fn, "%srsf-%s.xml", RSF_PATH, caller_id);
+		if (fexist(fn) == 0) {
+			// no file corresponded to caller ID
+			sprintf(fn, "%srsf-%s.xml", RSF_PATH, "0");
+		}
+	}
+	if (readXML(fn, pst_xml)) {
+		LOG_ERR("can't load RSF file\n");
+		ret = -1;
+		goto getRSF_Err;
+	}
+
+	if (cnvXML_RSF(pst_xml, pst_rsf)) {
+		LOG_ERR("can't analyze RSF file\n");
+		ret = -1;
+		goto getRSF_Err;
+	}
+
+getRSF_Err:
+	freeXML(pst_xml);
+	return ret;
+}
+
+/*
+	Receive the fax call.
+	ret:	0 -> OK
+		-99 -> no handler
+		-1 -> comm err
+		-2 -> time out
+		-100 -> no received fax data
+		-999 -> other error
+
+*/
+static int faxCall(ST_ConfFile *st_confFile, ST_RDF *pst_rdf, ST_TSF *pst_tsf)
+{
+	ST_FAX_DATA *pst_fax_dat;
+	ST_BIN_FILE *pbinf;
+	char buf[MAX_LEN], buf1[MAX_LEN], buf2[MAX_LEN];
+	char telno[MAX_TEL_LEN];
+	int i;
+	int ret = 0;
+
+	// answer the fax call.
+	ret = answerFax(st_confFile);	// close modem port
+	if (ret < 0) return ret;
+
+	// Save fax data
+	if (cleardir(FAXPATH) < 0) return -999;	// clear tmp fax forder
+	sprintf(buf, "rdf-%s-%s", pst_rdf->telno, pst_rdf->id_date);
+	sprintf(telno, "%s %s", st_confFile->inter_telcode, pst_tsf->telno);
+	ret = saveFax(buf, telno, st_confFile->fax_baud_rate);  // open & close modem port
+//strcpy(buf, "efax -d /dev/modem -v chewmainr -l \"+81 042 5856394\" -r \"/var/spool/var/ttt\"");
+//LOG_ST("%s\n", buf);
+//ret = system(buf);
+	openDCE(st_confFile);	// reopen modem port
+	if (ret > 0) return -999;
+
+	// move fax data
+	pst_fax_dat = &(pst_rdf->data.fax_data);
+	for(i = 0; i < MAX_FAX_PAGE; i++) {
+		sprintf(buf1, "%s/%s.%03d", FAXPATH, buf, i+1);
+		if (fexist(buf1) == 0) break;
+		sprintf(buf2, "%s/%s-%d.tif", RDF_TIFF_PATH, buf, i+1);
+		// move files
+		if (rename(buf1, buf2) != 0) return -999;
+		// set to rdf struct.
+		pbinf = pst_fax_dat->fax_file + i;
+		sprintf(pbinf->filename, "%s-%d.png", buf, i+1);
+		strcpy(pbinf->bin_type, "image/png");	// convert from tiff to png in "Transfer" process
+	}
+	if (i == 0) return -100;
+	pst_fax_dat->file_cnt = i;
+
+	return ret;
+}
+
+/*
+	save RDF structure into XML file.
+	return -> 0:ok -1:error
+*/
+static int saveRDF(ST_RDF *pst_rdf, char *rdf_fn)
+{
+	ST_XmlFile st_xml;
+	ST_XmlFile *pst_xml = &st_xml;
+	int ret = 0;
+
+	memset(pst_xml, '\0', sizeof(ST_XmlFile));
+	if (newXML(pst_xml)) {
+		LOG_ERR("fatal error\n");
+		return -1;
+	}
+
+	if (cnvRDF_XML(pst_rdf, pst_xml)) {
+		LOG_ERR("can't convert RDF structure to XML structure\n");
+		ret = -1;
+		goto saveRDF_Err;
+	}
+
+	if (writeXML(rdf_fn, pst_xml)) {
+		LOG_ERR("can't save XML file\n");
+		ret = -1;
+		goto saveRDF_Err;
+	}
+
+saveRDF_Err:
+	freeXML(pst_xml);
+	return ret;
+}
+
+/*
+	set RDF into RDFL list
+	rdf_fn:RDF filename to save
+	pst_rdf: RDF date
+	return -> 0:ok -1:error
+*/
+static int setRDFL(char *rdf_fn, ST_RDF *pst_rdf)
+{
+	ST_RDFL tmp_rdfl;
+	ST_RDFL *pst_rdfl = &tmp_rdfl;
+	ST_RDF_RESP *pst_rdf_resp;
+	ST_FAX_DATA *pfax_dat;
+	int i;
+	int addflag = 1; // add
+	char *fn;
+
+	// load RDFL
+	st_rdfl = loadRDFL(st_rdfl, &cnt_rdfl);
+	if (st_rdfl == NULL) {
+		return -1;
+	}
+
+	// find reusable one RDFL structure
+	for (i = 0; i < cnt_rdfl; i++) {
+		// check flag
+		if ((st_rdfl+i)->flag == RDFL_FLAG_REUSE) {
+			pst_rdfl = st_rdfl + i;
+			addflag = 0;
+			break;
+		}
+	}
+
+	// set RDFL from RDF
+	strcpy(pst_rdfl->id_date, pst_rdf->id_date);
+	strcpy(pst_rdfl->rdf_filename, rdf_fn);
+	pst_rdfl->flag = RDFL_FLAG_WAIT;
+	if (pst_rdf->type == RDF_TYPE_CALL) { // call
+		pst_rdfl->bin_cnt = 0;
+		for (i = 0; i < pst_rdf->resp_cnt; i++) {
+			pst_rdf_resp = pst_rdf->data.call_resp + i;
+			if (pst_rdf_resp->type == RESP_TYPE_RECORD || pst_rdf_resp->type == RESP_TYPE_HANDSET) {
+				fn = pst_rdf_resp->data.record_file.filename;
+				if (strlen(fn) > 0) {
+					strcpy(pst_rdfl->bin_filename[pst_rdfl->bin_cnt], fn);
+					pst_rdfl->bin_cnt++;
+				}
+			}
+		}
+	} else if (pst_rdf->type == RDF_TYPE_FAX) { // fax
+		pst_rdfl->bin_cnt = 0;
+		pfax_dat = &(pst_rdf->data.fax_data);
+		for (i = 0; i < pfax_dat->file_cnt; i++) {
+			fn = pfax_dat->fax_file[i].filename;
+			if (strlen(fn) > 0) {
+				strcpy(pst_rdfl->bin_filename[pst_rdfl->bin_cnt], fn);
+				pst_rdfl->bin_cnt++;
+			}
+		}
+	}
+
+	// save RDFL file
+	if (addflag) {// add
+		if (addRDFL(&tmp_rdfl) < 0) {
+			return -1;
+		}
+	} else { // update
+		if (saveRDFL(st_rdfl, cnt_rdfl) < 0) {
+			return -1;
+		}
+	}
+
+	return 0;
+}
+
+
+/********************  gloval functions  *****************/
+/*
+	responseMain
+*/
+int responseMain(ST_ConfFile *st_confFile)
+{
+	ST_XmlFile st_xml;
+	ST_XmlFile *pst_xml = &st_xml;
+	ST_TSF st_tsf;
+	char tsf_filename[MAX_PATH];
+	ST_RSF st_rsf;
+	ST_RDF st_rdf;
+	ST_RDF *pst_rdf = &st_rdf;
+	int ret = 0;
+	char caller_id[MAX_TEL_LEN], fn[MAX_PATH];
+
+	/* load modules and handlers */
+	ret = initModules(st_confFile);
+	if (ret < 0) {
+		sprintf(errbuf, "initModules err=%d!", ret);
+		LOG_ERR(errbuf);
+		kill(getppid(),SIGTERM);
+		return ret;
+	}
+
+	/* show count of modules */
+	if (gst_modules.cnt < 1) {
+		LOG_ERR("no modules!");
+		kill(getppid(),SIGTERM);
+		return -1;
+	}
+
+	// allocate for TSF
+	memset(pst_xml, '\0', sizeof(ST_XmlFile));
+	if (newXML(pst_xml)) {
+		LOG_ERR("fatal error!");
+		return -1;
+	}
+
+	while (1) {
+		// read TSF file
+		sprintf(tsf_filename, "%s%s", TSF_PATH, TSF_FILENAME);
+		if (readXML(tsf_filename, pst_xml)) {
+			LOG_ERR("can't load TSF file.");
+			sleep(ERR_SLEEP);
+			continue;
+		}
+		if (cnvXML_TSF(pst_xml, &st_tsf)) {
+			LOG_ERR("can't analyze TSF file.");
+			sleep(ERR_SLEEP);
+			continue;
+		}
+
+		// Reset RDF structure
+		memset((void *)pst_rdf, '\0', sizeof(ST_RDF));
+		strcpy(pst_rdf->version, RDF_VERSION);
+		pst_rdf->resp_cnt = 0;
+		pst_rdf->st_rsf = &st_rsf;
+
+		// Resetting the DCE(ex, modem).
+		if (openDCE(st_confFile) < 0) {
+			LOG_ERR("Reset DCE error.");
+			sleep(ERR_SLEEP);
+			continue;
+		}
+
+		// waiting for rings
+		ret = waitRings(st_confFile);
+		if (ret < 0) {
+			if (ret != -2) { // except for timeout
+				LOG_ERR("Wait Rings error.");
+				goto responseMain_CONT;
+			}
+			goto responseMain_CONT;
+		}
+
+		// find Caller ID
+		ret = getCallId(CID_OUT_FILENAME, caller_id, MAX_TEL_LEN);
+		if (ret < 0 || strlen(caller_id) == 0) {
+			strcpy(caller_id, "0");
+		}
+		strncpy(pst_rdf->telno, caller_id, MAX_TEL_LEN-1);
+
+		// search for RSF setting by Caller ID
+		if (getRSF(&st_rsf, caller_id) < 0) {
+			LOG_WRN("no correspond RSF setting.");
+			goto responseMain_CONT;
+		}
+
+		// date of call
+		getDateId(pst_rdf->id_date);
+		
+		// Answer the call.
+		ret = answerCall(st_confFile);
+		if (ret < 0) {
+			LOG_ERR("Answer the call error.");
+			goto responseMain_CONT;
+		}
+
+		// Receiving a Voice call
+		pst_rdf->type = 1;
+		ret = voiceCall(st_confFile, pst_rdf);
+		if (ret == 1) {
+			// Receiving a Fax
+			pst_rdf->type = 2;
+			ret = faxCall(st_confFile, pst_rdf, &st_tsf);  // port is closed
+			if (ret < 0) {
+				if (ret == -100) {
+					LOG_WRN("no received fax data.");
+				} else if (ret != -2) { // except for timeout
+					LOG_ERR("fax call error.");
+				}
+				goto responseMain_CONT;
+			}
+		} else if (ret == -2 || ret == -100) {
+			// timeout & no data : not error but don't save
+			goto responseMain_CONT;
+		} else if (ret < 0) {
+			// erros
+			LOG_ERR("voice call error.");
+			goto responseMain_CONT;
+		}
+
+		// save RDF file
+		sprintf(fn, "%srdf-%s-%s.xml", RDF_PATH, pst_rdf->telno, pst_rdf->id_date);
+		ret = saveRDF(pst_rdf, fn);
+		if (ret < 0) {
+			LOG_ERR("saveRDF error.");
+			goto responseMain_CONT;
+		}
+
+		// set RDF into RDFL list
+		ret = setRDFL(deldirname(fn), pst_rdf);
+		if (ret < 0) {
+			LOG_ERR("setRDFL error.");
+			goto responseMain_CONT;
+		}
+
+responseMain_CONT:
+		// Close call.
+		ret = closeDCE(st_confFile);
+		if (ret < 0) {
+			LOG_ERR("Close the call error.");
+			continue;
+		}
+	}
+
+	freeXML(pst_xml);
+	return (ret);
+}
+
+
+/*
+	responseQuit
+*/
+void responseQuit()
+{
+	// close device	
+	// dlclose		
+	// free memory	
+	closeModules();
+}

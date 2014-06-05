@@ -1,0 +1,41 @@
+---------------------------------------
+spConfig 0.1.3 - 2003.05.23 - softpixel
+http://prj.softpixel.com/spconfig/
+---------------------------------------
+
+spConfig is a configuration file parsing library intended to allow one to add
+configuration file functionality to an application with relative ease.
+
+-------------------------------------------
+Compilation and Installation on Unix
+-------------------------------------------
+
+   * unpack the archive, cd to spconfig-0.1.3
+   * ./configure
+   * make
+   * make install
+
+After installation, you'll need to run ldconfig before you start linking 
+to it.  You probably need to be root to run it.
+
+-------------------------------------------
+Compilation and Installation on Windows
+-------------------------------------------
+
+   * open the workspace from the vc folder.  then do a build.
+   * copy the include file to "C:\Program Files\Microsoft Visual Studio\VC98\Include"
+   * copy the generated .lib to "C:\Program Files\Microsoft Visual Studio\VC98\Include"
+
+   * a DLL version should be available in a future release.
+
+-------------------------------------------
+       Making programs use SpConfig
+-------------------------------------------
+
+Making programs is easy.  Simply 
+   * #include <spconfig.h>
+
+and finally, link sprech into the executable 
+   * -lspconfig for gcc
+
+See doc/API* for programming information.

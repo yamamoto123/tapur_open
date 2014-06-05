@@ -1,0 +1,30 @@
+[Was ist Tapur]
+[Tapur] ist ein Anrufbeantworter zur Aufzeichnung von Video- und Sprachnachrichten fur Skype.
+
+[System Vorraussetzungen]
+Bevor Sie Tapur installieren, stellen Sie sicher das folgende Vorraussetzungen erfullt sind:
++ Unterstutzte Betriebssyteme: Windows 2000 / XP / Vista /
+2003 Server
++ Skype (Mindestversion 3.0 oder hoher) muss bereits vor der Installation von Tabur installiert sein.
+
+[Wie wird Tapur installiert?]
+Wenn Sie bereits eine vorherige Version installiert haben, ist es besser diese als erstes zu deinstallieren.
+1 Download die Datei von der folgenden Webseite.
+http://www.tapur.com/
+2 Speichere die Datei (Programmdatei mit der Endung EXE) auf deiner Festplatte und doppel klicke diese. Folge den Anweisungen am Bildschirm um die Installation abzuschliesen.
+3. Durch klicken des [Entferne alle User Daten] ptions Buttons, kannst Du alle Daten der vorherigen Tapur Version loschen. Bitte beachte, das mit dieser Aktion alle Daten unwiderbringlich geloscht werden und nicht widerhergestellt werden konnen.
+4. Nach erfolgreicher Installation, wird eine Dialog Box eingeblendet um sich mit Skype zu verbinden. und klicke auf [OK]. Ein kleines Icon von Tapur wird in der Taskleiste erscheinen (gewohnlich in der rechts unten im Bildschirm)
+
+[Wie Deinstalliere ich Tapur]
+Bevor Tapur entfernt wird, stelle sicher das Tapur und Skype beendet wurden.
+Du musst Tapur mit demselben User entfernen mit dem Tapur installiert wurde.
+Auf [Start Menu] klicken, dann auf Sytemsteuerung und anschliesend auf Programme- und Funktionen.
+Doppel klicke [Programm Hinzufugen/Entfernen]. Es werden
+
+alle aktuell installierten Programme gelistet, wahle Tapur aus und klicke dann auf Enfernen. Folge den Anweisungen auf dem Bildschirm um die Software komplett zu entfernen.
+
+[Copyright]
+tapur.com Tokyo, Japan (www.tapur.com)
+(c) Tapur - Letzte Uberarbeitung: Dezember 2009.
+
+*Translations in German by Peter Fischer(Thanks!)

@@ -1,0 +1,49 @@
+                  ** Tapur (Answering Agent for Skype) **
+
+                      Copyright(c) 2004-2009 tapur.com
+
+
+END-USER LICENSE AGREEMENT (Trial, Full Version)
+
+This End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and the mentioned author of this Software for the software product identified above, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT").
+
+You will not be able to download or install any software that is accompanied by or includes a license agreement unless you agree to the terms of such license agreement. If you do not agree to such terms, you will not be able to use the software.
+
+
+SOFTWARE PRODUCT LICENSE
+The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. The SOFTWARE PRODUCT is licensed, not sold.
+
+1. GRANT OF LICENSE. This EULA grants you the following rights:
+Installation and Use. 
+You are granted a non-exclusive, non-transferable license to install and use the SOFTWARE PRODUCT on a single computer and to make a single archival copy of the SOFTWARE PRODUCT. The SOFTWARE PRODUCT is considered legal only if obtained through registration at and download from our website.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.
+Limitations on Reverse Engineering, Decompilation, and Disassembly. 
+You agree that you will not decompile, reverse engineer, or otherwise attempt to discover the source code of the software available on the Site.
+
+Separation of Components.
+The SOFTWARE PRODUCT is licensed as a single product. Its component parts may not be separated for use on more than one computer.
+
+Termination.
+Without prejudice to any other rights, the Author of this Software may terminate this EULA if you fail to comply with the terms and conditions of this EULA. In such event, you must destroy all copies of the SOFTWARE PRODUCT and all of its component parts.
+
+Distribution.
+The SOFTWARE PRODUCT may not be sold, rented, offered for download on an internet site or be included in a product or package which intends to receive benefits through the inclusion of the SOFTWARE PRODUCT. The SOFTWARE PRODUCT may not be distributed in any way.
+
+3. COPYRIGHT.
+The copyright and intellectual property rights of this software and any attachments to this software are owned by the author of this Software, AND protected by the copyright laws of Japan, and international intellectual property right treaties. Therefore, you cannot copy any portion of this software in any form, except for using or copying it for backup purposes. Also, you cannot transform the contents of the software or change the file names. 
+
+LIMITED WARRANTY
+
+NO WARRANTIES.
+The Author of this Software expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT and any related documentation is provided "as is" without warranty of any kind, either express or implied, including, without limitation, the implied warranties or merchantability, fitness for a particular purpose, or non-infringement. The entire risk arising out of use or performance of the SOFTWARE PRODUCT remains with you.
+
+NO LIABILITY FOR DAMAGES.
+In no event shall the author of this Software be liable for any damages whatsever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this product, even if the Author of this Software has been advised of the possibility of such damages.
+
+---------------------------------------------------------------------------
+
+[Author]
+tapur.com, Tokyo, Japan (www.tapur.com)
+(c) Tapur - Last revised: February 2009.
+

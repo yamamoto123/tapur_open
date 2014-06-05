@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>ËŞÙÄŞ‚ÌÛ¸Ş</h1>
+<h3>
+--------------------\¬: English - Win32 Release--------------------
+</h3>
+<h3>ºÏİÄŞ ×²İ</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/English.res" /d "NDEBUG" /d "_AFXDLL" "D:\Tapur\res\English\English.rc"" 
+ºÏİÄŞ ×²İ "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/en.pdb" /machine:I386 /out:"D:\Tapur\Release\res\en.dll" /implib:"Release/en.lib" /NOENTRY  .\Release\English.res " ‚Ìì¬’†
+<h3>±³ÄÌß¯Ä ³¨İÄŞ³</h3>
+Ø¿°½‚ğºİÊß²Ù’†...
+Øİ¸’†...
+
+
+
+<h3>Œ‹‰Ê</h3>
+en.dll - ´×° 0AŒx 0
+</pre>
+</body>
+</html>

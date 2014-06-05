@@ -1,0 +1,394 @@
+\documentclass[10pt]{article}
+
+\usepackage{vmargin}
+\setpapersize{A4}
+% {left}{top}{right}{bottom}{headheight}{headsep}{footheight}{footskip}
+\setmarginsrb{1.5in}{1in}{1in}{1.5in}{0cm}{0cm}{0pt}{0pt}
+
+\title{spConfig-0.1.3 API Reference}
+\author{Christopher Wright, cwright@softpixel.com\\
+	Steve Mokris, smokris@softpixel.com}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+To visualize the way configuration files work in spConfig, one simply needs to
+think of a hierarchical filesystem.  Configuration files are arranged in a
+tree-like structure, composed of `nodes' (analogous to directories),
+`attributes' (files), and `text' (which is a sort of metadata).  Additionally,
+commands such as `notices' can be inserted into the config tree. There are
+plans for simple logic commands and an `include' operation in the future.
+
+The syntax is similar to XML, and the parser should be able to grok most XML
+files.  We will perform a more extensive review of this in the future.  For a
+fairly complete example and documentation of the syntax, see demo/demo.conf.
+
+
+
+
+\pagebreak
+
+\section{Structure}
+
+The base of any config tree is a particular node, known as the \textbf{root
+node}.  Typical operation involves using the library to read from a config file
+(on disk or in memory) into a memory structure, then using the library-provided
+routines to glean information from this structure.  It is also possible to use
+the library-provided routines to construct such a structure in its entirety. 
+In the future, it will be possible to write out these memory structures to disk
+in our config file format.
+
+\subsection{struct spConfigNode}
+
+\begin{verbatim}typedef struct spConfigNodeS
+{
+        char                    *name;
+        char                    confFlag;
+        char                    *text;
+        
+        int                     numAttributes;
+        int                     numChildren;
+        spConfigAttribute       **attributes;
+        struct spConfigNodeS    **children;
+	
+        struct spConfigNodeS    *parent;
+        spConfigMessage         *message;
+        void*(*callback)(struct spConfigNodeS*node,char*string);
+} spConfigNode;\end{verbatim}
+
+\begin{itemize}
+	\item[name] is obviously the name of the node. When reading in a configuration file from disk, the root node's name points to NULL, but
+this is not a requirement for structures created in memory (more on this below).
+	\item[text] stores the text that happened to be located in the node, between the opening tag and closing tag, if any.  It does not include text within child nodes.
+	\item[numAttributes] number of attributes this node has
+	\item[numChildren] number of children this node has
+	\item[**attributes] one-dimensional array of attributes
+	\item[**children] one-dimensional array of child nodes.
+	\item[parent] is a pointer to the parent node of this node, if there is any (NULL if root node). 
+Unfortunately, sharing a node between two parents will result in a pointer to only one.
+	\item[message] is the beginning of a linked list of messages attached to this node.
+	\item[confFlag] can have any of the following set:
+\begin{verbatim}
+SP_CONFIG_NODE_ALLOW_TEXT   - this node accepts text if parsed
+SP_CONFIG_NODE_ALLOW_ATTRIBUTES - this node accepts additional attributes
+SP_CONFIG_NODE_ALLOW_NODES  - this node accepts additional child nodes
+\end{verbatim}
+
+These flag values are not yet implemented, however.
+	\item[callback] is a function used to handle include files.  Because we don't support
+include files just yet, this field is presently useless.
+\end{itemize}
+
+
+
+\subsection{struct spConfigAttribute}
+
+\noindent\textbf{attributes} are name/value pairs defined within the node begin tag.
+\begin{verbatim}
+typedef struct
+{
+        char    *name;
+        char    type;
+        union
+        {
+                int i;
+                double d;
+                char *string;
+        }       value;
+} spConfigAttribute;
+\end{verbatim}
+
+\begin{itemize}
+	\item[name] stores the attributes name (this should always be set).
+	\item[type] determines which type of data this attribute holds, if any.\\
+\begin{verbatim}SP_CONFIG_VALUE_NONE    - no values are associated with this attribute
+SP_CONFIG_VALUE_INT     - the value is an int (use value.i)
+SP_CONFIG_VALUE_FLOAT   - the value is a double (use value.d)
+SP_CONFIG_VALUE_STRING  - the value is a string (use value.string);\end{verbatim}
+\end{itemize}
+
+
+\subsection{struct spConfigMessage}
+
+\noindent And finally, we have \textbf{messages}.\\
+\begin{verbatim}
+typedef struct spConfigMessageS
+{
+        int     line,col;
+        char    type;
+        char    *text;
+        char    *filename;
+        struct spConfigMessageS *next;
+} spConfigMessage;
+\end{verbatim}
+
+\begin{itemize}
+	\item[line] number (of input file/string) upon which this message occurred
+	\item[col] column of message
+	\item[type] determines the severity of the message:\\
+\begin{verbatim}
+SP_CONFIG_MESSAGE_INFO          - information, not a problem
+SP_CONFIG_MESSAGE_NOTICE        - small trivial warning, nothing too bad
+SP_CONFIG_MESSAGE_WARNING       - something may have been misparsed
+                                  but overall we're still on track.
+SP_CONFIG_MESSAGE_ERROR         - something is very wrong, parsing may 
+                                  be wrong after this point.
+\end{verbatim}
+
+	\item[text] stores the actual message.
+	\item[filename] stores which file the message
+originated in (currently useless, we don't support include files yet).
+	\item[next] stores a pointer to the next message, or NULL of there
+are no more messages.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\pagebreak
+
+\section{API}
+
+\subsection{Allocation / Duplication / Deallocation}
+
+\subsubsection*{New}
+\noindent\begin{tabular}{l l l @{}}
+spConfigNode&\textbf{*spConfigNodeNew}&();\\
+spConfigAttribute&\textbf{*spConfigAttributeNew}&();\\
+spConfigMessage&\textbf{*spConfigMessageNew}&();\\
+\end{tabular}
+
+\noindent These functions return a newly allocated and initialized item, or
+NULL on error (out of memory).
+
+\subsubsection*{Clone}
+\noindent\begin{tabular}{l l l @{}}
+spConfigNode&\textbf{*spConfigNodeClone}&(spConfigNode *node);\\
+spConfigAttribute&\textbf{*spConfigAttributeClone}&(spConfigAttribute *att);\\
+spConfigMessage&\textbf{*spConfigMessageClone}&(spConfigMessage *msg);\\
+\end{tabular}
+
+\noindent These functions return a complete copy of the input item.  Strings
+are copied, child nodes and values are copied, and any other pointers are
+duplicated, not shared.  Thus it is safe to clone a tree and hack on one.  The
+other will be preserved.
+
+\subsubsection*{Copy}
+\noindent\begin{tabular}{l l l @{}}
+spConfigNode&\textbf{*spConfigNodeCopy}&(spConfigNode *node);\\
+spConfigAttribute&\textbf{*spConfigAttributeCopy}&(spConfigAttribute *att);\\
+spConfigMessage&\textbf{*spConfigMessageCopy}&(spConfigMessage *msg);\\
+\end{tabular}
+
+\noindent These functions copy the values of the input item, returning a newly
+allocated  item with the same values. Pointers are shared, so copying a tree
+and hacking on one  will hack up the other as well.  Very hard to cleanly
+destruct (pointers could already  be freed), these probably shouldn't be used
+unless you know what you're doing.
+
+\subsubsection*{Free}
+\noindent\begin{tabular}{l l l @{}}
+void&\textbf{spConfigNodeFree}&(spConfigNode *node);\\
+void&\textbf{spConfigAttributeFree}&(spConfigAttribute *att);\\
+void&\textbf{spConfigMessageFree}&(spConfigMessage *msg);\\
+\end{tabular}
+
+\noindent These functions free the memory used by the item passed to them. 
+Messages and nodes have their children freed as well.
+
+
+
+
+\subsection{Node Management}
+
+\subsubsection*{AddChild}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigNodeAddChild}&(spConfigNode *parent,spConfigNode *child);\\
+\end{tabular}
+
+\noindent This function adds node \textbf{child} to the list of child nodes in
+\textbf{parent}.\\ Returns 0 on success, else error.
+
+\subsubsection*{AddAttribute}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigNodeAddAttribute}&(spConfigNode *parent,spConfigAttribute *att);\\
+\end{tabular}
+
+\noindent This adds value \textbf{att} to the list of attributes in
+\textbf{parent}.\\ Returns 0 on success, else error.
+
+\subsubsection*{AddAttribute*}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigNodeAddAttributeInt}&(spConfigNode*parent,char*name,int i);\\
+int&\textbf{spConfigNodeAddAttributeDouble}&(spConfigNode*parent,char*name,double d);\\
+int&\textbf{spConfigNodeAddAttributeString}&(spConfigNode*parent,char*name,char*text);\\
+\end{tabular}
+
+\noindent These functions add an attribute named \textbf{name}, with a value of
+the item passed,  to the list of attributes in \textbf{parent}.\\ They return 0
+on success, else error.
+
+\subsubsection*{NodeName}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigNodeName}&(spConfigNode *node,char *name);\\
+\end{tabular}
+
+\noindent Sets the name of \textbf{node} to \textbf{name}, freeing the old name
+if there was one.\\ Returns 0 on first name, else the old name was freed.
+
+\subsubsection*{AttributeName}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigAttributeName}&(spConfigAttribute *att,char *name);\\
+\end{tabular}
+
+\noindent Sets the name of \textbf{attribute} to \textbf{name}, freeing the old
+name if there was one.\\ Returns 0 on first name, else the old name was freed.
+
+
+
+\subsection{Loading}
+
+
+\subsubsection*{Load}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigLoad}&(spConfigNode *root,char *filename);\\
+\end{tabular}
+
+\noindent This function loads a config file from \textbf{filename}, parses it,
+and stores whatever it successfully parses in \textbf{root}.\\  Returns 0 on
+success, else error.
+
+\subsubsection*{LoadStr}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigLoadStr}&(spConfigNode *root,char *name,char *string);\\
+\end{tabular}
+
+\noindent This function is identical to spConfigLoad above, but instead of a
+file it takes a string.  this allows the program to store a compressed and/or
+encrypted configuration file, as long as this function gets plain text for
+parsing. name is the name that will show up in messages as the file name.\\
+Returns 0 on success, else error.
+
+
+
+\subsection{Saving}
+
+\subsubsection*{Save}
+\noindent\begin{tabular}{l l l @{}}
+int&\textbf{spConfigSave}&(spConfigNode *root,char *filename);\\
+\end{tabular}
+
+\noindent This function saves a configtree based on \textbf{root} in a file
+named \textbf{filename}. This file can then be opened and reparsed with
+spConfigLoad() to return an identical tree at a later time.\\ Returns 0 on
+success, else error.
+
+\subsubsection*{SaveStr (NOT YET IMPLEMENTED)}
+\noindent\begin{tabular}{l l l @{}}
+char&\textbf{*spConfigSaveStr}&(spConfigNode *root);\\
+\end{tabular}
+
+\noindent This function returns a string representing the config file in
+parsable form. instead of saving the config tree in a file, this allows the
+program to compress and/or encrypt the config string before saving, effectively
+protecting the configuration from casual hacking.
+
+
+
+
+\subsection{Messages}
+
+\subsubsection*{MessagesList}
+\noindent\begin{tabular}{l l l @{}}
+char&\textbf{*spConfigMessagesList}&(spConfigNode *rootNode);\\
+\end{tabular}
+
+\noindent This function returns a string containing all the messages in
+\textbf{rootNode}.  This is suitable for printing on the screen or saving to a
+file.
+
+\subsubsection*{MessagesClear}
+\noindent\begin{tabular}{l l l @{}}
+void&\textbf{spConfigMessagesClear}&(spConfigNode*rootNode);\\
+\end{tabular}
+
+\noindent This function removes all the messages from \textbf{rootNode} and
+reclaims the memory used by those messages.
+
+
+
+\subsection{Finding Information}
+
+\subsubsection*{Find}
+\noindent\begin{tabular}{l l l @{}}
+spConfigNode&\textbf{*spConfigNodeFind}\\
+&(spConfigNode *root, char *name, char deep, spConfigNode *previous);\\
+
+spConfigAttribute&\textbf{*spConfigAttributeFind}\\
+&(spConfigNode *root, char *name, char deep, spConfigAttribute *previous);\\
+\end{tabular}
+
+\noindent These functions search through the entire config tree specified by
+\textbf{root}, looking for nodes or attributes with the name \textbf{name}.  If
+\textbf{deep} is non-zero, child nodes of \textbf{root} are recursively
+included in the search.  If \textbf{previous} is non-null, it is assumed to be
+a pointer to the previous node/attribute returned, and the function will return
+the next node/attribute after that one.  On the first call, \textbf{previous}
+should be NULL.
+
+\subsubsection*{FindPath}
+\noindent\begin{tabular}{l l l @{}}
+spConfigNode&\textbf{*spConfigNodeFindPath}&(spConfigNode *root,char *path);\\
+spConfigAttribute&\textbf{*spConfigAttributeFindPath}&(spConfigNode *root,char *path);\\
+\end{tabular}
+
+\noindent These functions return a node or attribute pointing to the node or
+attribute indicated in \textbf{path}.  \textbf{path} is a string similar to a
+unix path.  NULL is returned  if nothing is found.  If some of the
+\textbf{path} is correct, it returns the closest match  (deepest matching
+directory).
+
+\subsubsection*{GetPath}
+\noindent\begin{tabular}{l l l @{}}
+char&\textbf{*spConfigNodeGetPath}&(spConfigNode *node);\\
+\end{tabular}
+
+\noindent This function returns the path string of \textbf{node}.\\
+
+
+
+\subsection{Debugging}
+
+For detailed information regarding debugging, please see {\tt doc/DEBUGGING}
+
+\subsubsection*{File Output}
+\noindent\begin{tabular}{l l l @{}}
+void&\textbf{DEBUGFD\_spconfig}&(FILE *debuglog);\\
+\end{tabular}
+
+\noindent This is a debugging function used to specify where the debug messages
+should go. \textbf{debuglog} should be a file opened for writing.  The default
+log is stderr. \textbf{This function has no effect if spconfig is compiled
+without debugging.}
+
+\subsubsection*{Debug Level}
+\noindent\begin{tabular}{l l l @{}}
+void&\textbf{DEBUGLEVEL\_spconfig}&(signed char level);\\
+\end{tabular}
+
+\noindent This is a debugging function used to specify the verbosity of the
+debug messages.  \textbf{level} is a value between -128 and 127.  Lower levels
+result in more messages.  The default level is 0. \textbf{This function has no
+effect if spconfig is compiled without debugging.}
+
+\end{document}

@@ -1,0 +1,7 @@
+; Chinese.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "Chinese"
+DESCRIPTION  'Chinese Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

@@ -1,0 +1,55 @@
+// WaveDevice.cpp: implementation of the CWaveDevice class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "WaveDevice.h"
+
+// memory leak åüèo
+#ifdef	__AFX_H__            // MFCÇÃÇ›
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////
+CWaveDevice::CWaveDevice(UINT nDevice/* = WAVE_MAPPER*/) : m_nDevice(nDevice)
+{
+}
+
+//////////////////////////////////////////////////////////////////////
+CWaveDevice::CWaveDevice(const CWaveDevice &copy)
+{
+	m_nDevice = copy.GetDevice();
+}
+
+//////////////////////////////////////////////////////////////////////
+CWaveDevice::~CWaveDevice()
+{
+}
+
+//////////////////////////////////////////////////////////////////////
+bool CWaveDevice::IsInputFormat(const CWave& wave)
+{
+	MMRESULT r = waveInOpen(NULL, GetDevice(), &(wave.m_vacWaveFormat.Fmt), NULL, NULL, WAVE_FORMAT_QUERY);
+	return (r == MMSYSERR_NOERROR);
+}
+
+//////////////////////////////////////////////////////////////////////
+bool CWaveDevice::IsOutputFormat(const CWave& wave)
+{
+	MMRESULT r = waveOutOpen(NULL, GetDevice(), &(wave.m_vacWaveFormat.Fmt), NULL, NULL, WAVE_FORMAT_QUERY);
+	return (r == MMSYSERR_NOERROR);
+}
+
+//////////////////////////////////////////////////////////////////////
+inline UINT CWaveDevice::GetDevice() const
+{
+	return m_nDevice;
+}

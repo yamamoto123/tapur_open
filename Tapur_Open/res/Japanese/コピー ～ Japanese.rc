@@ -1,0 +1,1383 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Japanese.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // 印刷/印刷プレビュー リソース\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "..\\..\\res\\tapur.ico"
+IDR_TAPURTYPE           ICON    DISCARDABLE     "..\\..\\res\\TapurDoc.ico"
+IDI_F_MSG_CLOSE         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_CLOSE.ico"
+IDI_F_MSG_OPEN          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_OPEN.ico"
+IDI_F_RESP_CLOSE        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_CLOSE.ico"
+IDI_F_RESP_OPEN         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_OPEN.ico"
+IDI_RESP_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\RESP_SIMPLE.ico"
+IDI_F_ROOT              ICON    DISCARDABLE     "..\\..\\res\\F_ROOT.ico"
+IDI_F_MSG_TRASH         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_TRASH.ico"
+IDI_F_RESP_TRASH        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_TRASH.ico"
+IDI_F_RESP_DRAG         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_DRAG.ico"
+IDI_F_MSG_DRAG          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_DRAG.ico"
+IDI_MSG_SIMPLE          ICON    DISCARDABLE     "..\\..\\res\\MSG_SIMPLE.ico"
+IDI_T_RECORD            ICON    DISCARDABLE     "..\\..\\res\\T_RECORD.ico"
+IDI_T_RECORD_PAUSE      ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_PAUSE.ico"
+IDI_NEW                 ICON    DISCARDABLE     "..\\..\\res\\new32.ico"
+IDI_DISCON              ICON    DISCARDABLE     "..\\..\\res\\discon32.ico"
+IDI_VMSG_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\VMSG_SIMPLE.ico"
+IDI_T_RECORD_SND        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_SND.ico"
+IDI_T_RECORD_BOTH       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_BOTH.ico"
+IDI_T_RECORD_RCV        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_RCV.ico"
+IDI_T_RECORD_STOP       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_STOP.ico"
+IDI_T_VRECORD_STOP      ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_STOP.ico"
+IDI_T_VRECORD_PAUSE     ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_PAUSE.ico"
+IDI_T_VRECORD           ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD.ico"
+IDI_VMSG_RECORD         ICON    DISCARDABLE     "..\\..\\res\\VMSG_RECORD.ico"
+IDI_MSG_RECORD          ICON    DISCARDABLE     "..\\..\\res\\MSG_RECORD.ico"
+IDI_APP_VPLAY           ICON    DISCARDABLE     "..\\..\\res\\VPLAY_APP.ico"
+IDI_APP_PLAY            ICON    DISCARDABLE     "..\\..\\res\\PLAY_APP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAIN_TOOL           BITMAP  MOVEABLE PURE   "..\\..\\res\\Toolbar.bmp"
+STOPX                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPX.BMP"
+PAUSED                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSED.BMP"
+PAUSEU                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEU.BMP"
+PAUSEX                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEX.BMP"
+PLAYD                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYD.BMP"
+PLAYU                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYU.BMP"
+PLAYX                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYX.BMP"
+STOPD                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPD.BMP"
+STOPU                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPU.BMP"
+STOPF                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPF.BMP"
+PAUSEF                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEF.BMP"
+PLAYF                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYF.BMP"
+IDB_TAPUR               BITMAP  DISCARDABLE     "..\\..\\res\\tapur48.bmp"
+IDR_RECMOD_TOOL         BITMAP  DISCARDABLE     "..\\..\\res\\recmod_t.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAIN_TOOL TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    SEPARATOR
+    BUTTON      ID_VRECORD_START
+    BUTTON      ID_RECORD_START
+    BUTTON      ID_RECORD_PAUSE
+    BUTTON      ID_RECORD_STOP
+    BUTTON      ID_PLACEHOLDER
+    BUTTON      ID_RECORD_MOD
+END
+
+IDR_RECMOD_TOOL TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_RECMOD_BOTH
+    BUTTON      ID_RECMOD_RCV
+    BUTTON      ID_RECMOD_SND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "設定(&S)",                    ID_TOOL_SETTING
+        MENUITEM SEPARATOR
+        MENUITEM "閉じる(&C)",                  ID_APP_EXIT
+    END
+    POPUP "ツール(&T)"
+    BEGIN
+        MENUITEM "ビデオ録画(&V)",              ID_VRECORD_START
+        MENUITEM "会話録音(&R)",                ID_RECORD_START
+        MENUITEM "録音/録画一時停止(&T)",       ID_RECORD_PAUSE
+        MENUITEM "録音/録画終了(&E)",           ID_RECORD_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "録音対象の設定(&O)",          ID_RECORD_MOD
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "オンラインマニュアル(&H)",    ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "SkypeIn/Outの購入(&S)",       ID_APP_SKYPE
+        MENUITEM SEPARATOR
+        MENUITEM "Tapurについて(&A)",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "main"
+    BEGIN
+        MENUITEM "開く(&O)",                    ID_POPUP_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "応答を有効(&E)",              ID_POPUP_ENABLE
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)",                    ID_POPUP_CLOSE
+    END
+END
+
+IDR_POPUP_FOLDER MENU DISCARDABLE 
+BEGIN
+    POPUP "folder"
+    BEGIN
+        MENUITEM "新しいフォルダを作成(&N)",    ID_POPUP_FOLDER_NEW
+        MENUITEM "フォルダの名前変更(&R)",      ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "フォルダの削除(&D)",          ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_SETUP MENU DISCARDABLE 
+BEGIN
+    POPUP "setup"
+    BEGIN
+        MENUITEM "応答設定を新規作成(&W)",      ID_POPUP_SETUP_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "新しいフォルダを作成(&N)",    ID_POPUP_FOLDER_NEW
+        MENUITEM "フォルダの名前変更(&R)",      ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "フォルダの削除(&D)",          ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_TRASHCAN MENU DISCARDABLE 
+BEGIN
+    POPUP "trashcan"
+    BEGIN
+        MENUITEM "ごみ箱を空にする(&B)",        ID_POPUP_TRASHCAN_CLEAR
+    END
+END
+
+IDR_POPUP_SETLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "setuplist"
+    BEGIN
+        MENUITEM "応答設定を新規作成(&W)",      ID_POPUP_SETLIST_NEW
+        MENUITEM "送信者の変更(&P)",            ID_POPUP_SETLIST_RENAME
+        MENUITEM "コピー(&C)",                  ID_POPUP_SETLIST_COPY
+        MENUITEM "貼り付け(&P)",                ID_POPUP_SETLIST_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "送信者へ発信する(&R)",        ID_POPUP_SETLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "応答設定を削除(&D)",          ID_POPUP_SETLIST_DEL
+    END
+END
+
+IDR_POPUP_MSGLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "msglist"
+    BEGIN
+        MENUITEM "送信者へ発信する(&R)",        ID_POPUP_MSGLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "応答設定を表示(&O)",          ID_POPUP_MSGLIST_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "メッセージを削除(&D)",        ID_POPUP_MSGLIST_DEL
+    END
+END
+
+IDR_POPUP_TRASH MENU DISCARDABLE 
+BEGIN
+    POPUP "trash"
+    BEGIN
+        MENUITEM "元に戻す(&E)",                ID_POPUP_TRASH_RECOVER
+        MENUITEM SEPARATOR
+        MENUITEM "ごみ箱から削除(&D)",          ID_POPUP_TRASH_CLEAR
+    END
+END
+
+IDR_DROP_RECMOD MENU DISCARDABLE 
+BEGIN
+    POPUP "recmod"
+    BEGIN
+        MENUITEM "自分と相手の声を録音",        ID_RECMOD_BOTH
+        MENUITEM "相手の声のみ録音",            ID_RECMOD_RCV
+        MENUITEM "自分の声のみ録音",            ID_RECMOD_SND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 195, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tapurについて"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         194,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN,81,7,28,33,WS_EX_TRANSPARENT
+    CTEXT           "Tapur Version 0.9.7.0 Beta",IDC_STATIC,7,72,181,8,
+                    SS_NOPREFIX,WS_EX_TRANSPARENT
+    CTEXT           "Copyright (C) 2004-2006  tapur.com",IDC_STATIC,7,87,181,
+                    8,0,WS_EX_TRANSPARENT
+    CTEXT           "スカイプのお留守番",IDC_STATIC,7,42,181,11,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "All Rights Reserved",IDC_STATIC,7,97,181,8,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,77,162,37,14,BS_CENTER | BS_BOTTOM | BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CTEXT           "(Answering Agent for Skype)",IDC_STATIC,7,51,181,13,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "Icons courtesy of www.mienet.net/, used with permission.",
+                    IDC_STATIC_COPY,7,135,181,8
+    CTEXT           "This product uses the Skype API \nbut is not endorsed or certified by Skype.",
+                    IDC_STATIC_COPY2,7,113,181,17
+    CTEXT           "Powerd by ryu's FCS technology (http://nyanyan.to/)",
+                    IDC_STATIC_COPY3,7,145,181,8
+END
+
+IDD_RSF_SIMPLEFORM DIALOGEX 0, 0, 182, 133
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "応答メッセージ",IDC_STATIC,5,3,169,65,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "音声応答",IDC_CHK_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,18,9,11
+    PUSHBUTTON      "音声応答",IDC_BTN_AUDIO,24,16,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 00:00 ]",IDC_ST_SIZE_AUDIO,28,31,29,9,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "チャット応答",IDC_CHK_CHAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,18,9,11
+    PUSHBUTTON      "チャット応答",IDC_BTN_CHAT,92,16,46,14,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "[ 0 bytes ]",IDC_ST_SIZE_CHAT,96,31,53,9,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "ビデオ応答",IDC_CHK_VIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,41,9,11
+    PUSHBUTTON      "ビデオ応答",IDC_BTN_VIDEO,24,42,46,14,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "[ 00:00 ]",IDC_ST_SIZE_VIDEO,28,57,29,9,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "静止画応答",IDC_CHK_IMG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,41,9,11
+    PUSHBUTTON      "静止画応答",IDC_BTN_IMG,92,42,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 0 Kbytes ]",IDC_ST_SIZE_IMG,96,57,53,9,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,5,67,169,28,BS_FLAT,WS_EX_TRANSPARENT
+    CONTROL         "ビープ音",IDC_CHK_BEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,78,55,11
+    GROUPBOX        "記録形式",IDC_STATIC,5,99,169,28,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "録音",IDC_RDO_REC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,110,31,12
+    CONTROL         "録画/録音",IDC_RDO_VREC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,48,110,44,12
+    CONTROL         "記録しない(切断)",IDC_RDO_DISCONNECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,99,110,63,12
+END
+
+IDD_FOLDERFORM DIALOG DISCARDABLE  0, 0, 176, 87
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+END
+
+IDD_MSGLISTFORM DIALOG DISCARDABLE  0, 0, 158, 84
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,0,0,158,
+                    84
+END
+
+IDD_RSF_NEW DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新しい応答設定"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    LTEXT           "*送信者のスカイプ名（必須）：",IDC_STATIC_ID,7,7,137,8,
+                    0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "送信者の表示名：",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,94,65,50,14
+END
+
+IDD_FOLDER_NEW DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "フォルダの作成"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    LTEXT           "新規フォルダ名称：",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,94,38,50,14
+END
+
+IDD_FOLDER_RENAME DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "フォルダ名の変更"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    LTEXT           "新しいフォルダ名：",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,94,38,50,14
+END
+
+IDD_MSGFORM DIALOGEX 0, 0, 182, 61
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    CONTROL         "音声/動画：",IDC_STATIC_TITLE,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP | WS_TABSTOP,6,7,35,11,
+                    WS_EX_TRANSPARENT
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,7,19,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,43,5,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,56,
+                    5,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,68,5,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "音声ファイル取出し",IDC_BTN_FILE,43,23,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_PLAY",IDC_APP_PLAY,133,23,14,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "動画ファイル取出し",IDC_BTN_VFILE,43,40,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_VPLAY",IDC_APP_VPLAY,133,40,14,15,BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    86,9,72,8
+    PUSHBUTTON      "PODCAST公開",IDC_BTN_PODCAST,95,2,86,15,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_RSF_RENAME DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "送信者の変更"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    LTEXT           "*送信者のスカイプ名（必須）：",IDC_STATIC_ID,7,7,137,8,
+                    0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "送信者の表示名：",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,94,65,50,14
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 241, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tapur - 設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,125,281,50,14
+    DEFPUSHBUTTON   "適用",IDC_APPLY,184,281,50,14
+    DEFPUSHBUTTON   "OK",IDOK,66,281,50,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,7,7,227,265
+END
+
+IDD_TAB_PUB DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "留守番応答時の動作",IDC_FRAME2,7,7,209,70,WS_TABSTOP
+    LTEXT           "自動応答までの待機時間（秒）：",IDC_STATIC3,13,25,98,8,
+                    0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_WAIT_ANSWER,112,22,30,127,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "録音時間の制限（分）：",IDC_STATIC1,13,43,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_MAX_RECORD,112,41,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "起動時に応答を無効にする",IDC_CHK_DISABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,60,156,13
+    GROUPBOX        "音声設定",IDC_FRAME1,7,81,209,35,WS_TABSTOP
+    CONTROL         "スピーカ出力をミュートする",IDC_CHK_MUTE,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED,60,53,156,
+                    14
+    CONTROL         "コンタクトリスト以外の着信には応答しない",
+                    IDC_CHK_CONTACT,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED,60,63,156,14
+    LTEXT           "ビープ音の変更：",IDC_STATIC2,15,97,56,8,WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "音声ファイル登録(WAVE)",IDC_BTN_BEEPFILE,71,94,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    GROUPBOX        "キーボード設定",IDC_FRAME5,7,120,209,46,WS_TABSTOP
+    CONTROL         "Ctrl+Alt+T でTapurを表示する ",IDC_CHK_SHORTCUT_TAPUR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,133,156,13
+    CONTROL         "Ctrl+Alt+S でSkypeを表示する ",IDC_CHK_SHORTCUT_SKYPE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,148,156,13
+END
+
+IDD_TAB_ADMIN DIALOG DISCARDABLE  0, 0, 223, 210
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "メンテナンス",IDC_FRAME1,7,7,209,48
+    CONTROL         "ログの生成を有効にする",IDC_CHK_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,24,156,14
+END
+
+IDD_CONVERT_AUDIO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "音声メッセージの取出し"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "出力ファイル名：",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "参照",IDC_BROWSETARGET,7,21,18,15
+    EDITTEXT        IDC_TARGET,27,22,191,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,168,40,50,14
+END
+
+IDD_TAB_REC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "通話録音時の動作",IDC_FRAME3,7,7,209,116,WS_TABSTOP
+    LTEXT           "録音時間の制限（分）：",IDC_STATIC1,13,24,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_RECORD_LIMIT,82,22,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "録音開始時のメッセージ(チャット)：",IDC_STATIC4,13,39,
+                    109,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_REC_WARNING,15,51,195,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "初期メッセージに戻す",IDC_BTN_REC_WARNING,122,36,78,13
+    LTEXT           "録音終了時のメッセージ(チャット)：",IDC_STATIC5,13,86,
+                    108,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_RECSTOP_WARNING,15,98,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "初期メッセージに戻す",IDC_BTN_RECSTOP_WARNING,122,83,78,
+                    13
+    GROUPBOX        "音質",IDC_STATIC,7,127,209,31,WS_TABSTOP
+    CONTROL         "モノラル",IDC_RDO_MONORAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,17,140,39,12
+    CONTROL         "ステレオ",IDC_RDO_STEREO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,59,140,44,12
+END
+
+IDD_RSF_AUDIO DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "音声登録"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "音声ファイル登録(WAVE)",IDC_BTN_FILE,50,24,84,15
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,98,48,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,97,8
+END
+
+IDD_RSF_BEEP DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ビープ音登録"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,98,48,50,14
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "音声ファイル登録(WAVE)",IDC_BTN_FILE,50,24,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,72,8
+END
+
+IDD_RSF_CHAT DIALOG DISCARDABLE  0, 0, 210, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "チャットメッセージ登録"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,68,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,153,68,50,14
+    EDITTEXT        IDC_EDIT_CHAT,7,7,196,55,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_VIDEO DIALOG DISCARDABLE  0, 0, 119, 125
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ビデオ再生"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,7,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,7,7,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_VIDEOGRAB,"{17066EFF-35D3-402E-AF85-83A8730E58BB}",
+                    0x0,7,7,105,111
+END
+
+IDD_CONVERT_VIDEO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ビデオメッセージの取出し"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "出力ファイル名：",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "参照",IDC_BROWSETARGET,7,21,18,15
+    EDITTEXT        IDC_TARGET,27,22,191,14,ES_AUTOHSCROLL
+    CONTROL         "音声付き ",IDC_CHK_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | WS_TABSTOP,171,7,47,15
+    LTEXT           "(*長時間かかる場合があります)",IDC_STATIC,7,41,93,13,
+                    SS_CENTERIMAGE | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,168,40,50,14
+END
+
+IDD_TAB_VREC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ビデオ録画時の動作",IDC_FRAME4,7,7,209,135,WS_TABSTOP
+    LTEXT           "録画時間の制限（分）：",IDC_STATIC3,13,23,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_VRECORD_LIMIT,83,21,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "録画開始時のメッセージ(チャット)：",IDC_STATIC6,13,40,
+                    109,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VREC_WARNING,15,52,195,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "初期メッセージに戻す",IDC_BTN_VREC_WARNING,122,36,78,13
+    LTEXT           "録画終了時のメッセージ(チャット)：",IDC_STATIC7,13,86,
+                    109,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VRECSTOP_WARNING,15,98,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "初期メッセージに戻す",IDC_BTN_VRECSTOP_WARNING,122,84,
+                    78,13
+    CONTROL         "録画中はビデオ画面を前面にする",IDC_CHK_VSETTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,123,156,13
+END
+
+IDD_RSF_VIDEO DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ビデオ登録"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "ビデオファイル登録(AVI)",IDC_BTN_FILE,50,24,84,15
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,98,48,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,97,8
+END
+
+IDD_RSF_IMG DIALOG DISCARDABLE  0, 0, 123, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "画像登録"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,114,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,67,114,50,14
+    PUSHBUTTON      "画像ファイル登録(JPG/GIF/BMP)",IDC_BTN_FILE,7,7,109,15
+    CONTROL         "",IDC_PICT,"Static",SS_BLACKFRAME,7,27,109,83
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,7,0
+ PRODUCTVERSION 0,9,7,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Japanese resource for Tapur \0"
+            VALUE "CompanyName", "tapur.com\0"
+            VALUE "FileDescription", "jp.dll\0"
+            VALUE "FileVersion", "0, 9, 7, 0\0"
+            VALUE "InternalName", "jp\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2006\0"
+            VALUE "LegalTrademarks", "Tapur\0"
+            VALUE "OriginalFilename", "jp.dll\0"
+            VALUE "PrivateBuild", "b1\0"
+            VALUE "ProductName", "Tapur\0"
+            VALUE "ProductVersion", "0, 9, 7, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_RSF_SIMPLEFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_RSF_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FOLDER_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_FOLDER_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_MSGFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+        HORZGUIDE, 17
+    END
+
+    IDD_RSF_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_TAB_PUB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_TAB_ADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CONVERT_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_TAB_REC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_RSF_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_RSF_BEEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_RSF_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_CONVERT_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_TAB_VREC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_RSF_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_RSF_IMG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_TAPUR               REGISTRY DISCARDABLE    "..\\..\\Tapur.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODROP              CURSOR  DISCARDABLE     "..\\..\\res\\nodrop.cur"
+IDC_LINK                CURSOR  DISCARDABLE     "..\\..\\res\\link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VIDEO DLGINIT
+BEGIN
+    IDC_VIDEOGRAB, 0x376, 1439, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540d, 0x6956, 0x6564, 0x476f, 0x6172, 
+0x6262, 0x7265, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 
+0x5705, 0x6469, 0x6874, 0xb803, 0x0600, 0x6548, 0x6769, 0x7468, 0xa703, 
+0x0b00, 0x7546, 0x6c6c, 0x6552, 0x6170, 0x6e69, 0x0874, 0x411d, 0x4653, 
+0x654d, 0x6964, 0x5361, 0x7265, 0x6576, 0x5072, 0x6275, 0x696c, 0x6873, 
+0x6e69, 0x5067, 0x696f, 0x746e, 0x3106, 0x7468, 0x7074, 0x2f3a, 0x592f, 
+0x756f, 0x5772, 0x6e69, 0x6f64, 0x7377, 0x654d, 0x6964, 0x5361, 0x7265, 
+0x6576, 0x2f72, 0x6f59, 0x7275, 0x7550, 0x6c62, 0x7369, 0x6968, 0x676e, 
+0x6f50, 0x6e69, 0x0d74, 0x5341, 0x5646, 0x6469, 0x6f65, 0x6957, 0x7464, 
+0x0368, 0x0140, 0x410e, 0x7475, 0x466f, 0x6c69, 0x5065, 0x6572, 0x6966, 
+0x0678, 0x7602, 0x0c67, 0x6944, 0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 
+0x0a02, 0x440b, 0x7369, 0x6c70, 0x7961, 0x545f, 0x706f, 0x0a02, 0x441c, 
+0x6f72, 0x7070, 0x6465, 0x7246, 0x6d61, 0x7365, 0x6f50, 0x6c6c, 0x6e69, 
+0x4967, 0x746e, 0x7265, 0x6176, 0x026c, 0x100a, 0x7544, 0x6c61, 0x6944, 
+0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 0x9003, 0x0f01, 0x7544, 0x6c61, 
+0x6944, 0x7073, 0x616c, 0x5f79, 0x6f54, 0x0270, 0x150a, 0x5644, 0x6e45, 
+0x6f63, 0x6564, 0x5f72, 0x6956, 0x6564, 0x466f, 0x726f, 0x616d, 0x0774, 
+0x6408, 0x6676, 0x445f, 0x5356, 0x1944, 0x5644, 0x6e45, 0x6f63, 0x6564, 
+0x5f72, 0x6956, 0x6564, 0x526f, 0x7365, 0x6c6f, 0x7475, 0x6f69, 0x076e, 
+0x6407, 0x5f76, 0x7546, 0x6c6c, 0x4417, 0x4556, 0x636e, 0x646f, 0x7265, 
+0x565f, 0x6469, 0x6f65, 0x7453, 0x6e61, 0x6164, 0x6472, 0x0707, 0x7664, 
+0x5f73, 0x4150, 0x0d4c, 0x7243, 0x706f, 0x6970, 0x676e, 0x5a5f, 0x6f6f, 
+0x056d, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x4618, 0x7869, 0x6c46, 
+0x6369, 0x656b, 0x4f72, 0x4272, 0x616c, 0x6b63, 0x6143, 0x7470, 0x7275, 
+0x0865, 0x4c0d, 0x6369, 0x6e65, 0x6573, 0x7453, 0x6972, 0x676e, 0x2206, 
+0x3831, 0x3835, 0x3830, 0x3939, 0x3531, 0x3931, 0x3232, 0x3038, 0x2d33, 
+0x6154, 0x7473, 0x7975, 0x2061, 0x6159, 0x616d, 0x6f6d, 0x6f74, 0x4913, 
+0x616d, 0x6567, 0x764f, 0x7265, 0x616c, 0x4579, 0x616e, 0x6c62, 0x6465, 
+0x1308, 0x6f4d, 0x6974, 0x6e6f, 0x6544, 0x6574, 0x7463, 0x726f, 0x475f, 
+0x6972, 0x0664, 0x356e, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x1620, 0x754d, 0x746c, 0x7069, 0x656c, 0x6578, 
+0x5364, 0x6977, 0x6374, 0x4468, 0x6c65, 0x7961, 0x0002, 0x4d1d, 0x6c75, 
+0x6974, 0x6c70, 0x7865, 0x6465, 0x7453, 0x6261, 0x6c69, 0x7a69, 0x7461, 
+0x6f69, 0x446e, 0x6c65, 0x7961, 0x0102, 0x5010, 0x616c, 0x6579, 0x5372, 
+0x6570, 0x6465, 0x6152, 0x6974, 0x056f, 0x0000, 0x0000, 0x0000, 0x8000, 
+0x3fff, 0x5221, 0x6365, 0x726f, 0x6964, 0x676e, 0x6e4f, 0x6f4d, 0x6974, 
+0x6e6f, 0x4d5f, 0x746f, 0x6f69, 0x546e, 0x7268, 0x7365, 0x6f68, 0x646c, 
+0x0005, 0x4fe0, 0x978d, 0x126e, 0xf583, 0x143f, 0x6552, 0x6e65, 0x6f63, 
+0x6964, 0x676e, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xff80, 0x13bf, 0x6552, 0x6e65, 0x6f63, 0x6964, 0x676e, 
+0x535f, 0x6f74, 0x5470, 0x6d69, 0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 
+0xbfff, 0x5218, 0x7761, 0x6153, 0x706d, 0x656c, 0x6143, 0x7470, 0x7275, 
+0x4c65, 0x636f, 0x7461, 0x6f69, 0x076e, 0x720f, 0x5f6c, 0x6f53, 0x7275, 
+0x6563, 0x6f46, 0x6d72, 0x7461, 0x5415, 0x7865, 0x4f74, 0x6576, 0x6c72, 
+0x7961, 0x465f, 0x6e6f, 0x4374, 0x6c6f, 0x726f, 0x0607, 0x6c63, 0x7141, 
+0x6175, 0x5412, 0x7865, 0x4f74, 0x6576, 0x6c72, 0x7961, 0x535f, 0x7274, 
+0x6e69, 0x0c67, 0x0116, 0x0000, 0x6f4e, 0x6574, 0x203a, 0x6874, 0x2065, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x2065, 0x6f66, 0x6d72, 0x7461, 0x2073, 
+0x0a0d, 0x6163, 0x206e, 0x6562, 0x6520, 0x7361, 0x6c69, 0x2079, 0x6f6d, 
+0x6964, 0x6966, 0x6465, 0x0d2e, 0x0d0a, 0x730a, 0x7379, 0x6574, 0x206d, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7973, 0x5f73, 0x6974, 
+0x656d, 0x645b, 0x2f64, 0x6d6d, 0x792f, 0x2079, 0x6868, 0x6e3a, 0x3a6e, 
+0x7373, 0x255d, 0x0a0d, 0x5644, 0x7420, 0x6d69, 0x2065, 0x6f63, 0x6564, 
+0x203a, 0x7425, 0x6d69, 0x5f65, 0x6f63, 0x6564, 0x0d25, 0x440a, 0x2056, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7664, 0x745f, 0x6d69, 
+0x5b65, 0x6464, 0x6d2f, 0x2f6d, 0x7979, 0x6820, 0x3a68, 0x6e6e, 0x733a, 
+0x5d73, 0x0d25, 0x660a, 0x6172, 0x656d, 0x6320, 0x756f, 0x746e, 0x203a, 
+0x6625, 0x6172, 0x656d, 0x635f, 0x756f, 0x746e, 0x0d25, 0x740a, 0x6d69, 
+0x2065, 0x6628, 0x6c75, 0x296c, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x7566, 
+0x6c6c, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x7328, 0x6365, 0x3a29, 0x2520, 
+0x6974, 0x656d, 0x735f, 0x6365, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x6e28, 
+0x2973, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x3031, 0x6e30, 0x2573, 0x5618, 
+0x6469, 0x6f65, 0x6f43, 0x706d, 0x6572, 0x7373, 0x6f69, 0x5f6e, 0x7551, 
+0x6c61, 0x7469, 0x0579, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x561d, 
+0x6469, 0x6f65, 0x7246, 0x6d6f, 0x6d49, 0x6761, 0x7365, 0x545f, 0x6d65, 
+0x6f70, 0x6172, 0x7972, 0x6946, 0x656c, 0x1206, 0x6553, 0x4f74, 0x4266, 
+0x7469, 0x616d, 0x7370, 0x3130, 0x642e, 0x7461, 0x5615, 0x6469, 0x6f65, 
+0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 0x4f65, 0x5572, 0x4c52, 0x2606, 
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x642e, 0x7461, 0x7361, 0x6574, 
+0x6461, 0x632e, 0x6d6f, 0x642f, 0x6d65, 0x2f6f, 0x6564, 0x6f6d, 0x772e, 
+0x766d, 0x561f, 0x6469, 0x6f65, 0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 
+0x4f65, 0x5572, 0x4c52, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 
+0x0000, 0x0000, 0x0000, 0xff80, 0x1ebf, 0x6956, 0x6564, 0x536f, 0x756f, 
+0x6372, 0x5f65, 0x6946, 0x656c, 0x724f, 0x5255, 0x5f4c, 0x7453, 0x706f, 
+0x6954, 0x656d, 0x0005, 0x0000, 0x0000, 0x0000, 0xff80, 0x00bf, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Tapur\n\nTapur\n\n\nTapur.Document\nTapur Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Tapur"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        " "
+    ID_INDICATOR_CAPS       "        "
+    ID_INDICATOR_NUM        " "
+    ID_INDICATOR_SCRL       " "
+    ID_INDICATOR_OVR        " "
+    ID_INDICATOR_REC        " "
+    ID_INDICATOR_KANA       "        "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"
+    ID_FILE_OPEN            "既存のﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のﾌｧｲﾙを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のﾌｧｲﾙを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のﾌｧｲﾙを新しい名前で保存\n名前をつけて保存"
+    ID_FILE_PAGE_SETUP      "印刷ｵﾌﾟｼｮﾝの変更\nﾍﾟｰｼﾞ ﾚｲｱｳﾄの設定"
+    ID_FILE_PRINT_SETUP     "ﾌﾟﾘﾝﾀ/印刷ｵﾌﾟｼｮﾝの変更\n印刷設定"
+    ID_FILE_PRINT           "作業中のﾌｧｲﾙを印刷\n印刷"
+    ID_FILE_PRINT_PREVIEW   "印刷ｲﾒｰｼﾞを表示\n印刷ﾌﾟﾚﾋﾞｭｰ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "バージョン、著作権等を表示します\nバージョン"
+    ID_APP_EXIT             "タスクトレイに常駐します\n閉じる"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE2       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE3       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE4       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE5       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE6       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE7       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE8       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE9       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE10      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE11      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE12      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE13      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE14      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE15      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE16      "指定のﾌｧｲﾙを開く"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "次のｳｨﾝﾄﾞｳに切り替える\n次のﾍﾟｲﾝ"
+    ID_PREV_PANE            "前のｳｨﾝﾄﾞｳに切り替える\n前のﾍﾟｲﾝ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のｳｨﾝﾄﾞｳを分割\n分割"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ﾌｧｲﾙ内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ﾂｰﾙ ﾊﾞｰの 表示/非表示\nﾂｰﾙ ﾊﾞｰの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ｽﾃｰﾀｽ ﾊﾞｰの 表示/非表示\nｽﾃｰﾀｽ ﾊﾞｰの表示切り替え"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ｳｨﾝﾄﾞｳのｻｲｽﾞを変更"
+    AFX_IDS_SCMOVE          "ｳｨﾝﾄﾞｳの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ｳｨﾝﾄﾞｳを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ｳｨﾝﾄﾞｳを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のｳｨﾝﾄﾞｳを閉じ、変更したﾌｧｲﾙの保存を指示"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ｳｨﾝﾄﾞｳを通常のｻｲｽﾞに戻す"
+    AFX_IDS_SCTASKLIST      "ｱﾌﾟﾘｹｰｼｮﾝの切り替え"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "印刷ﾌﾟﾚﾋﾞｭｰ ﾓｰﾄﾞの終わり\nﾌﾟﾚﾋﾞｭｰのｷｬﾝｾﾙ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_MSG          "受信箱"
+    IDS_FOLDER_MSG_TRASH    "ごみ箱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_SETUP        "応答設定"
+    IDS_FOLDER_SETUP_TRASH  "ごみ箱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RSF_DEF             "(規定の応答)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX0             "スカイプと接続できません"
+    IDS_MSGBOX1             "以下の点を確認してください\n・スカイプが起動している\n・スカイプのアクセス管理でTapur とのアクセスが許可されている\n　（スカイプのメニュー『ツール』-『設定』-『プライバシー設定』-『スカイプへのアクセスを管理』を参照）"
+    IDS_MSGBOX2             "スカイプと接続されていません"
+    IDS_MSGBOX3             "スカイプと接続されていないため、この機能は使用できません"
+    IDS_MSGBOX5             "スカイプと接続しました"
+    IDS_MSGBOX6             "Windowsのオーディオデバイスの設定が「Tapur Virtula Cable」に変更されています\n通常使用するオーディオデバイスに変更してください\n\n『コントロールパネル』-『サウンドとオーディオデバイスのプロパティ』-『オーディオ』タブで、『音の再生』及び『録音』の『規定のデバイス』を変更"
+    IDS_MSGBOX7             "Tapurはスカイプと正常に接続できません\nスカイプを再起動した後、Tapurを起動してください"
+    IDS_MSGBOX8             "Tapurはログアウト状態のスカイプとは接続できません\nスカイプにログインした後、Tapurを再起動してください"
+    IDS_MSGBOX11            "『スカイプ名』が重複しています"
+    IDS_MSGBOX12            "『スカイプ名』に利用できない文字が含まれています"
+    IDS_MSGBOX13            "『スカイプ名』が入力されていません"
+    IDS_MSGBOX14            "送信者に電話（スカイプ）をかけます\nよろしいですか？"
+    IDS_MSGBOX15            "スカイプをオンライン状態にしてください"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX16            "現在、通話中です"
+    IDS_MSGBOX17            "送信者が不明なため、この機能は使用できません"
+    IDS_MSGBOX18            "スカイプがTapur用オーディオデバイスを使用しています\nスカイプのオーディオデバイスの設定を変更してください\n （スカイプのメニュー『ツール』-『設定』-『オーディオデバイス』で「WIndowsの標準デバイス」を設定）"
+    IDS_MSGBOX21            "『フォルダ名』が重複しています"
+    IDS_MSGBOX22            "『フォルダ名』が入力されていません"
+    IDS_MSGBOX23            "フォルダを削除します\nよろしいですか？"
+    IDS_MSGBOX31            "ごみ箱を空にします\nごみ箱から削除したデータは元に戻すことはできません\nよろしいですか？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX32            "フォルダをごみ箱から削除します\nごみ箱から削除したフォルダは元に戻すことはできません\nよろしいですか？"
+    IDS_MSGBOX33            "フォルダを元の位置に戻します\nよろしいですか？"
+    IDS_MSGBOX34            "データをごみ箱から削除します\nごみ箱から削除したデータは元に戻すことはできません\nよろしいですか？"
+    IDS_MSGBOX41            "『送信者名』が重複しています"
+    IDS_MSGBOX42            "『送信名』が入力されていません"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX51            "（規定の応答）を削除することはできません"
+    IDS_MSGBOX52            "該当する応答設定がありません\n新規作成しますか？"
+    IDS_MSGBOX53            "応答設定を削除します\nよろしいですか？"
+    IDS_MSGBOX54            "応答設定のコピーに失敗しました"
+    IDS_MSGBOX58            "『ビデオ応答』と『静止画応答』を同時に使用することはできません"
+    IDS_MSGBOX60            "音声ファイルを登録します\nよろしいですか？"
+    IDS_MSGBOX61            "再生できませんでした\n音声ファイルが破損している可能性があります"
+    IDS_MSGBOX62            "音声ファイルが破損している可能性があります"
+    IDS_MSGBOX63            "音声ファイルが未対応のフォーマットか、あるいは破損している可能性があります"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAPTION_CON         "Tapur (Skype接続)"
+    IDS_CAPTION_DISCON      "Tapur (Skype非接続)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP             "Tapur - スカイプお留守番"
+    IDS_TOOLTIP_DISABLE     "Tapur - スカイプお留守番(応答無効)"
+    IDS_TOOLTIP_DISCON      "Tapur - スカイプと接続待機中・・・"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_TRASH_RECOVER  "ごみ箱のデータを元に戻します\n復帰"
+    ID_POPUP_SETLIST_NEW    "応答設定を新規作成します\n新規作成"
+    ID_POPUP_SETLIST_RENAME "応答設定の送信者を変更します\n変更"
+    ID_POPUP_MSGLIST_SETUP  "メッセージの送信者に対応する応答設定を表示します\n応答設定"
+    ID_POPUP_SETLIST_CALL   "応答設定の送信者へスカイプ発信します\n発信"
+    ID_POPUP_SETLIST_COPY   "応答設定をコピーします\nコピー"
+    ID_POPUP_SETLIST_PASTE  "コピーした応答設定をペーストします\n貼り付け"
+    ID_TOOL_SETTING         "動作設定、カスタマイズﾞ等を行います\n設定"
+    ID_RECORD_START         "会話の録音を開始します\n会話録音"
+    ID_RECORD_PAUSE         "会話の録音/録画を一時停止します\n録音/録画一時停止"
+    ID_PLACEHOLDER          "会話の録音/録画時間を表示します\n録音/録画時間"
+    ID_RECORD_STOP          "会話の録音/録画を終了します\n録音/録画終了"
+    ID_TOOL_RECORD          "会話の録音を開始します\n会話録音"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_PUB             "留守番設定"
+    IDS_TAB_ADMIN           "上級設定"
+    IDS_TAB_REC             "録音設定"
+    IDS_TAB_VREC            "録画設定"
+    IDS_TAB_REC_WARNING     "通話を録音します。\r\n録音を望まない場合は、通話を終了するか、\r\n通話相手に録音の中止を依頼してください。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX64            "再生できませんでした\nビデオファイルが破損している可能性があります"
+    IDS_MSGBOX66            "ビデオファイルが未対応のフォーマットか、あるいは破損している可能性があります"
+    IDS_MSGBOX67            "画像ファイルが未対応のフォーマットです"
+    IDS_MSGBOX68            "画像ファイルのサイズが制限値を超えています\n (JPG/GIF:300Kbyte以下, BMP:1Mbyte以下)"
+    IDS_MSGBOX69            "音声ファイルを登録できませんでした"
+    IDS_MSGBOX70            "この機能は通話中のみ有効です"
+    IDS_MSGBOX71            "録音ファイルを出力しています・・・"
+    IDS_MSGBOX72            "この機能はビデオ通話中のみ有効です"
+    IDS_MSGBOX73            "この機能は留守番応答中は使用できません"
+    IDS_MSGBOX74            "録音終了"
+    IDS_MSGBOX75            "録画終了"
+    IDS_MSGBOX76            "制限時間に達したため、録音を終了しました"
+    IDS_MSGBOX77            "制限時間に達したため、録画を終了しました"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_DEF             "(不明な送信者)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX900           "旧バージョンの応答音声の更新に失敗しました\n応答音声を再登録する必要があります"
+    IDS_MSGBOX901           "旧バージョンのビープ音の更新に失敗しました\nビープ音を再登録する必要があります"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_RECPAUSE        "会話の録音を一時停止します\n録音一時停止"
+    ID_TOOL_RECSTOP         "会話の録音を終了します\n録音終了"
+    ID_APP_HELP             "オンラインマニュアルを表示します\nマニュアル"
+    ID_VRECORD_START        "ビデオの録画を開始します\nビデオ録画"
+    ID_RECMOD_BOTH          "自分と相手の声を録音します\n送受信音声"
+    ID_RECMOD_RCV           "相手の声のみを録音します\n受信音声"
+    ID_RECMOD_SND           "自分の声のみを録音します\n送信音声"
+    ID_RECORD_MOD           "会話の録音対象を指定します\n録音対象"
+    ID_APP_PLAY             "外部アプリケーションにより音声を再生します"
+    ID_APP_VPLAY            "外部アプリケーションによりビデオを再生します"
+    ID_APP_SKYPE            "アフィリエイトにご協力ください\nSkypeIn/Out"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_OPEN           "Tapurメイン画面を開きます\nTapur"
+    ID_POPUP_ENABLE         "留守番応答の有効・無効を設定します\n応答有効"
+    ID_POPUP_CLOSE          "Tapurを終了します\n終了"
+    ID_POPUP_SETUP_NEW      "応答設定を新規作成します\n新規作成"
+    ID_POPUP_FOLDER_NEW     "新しいフォルダを作成します\nフォルダ作成"
+    ID_POPUP_FOLDER_RENAME  "フォルダ名称を変更します\nフォルダ変更"
+    ID_POPUP_FOLDER_DEL     "フォルダを削除します\nフォルダ削除"
+    ID_POPUP_TRASH_CLEAR    "ごみ箱のデータを完全に削除します\n削除"
+    ID_POPUP_TRASHCAN_CLEAR "ごみ箱のデータを完全に削除します\n削除"
+    ID_POPUP_SETLIST_DEL    "応答設定を削除します\n削除"
+    ID_POPUP_MSGLIST_CALL   "メッセージの送信者へスカイプ発信します\n発信"
+    ID_POPUP_MSGLIST_DEL    "メッセージを削除します\n削除"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_URL_HELP            "http://www.tapur.com/manual.html"
+    IDS_URL_SKYPE           "http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2232000&pid=873311896"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX81            "出力ファイル名が指定されていません"
+    IDS_MSGBOX82            "出力ファイル名にフォルダ名が指定されています"
+    IDS_MSGBOX83            "出力ファイル名が重複しています\n上書きしますか？"
+    IDS_MSGBOX84            "指定ファイルの拡張子には対応していません。\n出力可能なファイル形式は以下の通りです\nWAVE(*.wav)\nOggVorbis(*.ogg)\nMPEG3(*.mp3) (制限あり)"
+    IDS_MSGBOX85            "この機能にはFraunhofer MPEG3 Codecが必要です\nWindowsMediaPlayer10以上には音質の制限されたMPEG3 Codecが含まれています"
+    IDS_MSGBOX86            "指定ファイルの拡張子には対応していません。\n出力可能なファイル形式は以下の通りです\nAVI(*.avi)"
+    IDS_MSGBOX88            "出力がキャンセルされました"
+    IDS_MSGBOX89            "出力が完了しました"
+    IDS_MSGBOX90            "出力に失敗しました"
+    IDS_MSGBOX91            "ファイルを出力しています・・・"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_NEW         "Tapur - 新着"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_RECSTOP_WARNING "通話録音を終了しました。"
+    IDS_TAB_VREC_WARNING    "ビデオ通話を録画します。\r\n録画を望まない場合は、通話を終了するか、\r\n通話相手に録画の中止を依頼してください。"
+    IDS_TAB_VRECSTOP_WARNING "ビデオ録画を終了しました。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX101           "チャットメッセージを登録できませんでした"
+    IDS_MSGBOX102           "チャットメッセージを送信できませんでした"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGLIST_HEAD        " , 20, 0; 送信者, 100, 0; 日時, 110, 0"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Japanese.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#include "l.jpn\afxprint.rc"        // 印刷/印刷プレビュー リソース
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

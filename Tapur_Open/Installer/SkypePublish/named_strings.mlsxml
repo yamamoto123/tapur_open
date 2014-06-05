@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root s="Tapur">
+  <names>
+    <i0 s="friendly_name"/>
+    <i1 s="description"/>
+    <i2 s="menu_tools"/>
+    <i3 s="menu_context"/>
+    <i4 s="menu_profile"/>
+    <i5 s="event_text"/>
+  </names>
+  <languages>
+    <ENU>
+      <i0 s="Tapur"/>
+      <i1 s="voice &amp; movie recorder and answering machine"/>
+      <i2 s=""/>
+      <i3 s=""/>
+      <i4 s=""/>
+      <i5 s=""/>
+    </ENU>
+    <JPN>
+      <i0 s="Tapur"/>
+      <i1 s="録音・録画・留守番電話"/>
+      <i2 s=""/>
+      <i3 s=""/>
+      <i4 s=""/>
+      <i5 s=""/>
+    </JPN>
+  </languages>
+</root>

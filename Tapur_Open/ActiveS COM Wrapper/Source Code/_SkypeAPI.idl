@@ -1,0 +1,1111 @@
+import "C:\Program Files\Microsoft SDKs\Windows\v7.1\include\prsht.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.1\include\mshtml.idl";
+import "c:\program files\microsoft sdks\windows\v7.1\include\dimm.idl";
+import "c:\program files\microsoft sdks\windows\v7.1\include\dispex.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.1\include\mshtmhst.idl";
+import "c:\program files\microsoft sdks\windows\v7.1\include\docobj.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.1\include\exdisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v7.1\include\objsafe.idl";
+
+import ".\\ForwardDefs.idl";
+[
+	v1_enum,
+	uuid(65BB3F87-9AC8-456e-BB0B-3C8034FD1371),
+	helpcontext(0101)
+] 
+#line 40 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeAPIAttachmentStatus {
+	apiAttachUnknown = -1,
+	apiAttachSuccess = 0,
+	apiAttachPendingAuth = 1,
+	apiAttachRefused = 2,
+	apiAttachNotAvailable = 3,
+	apiAttachAPIAvail = 32769,
+};
+
+[
+	v1_enum,
+	uuid(8FCBDB89-66FF-4638-ABB2-CD9B41CE70D7),
+	helpcontext(0102)
+] 
+#line 55 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeConnectionStatus {
+	conUnknown = -1,
+	conOffline = 0,
+	conConnecting = 1,
+	conPausing = 2,
+	conOnline = 3,
+	conLoggedOut = 4,
+};
+
+[
+	v1_enum,
+	uuid(A92E0B9F-DAF6-4092-A772-E920FEDDCCE9),
+	helpcontext(0103)
+] 
+#line 70 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeCallProgress {
+	prgUnknown = -1,
+	prgUnplaced = 0,
+	prgRouting = 1,
+	prgEarlyMedia = 2,
+	prgFailed = 3,
+	prgRinging = 4,
+	prgInProgress = 5,
+	prgOnHold = 6,
+	prgFinished = 7,
+	prgMissed = 8,
+	prgRefused = 9,
+	prgBusy = 10,
+	prgCancelled = 11,
+	prgRemoteHold = 12,
+	prgLocalHold = 13,
+	prgBufferingGreeting = 14,
+	prgPlayingGreeting = 15,
+	prgRecordingVoiceMail = 16,
+	prgUploadingVoiceMail = 17,
+	prgSentVoiceMail = 18,
+	prgCancelledVoiceMail = 19,
+	prgFailedVoiceMail = 20,
+};
+
+[
+	v1_enum,
+	uuid(3859796A-5B13-4400-80B2-254516AEC067),
+	helpcontext(0104)
+] 
+#line 101 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeCallType {
+	ctypUnknown = -1,
+	ctypIncomingPSTN = 0,
+	ctypOutgoingPSTN = 1,
+	ctypIncomingP2P = 2,
+	ctypOutgoingP2P = 3,
+};
+
+[
+	v1_enum,
+	uuid(33C4110A-02D8-4092-AC69-B7B258786762),
+	helpcontext(0105)
+] 
+#line 115 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeMessageType {
+	mtypUnknown = -1,
+	mtypAuthRequest = 0,
+	mtypText = 1,
+	mtypContacts = 2,
+};
+
+[
+	v1_enum,
+	uuid(D6E5321C-982A-4470-9F50-D5E97280D2E0),
+	helpcontext(0106)
+] 
+#line 128 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeMessageStatus {
+	msgUnknown = -1,
+	msgSending = 0,
+	msgSent = 1,
+	msgFailed = 2,
+	msgReceived = 3,
+	msgRead = 4,
+	msgIgnored = 5,
+	msgQueued = 6,
+};
+
+[
+	v1_enum,
+	uuid(127D4942-E520-4cfc-B5FD-B2FDFBA98782),
+	helpcontext(0107)
+] 
+#line 145 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeUserSex {
+	usexUnknown = -1,
+	usexNotSpecified = 0,
+	usexMale = 1,
+	usexFemale = 2,
+};
+
+[
+	v1_enum,
+	uuid(1D72D739-69FB-48b0-9D2D-E9FA0E1108AE),
+	helpcontext(0108)
+] 
+#line 158 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeBuddyStatus {
+	budUnknown = -1,
+	budNever = 0,
+	budDeleted = 1,
+	budPending = 2,
+	budFriend = 3,
+};
+
+[
+	v1_enum,
+	uuid(BD1F7281-2E21-4d6c-993E-2C21B1114726),
+	helpcontext(0109)
+] 
+#line 172 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeOnlineStatus {
+	olsUnknown = -1,
+	olsOffline = 0,
+	olsOnline = 1,
+	olsAway = 2,
+	olsNotAvail = 3,
+	olsDoNotDisturb = 4,
+	olsInvisible = 5,
+	olsSkypeMe = 6,
+	olsLoggedOut = 7,
+};
+
+[
+	v1_enum,
+	uuid(8DD2EDDA-C8FE-4c37-8B49-FE04825C8206),
+	helpcontext(0110)
+] 
+#line 190 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeChatStatus {
+	chatUnknown = -1,
+	chatLegacyDialog = 0,
+	chatDialog = 1,
+	chatMultiNeedAccept = 2,
+	chatMultiSubscribed = 3,
+};
+
+[
+	v1_enum,
+	uuid(5F10C769-6EF1-4495-9E12-B37ED9C311D4),
+	helpcontext(0111)
+] 
+#line 204 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeChatMessageStatus {
+	chatMsgUnknown = -1,
+	chatMsgSending = 0,
+	chatMsgSent = 1,
+	chatMsgReceived = 2,
+	chatMsgRead = 3,
+};
+
+[
+	v1_enum,
+	uuid(2315D3E3-C08A-4a5d-8A87-5D9439DCBFFC),
+	helpcontext(0112)
+] 
+#line 218 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeChatMessageLeftReason {
+	chatMsgLeftUnknown = -1,
+	chatMsgLeftUserNotFound = 0,
+	chatMsgLeftUserIncapable = 1,
+	chatMsgLeftAdderMustBeFriend = 2,
+	chatMsgLeftAdderMustBeAuthorized = 3,
+	chatMsgLeftDeclineAdd = 4,
+	chatMsgLeftUnsubscribe = 5,
+};
+
+[
+	v1_enum,
+	uuid(380437AD-6069-4a9f-B53F-9FDB9D7FF6C6),
+	helpcontext(0113)
+] 
+#line 234 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeCurrencyType {
+	currUnknown = -1,
+	currEuroCents = 0,
+};
+
+[
+	v1_enum,
+	uuid(D700390A-F14B-4275-9FF7-5E19802BEF3D),
+	helpcontext(0114)
+] 
+#line 245 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeChatMessageType {
+	chatMsgTypeUnknown = -1,
+	chatMsgTypeSetTopic = 0,
+	chatMsgTypeSaid = 1,
+	chatMsgTypeAddedMembers = 2,
+	chatMsgTypeSawMembers = 3,
+	chatMsgTypeCreatedChatWith = 4,
+	chatMsgTypeLeft = 5,
+};
+
+[
+	v1_enum,
+	uuid(FCDD7B32-D901-4933-8C5D-1B380BDE3C96),
+	helpcontext(0115)
+] 
+#line 261 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeVoiceMailType {
+	vmTypeUnknown = -1,
+	vmTypeIncoming = 0,
+	vmTypeDefaultGreeting = 1,
+	vmTypeCustomGreeting = 2,
+	vmTypeOutgoing = 3,
+};
+
+[
+	v1_enum,
+	uuid(0B7F55D7-ED68-4e09-91A4-0F20DB0E186F),
+	helpcontext(0116)
+] 
+#line 275 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeVoiceMailStatus {
+	vmStatusUnknown = -1,
+	vmStatusDownloading = 0,
+	vmStatusDownloaded = 1,
+	vmStatusUnplayed = 2,
+	vmStatusBuffering = 3,
+	vmStatusPlaying = 4,
+	vmStatusPlayed = 5,
+	vmStatusBlank = 6,
+	vmStatusRecording = 7,
+	vmStatusRecorded = 8,
+	vmStatusUploading = 9,
+	vmStatusUploaded = 10,
+	vmStatusDeleting = 11,
+	vmStatusFailed = 12,
+};
+
+[
+	v1_enum,
+	uuid(57181448-1317-411c-B064-6F2E872F3BC0),
+	helpcontext(0117)
+] 
+#line 298 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeVoiceMailFailure {
+	vmFailureUnknown = -1,
+	vmFailureMisc = 0,
+	vmFailureConnect = 1,
+	vmFailureNoPrivilege = 2,
+	vmFailureNoSuchVoiceMail = 3,
+	vmFailureReadError = 4,
+	vmFailureWriteError = 5,
+	vmFailureRecording = 6,
+	vmFailurePlayback = 7,
+};
+
+[
+	v1_enum,
+	uuid(4D1434DB-6F9F-4533-ACAF-B712F9F54F81),
+	helpcontext(0118)
+] 
+#line 316 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeClearCallHistory {
+	clrAllCalls = 0,
+	clrMissedCalls = 1,
+	clrIncomingCalls = 2,
+	clrOutgoingCalls = 3,
+};
+
+[
+	v1_enum,
+	uuid(A3678CC3-AC6E-4ffb-A8B5-FA57B97D4BF4),
+	helpcontext(0119)
+] 
+#line 329 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeNoAnswerAction {
+	noAnsUnknown = -1,
+	noAnsReject = 0,
+	noAnsForward = 1,
+	noAnsVoicemail = 2,
+};
+
+[
+	v1_enum,
+	uuid(EEC83F5F-3413-4c9e-BACA-295A76125CD8),
+	helpcontext(0120)
+] 
+#line 342 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeOptionsPage {
+	pgGeneral = 0,
+	pgPrivacy = 1,
+	pgNotifications = 2,
+	pgSoundAlerts = 3,
+	pgSoundDevices = 4,
+	pgHotKeys = 5,
+	pgConnection = 6,
+	pgVoiceMail = 7,
+	pgCallForward = 8,
+	pgVideo = 9,
+	pgAdvanced = 10,
+};
+
+[
+	v1_enum,
+	uuid(E8EA86FF-4282-4bf1-B371-EDDA7F97D5B7),
+	helpcontext(0121)
+] 
+#line 362 "c:\\tapur_open\\actives com wrapper\\source code\\enums.h"
+enum SkypeRingtone {
+	rngRingtone = 1101,
+	rngRingback = 1102,
+	rngBusy = 1103,
+	rngDialing = 1104,
+	rngConnecting = 1105,
+	rngResume = 1202,
+	rngHangup = 1203,
+	rngIncomingMessage = 1204,
+	rngOnlineAlert = 1205,
+};
+
+[
+	object,
+	uuid(E943F65C-CAD7-4e98-B380-54BCA0AB8030),
+	dual,
+	helpstring("IConversion Interface"),
+	helpcontext(2000),
+	pointer_default(unique)
+] 
+#line 63 "c:\\tapur_open\\actives com wrapper\\source code\\conversion.h"
+interface IConversion : IDispatch {
+#line 65 "c:\\tapur_open\\actives com wrapper\\source code\\conversion.h"
+	[id(1),helpcontext(2001),helpstring("method SkypeCallProgressAsText")] HRESULT  SkypeCallProgressAsText([in] enum SkypeCallProgress Progress, [out,retval] BSTR *Text);
+	[id(2),helpcontext(2002),helpstring("method SkypeCallTypeAsText")] HRESULT  SkypeCallTypeAsText([in] enum SkypeCallType CallType, [out,retval] BSTR *Text);
+	[id(3),helpcontext(2003),helpstring("method SkypeMessageStatusAsText")] HRESULT  SkypeMessageStatusAsText([in] enum SkypeMessageStatus Status, [out,retval] BSTR *Text);
+	[id(4),helpcontext(2004),helpstring("method SkypeMessageTypeAsText")] HRESULT  SkypeMessageTypeAsText([in] enum SkypeMessageType Type, [out,retval] BSTR *Text);
+	[id(5),helpcontext(2005),helpstring("method SkypeUserSexAsText")] HRESULT  SkypeUserSexAsText([in] enum SkypeUserSex Sex, [out,retval] BSTR *Text);
+	[id(6),helpcontext(2006),helpstring("method SkypeBuddyStatusAsText")] HRESULT  SkypeBuddyStatusAsText([in] enum SkypeBuddyStatus Status, [out,retval] BSTR *Text);
+	[id(7),helpcontext(2007),helpstring("method SkypeOnlineStatusAsText")] HRESULT  SkypeOnlineStatusAsText([in] enum SkypeOnlineStatus Status, [out,retval] BSTR *Text);
+	[id(8),helpcontext(2008),helpstring("method SkypeConnectionStatusAsText")] HRESULT  SkypeConnectionStatusAsText([in] enum SkypeConnectionStatus Status, [out,retval] BSTR *Text);
+	[id(9),helpcontext(2009),helpstring("method SkypeAPIAttachmentStatusAsText")] HRESULT  SkypeAPIAttachmentStatusAsText([in] enum SkypeAPIAttachmentStatus Status, [out,retval] BSTR *Text);
+	[id(10),helpcontext(2010),helpstring("method SkypeChatStatusAsText")] HRESULT  SkypeChatStatusAsText([in] enum SkypeChatStatus ChatStatus, [retval,out] BSTR *Text);
+	[id(11),helpcontext(2011),helpstring("method SkypeChatMessageStatusAsText")] HRESULT  SkypeChatMessageStatusAsText([in] enum SkypeChatMessageStatus Status, [out,retval] BSTR *Text);
+	[id(12),helpcontext(2012),helpstring("method SkypeChatMessageLeftReasonAsText")] HRESULT  SkypeChatMessageLeftReasonAsText([in] enum SkypeChatMessageLeftReason Reason, [out,retval] BSTR *Text);
+	[id(13),helpcontext(2013),helpstring("method SkypeCurrencyTypeAsText")] HRESULT  SkypeCurrencyTypeAsText([in] enum SkypeCurrencyType Currency, [out,retval] BSTR *Text);
+	[id(14),helpcontext(2014),helpstring("method SkypeChatMessageTypeAsText")] HRESULT  SkypeChatMessageTypeAsText([in] enum SkypeChatMessageType MessageType, [out,retval] BSTR *Text);
+	[id(15),helpcontext(2015),helpstring("method SkypeVoiceMailTypeAsText")] HRESULT  SkypeVoiceMailTypeAsText([in] enum SkypeVoiceMailType VoiceMailType, [out,retval] BSTR *Text);
+	[id(16),helpcontext(2016),helpstring("method SkypeVoiceMailStatusAsText")] HRESULT  SkypeVoiceMailStatusAsText([in] enum SkypeVoiceMailStatus VoiceMailStatus, [out,retval] BSTR *Text);
+	[id(17),helpcontext(2017),helpstring("method SkypeVoiceMailFailureAsText")] HRESULT  SkypeVoiceMailFailureAsText([in] enum SkypeVoiceMailFailure FailureReason, [out,retval] BSTR *Text);
+	[id(18),helpcontext(2018),helpstring("method SkypeNoAnswerActionAsText")] HRESULT  SkypeNoAnswerActionAsText([in] enum SkypeNoAnswerAction Action, [out,retval] BSTR *Text);
+};
+
+[
+	object,
+	uuid(D84C375F-43B9-446a-ADFB-F504FE049052),
+	dual,
+	helpstring("ICallCollection Interface"),
+	helpcontext(3500),
+	pointer_default(unique)
+] 
+#line 51 "c:\\tapur_open\\actives com wrapper\\source code\\callcollection.h"
+interface ICallCollection : IDispatch {
+#line 53 "c:\\tapur_open\\actives com wrapper\\source code\\callcollection.h"
+	[propget,restricted,id(-4),helpcontext(3503)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,id(1),helpcontext(3501)] HRESULT  Count([out,retval] long *pVal);
+	[propget,id(0),helpcontext(3502)] HRESULT  Item([in] VARIANT index, [out,retval] ICall **pVal);
+};
+
+[
+	object,
+	uuid(76B64C71-D601-4d72-A253-FCFE372ECC62),
+	dual,
+	helpstring("ICall Interface"),
+	pointer_default(unique)
+] 
+#line 43 "c:\\tapur_open\\actives com wrapper\\source code\\call.h"
+interface ICall : IDispatch {
+#line 45 "c:\\tapur_open\\actives com wrapper\\source code\\call.h"
+	[propget,id(1),helpcontext(3001),helpstring("property ID")] HRESULT  ID([out,retval] LONG *pVal);
+	[propget,id(2),helpcontext(3002),helpstring("property Timestamp")] HRESULT  Timestamp([out,retval] DATE *pVal);
+	[propget,id(3),helpcontext(3003),helpstring("property PartnerHandle")] HRESULT  PartnerHandle([out,retval] BSTR *pVal);
+	[propget,id(4),helpcontext(3004),helpstring("property PartnerDisplayName")] HRESULT  PartnerDisplayName([out,retval] BSTR *pVal);
+	[propget,id(5),helpcontext(3005),helpstring("property ConferenceID")] HRESULT  ConferenceID([out,retval] LONG *pVal);
+	[propget,id(6),helpcontext(3006),helpstring("property Type")] HRESULT  Type([out,retval] enum SkypeCallType *pVal);
+	[propget,id(7),helpcontext(3007),helpstring("property Status")] HRESULT  Status([out,retval] enum SkypeCallProgress *pVal);
+	[propput,id(7),helpcontext(3007),helpstring("property Status")] HRESULT  Status([in] enum SkypeCallProgress newVal);
+	[propget,id(8),helpcontext(3008),helpstring("property FailureReason")] HRESULT  FailureReason([out,retval] BSTR *pVal);
+	[propget,id(9),helpcontext(3009),helpstring("property Subject")] HRESULT  Subject([out,retval] BSTR *pVal);
+	[propget,id(10),helpcontext(3010),helpstring("property PSTN_Number")] HRESULT  PSTN_Number([out,retval] BSTR *pVal);
+	[propget,id(11),helpcontext(3011),helpstring("property Duration")] HRESULT  Duration([out,retval] LONG *pVal);
+	[propget,id(12),helpcontext(3012),helpstring("property PSTN_Status")] HRESULT  PSTN_Status([out,retval] BSTR *pVal);
+	[propget,id(13),helpcontext(3013),helpstring("property ParticipantCount")] HRESULT  ParticipantCount([out,retval] long *pVal);
+	[id(14),helpcontext(3014),helpstring("method GetParticipantInformation")] HRESULT  GetParticipantInformation([in] LONG Number, [out] BSTR *Handle, [out] enum SkypeCallType *Type, [out] enum SkypeCallProgress *Status, [out] BSTR *DisplayName);
+	[id(15),helpcontext(3015),helpstring("method JoinConference")] HRESULT  JoinConference([in] LONG CallID);
+	[propget,id(16),helpcontext(3016),helpstring("property VoiceMailDuration")] HRESULT  VoiceMailDuration([out,retval] LONG *pVal);
+	[propget,id(17),helpcontext(3017),helpstring("property VoiceMailAllowedDuration")] HRESULT  VoiceMailAllowedDuration([out,retval] LONG *pVal);
+	[id(18),helpcontext(3018),helpstring("method SendDTMF")] HRESULT  SendDTMF([in] BSTR Codes);
+	[id(19),helpcontext(3019),helpstring("method GetInput")] HRESULT  GetInput([out] BSTR *Soundcard, [out] BSTR *Port, [out] BSTR *File);
+	[id(20),helpcontext(3020),helpstring("method GetOutput")] HRESULT  GetOutput([out] BSTR *Soundcard, [out] BSTR *Port, [out] BSTR *File);
+	[id(21),helpcontext(3021),helpstring("method GetCaptureMic")] HRESULT  GetCaptureMic([out] BSTR *Port, [out] BSTR *File);
+	[id(22),helpcontext(3022),helpstring("method SetInput")] HRESULT  SetInput([in] BSTR Soundcard, [in] BSTR Port, [in] BSTR File);
+	[id(23),helpcontext(3023),helpstring("method SetOutput")] HRESULT  SetOutput([in] BSTR Soundcard, [in] BSTR Port, [in] BSTR File);
+	[id(24),helpcontext(3024),helpstring("method SetCaptureMic")] HRESULT  SetCaptureMic([in] BSTR Port, [in] BSTR File);
+	[propget,id(25),helpcontext(3025),helpstring("property VideoStatus")] HRESULT  VideoStatus([out,retval] BSTR *pVal);
+	[id(26),helpcontext(3026),helpstring("method StartVideoSend")] HRESULT  StartVideoSend();
+	[id(27),helpcontext(3027),helpstring("method StopVideoSend")] HRESULT  StopVideoSend();
+	[id(28),helpcontext(3028),helpstring("method StartVideoRecieve")] HRESULT  StartVideoRecieve();
+	[id(29),helpcontext(3029),helpstring("method StopVideoRecieve")] HRESULT  StopVideoRecieve();
+};
+
+[
+	object,
+	uuid(5B0EB0B9-BF7C-4119-9886-568177FF1FF7),
+	dual,
+	helpstring("IUserCollection Interface"),
+	pointer_default(unique)
+] 
+#line 47 "c:\\tapur_open\\actives com wrapper\\source code\\usercollection.h"
+interface IUserCollection : IDispatch {
+#line 49 "c:\\tapur_open\\actives com wrapper\\source code\\usercollection.h"
+	[propget,restricted,id(-4)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,id(1)] HRESULT  Count([out,retval] long *pVal);
+	[propget,id(0)] HRESULT  Item([in] VARIANT index, [out,retval] IUser **pVal);
+};
+
+[
+	object,
+	uuid(43CCA21E-9F58-4298-B31E-464011A96637),
+	dual,
+	helpstring("IUser Interface"),
+	helpcontext(4001),
+	pointer_default(unique)
+] 
+#line 43 "c:\\tapur_open\\actives com wrapper\\source code\\user.h"
+interface IUser : IDispatch {
+#line 45 "c:\\tapur_open\\actives com wrapper\\source code\\user.h"
+	[propget,id(1),helpcontext(4001),helpstring("property Handle")] HRESULT  Handle([out,retval] BSTR *pVal);
+	[propget,id(2),helpcontext(4002),helpstring("property FullName")] HRESULT  FullName([out,retval] BSTR *pVal);
+	[propget,id(3),helpcontext(4003),helpstring("property Birthdate")] HRESULT  Birthdate([out,retval] DATE *pVal);
+	[propget,id(4),helpcontext(4004),helpstring("property Sex")] HRESULT  Sex([out,retval] enum SkypeUserSex *pVal);
+	[propget,id(5),helpcontext(4005),helpstring("property Country")] HRESULT  Country([out,retval] BSTR *pVal);
+	[propget,id(6),helpcontext(4006),helpstring("property Province")] HRESULT  Province([out,retval] BSTR *pVal);
+	[propget,id(7),helpcontext(4007),helpstring("property City")] HRESULT  City([out,retval] BSTR *pVal);
+	[propget,id(8),helpcontext(4008),helpstring("property Phone_Home")] HRESULT  Phone_Home([out,retval] BSTR *pVal);
+	[propget,id(9),helpcontext(4009),helpstring("property Phone_Office")] HRESULT  Phone_Office([out,retval] BSTR *pVal);
+	[propget,id(10),helpcontext(4010),helpstring("property Phone_Mobile")] HRESULT  Phone_Mobile([out,retval] BSTR *pVal);
+	[propget,id(11),helpcontext(4011),helpstring("property Homepage")] HRESULT  Homepage([out,retval] BSTR *pVal);
+	[propget,id(12),helpcontext(4012),helpstring("property About")] HRESULT  About([out,retval] BSTR *pVal);
+	[propget,id(13),helpcontext(4013),helpstring("property HasCallEquipment")] HRESULT  HasCallEquipment([out,retval] VARIANT_BOOL *pVal);
+	[propget,id(14),helpcontext(4014),helpstring("property BuddyStatus")] HRESULT  BuddyStatus([out,retval] enum SkypeBuddyStatus *pVal);
+	[propput,id(14),helpcontext(4014),helpstring("property BuddyStatus")] HRESULT  BuddyStatus([in] enum SkypeBuddyStatus Val);
+	[propget,id(15),helpcontext(4015),helpstring("property Authorized")] HRESULT  Authorized([out,retval] VARIANT_BOOL *pVal);
+	[propget,id(16),helpcontext(4016),helpstring("property Blocked")] HRESULT  Blocked([out,retval] VARIANT_BOOL *pVal);
+	[propget,id(17),helpcontext(4017),helpstring("property DisplayName")] HRESULT  DisplayName([out,retval] BSTR *pVal);
+	[propget,id(18),helpcontext(4018),helpstring("property OnlineStatus")] HRESULT  OnlineStatus([out,retval] enum SkypeOnlineStatus *pVal);
+	[propget,id(19),helpcontext(4019),helpstring("property LastOnline")] HRESULT  LastOnline([out,retval] DATE *pVal);
+	[propget,id(20),helpcontext(4020),helpstring("property IsSkypeOut")] HRESULT  IsSkypeOut([out,retval] VARIANT_BOOL *pVal);
+	[propget,id(21),helpcontext(4021),helpstring("property ReceivedAuthorizationRequest")] HRESULT  ReceivedAuthorizationRequest([out,retval] BSTR *pVal);
+	[propget,id(22),helpcontext(4022),helpstring("property IsAuthorized")] HRESULT  IsAuthorized([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(22),helpcontext(4022),helpstring("property IsAuthorized")] HRESULT  IsAuthorized([in] VARIANT_BOOL Val);
+	[propget,id(23),helpcontext(4023),helpstring("property IsBlocked")] HRESULT  IsBlocked([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(23),helpcontext(4023),helpstring("property IsBlocked")] HRESULT  IsBlocked([in] VARIANT_BOOL Val);
+	[propget,id(24),helpcontext(4024),helpstring("property SpeedDial")] HRESULT  SpeedDial([out,retval] BSTR *pVal);
+	[propput,id(24),helpcontext(4024),helpstring("property SpeedDial")] HRESULT  SpeedDial([in] BSTR Val);
+	[propget,id(25),helpstring("property MoodText"),helpcontext(4025)] HRESULT  MoodText([out,retval] BSTR *pVal);
+	[propget,id(26),helpstring("property Aliases"),helpcontext(4026)] HRESULT  Aliases([out,retval] SAFEARRAY(BSTR)* pVal);
+	[propget,id(27),helpstring("property Timezone"),helpcontext(4027)] HRESULT  Timezone([out,retval] LONG *pVal);
+	[propget,id(28),helpcontext(4028),helpstring("property Language")] HRESULT  Language([out,retval] BSTR *pVal);
+};
+
+[
+	object,
+	uuid(E8EF86A8-27ED-4c9b-9096-E0B32005B9DB),
+	dual,
+	helpstring("IApp2App Interface"),
+	helpcontext(9000),
+	pointer_default(unique)
+] 
+#line 47 "c:\\tapur_open\\actives com wrapper\\source code\\app2app.h"
+interface IApp2App : IDispatch {
+#line 49 "c:\\tapur_open\\actives com wrapper\\source code\\app2app.h"
+	[id(1),helpcontext(9001),helpstring("method CreateApplication")] HRESULT  CreateApplication();
+	[id(2),helpcontext(9002),helpstring("method DeleteApplication")] HRESULT  DeleteApplication();
+	[id(3),helpcontext(9003),helpstring("method InitiateConnection")] HRESULT  InitiateConnection([in] BSTR UserHandle);
+	[propget,id(4),helpcontext(9004),helpstring("property ConnectableUsers")] HRESULT  ConnectableUsers([out,retval] IUserCollection **pVal);
+};
+
+[
+	object,
+	uuid(F4E034C7-B5CD-4852-9A89-011F30CE42CE),
+	dual,
+	helpstring("IApp2AppStream Interface"),
+	helpcontext(9500),
+	pointer_default(unique)
+] 
+#line 44 "c:\\tapur_open\\actives com wrapper\\source code\\app2appstream.h"
+interface IApp2AppStream : IDispatch {
+#line 46 "c:\\tapur_open\\actives com wrapper\\source code\\app2appstream.h"
+	[id(1),helpcontext(9501),helpstring("method Disconnect")] HRESULT  Disconnect();
+	[id(2),helpcontext(9502),helpstring("method WriteData")] HRESULT  WriteData([in] BSTR TextData);
+	[id(3),helpcontext(9503),helpstring("method WriteDatagram")] HRESULT  WriteDatagram([in] BSTR TextData);
+	[propget,id(4),helpcontext(9504),helpstring("property StreamID")] HRESULT  StreamID([out,retval] BSTR *pVal);
+	[propget,id(5),helpcontext(9505),helpstring("property User")] HRESULT  User([out,retval] IUser **pVal);
+	[id(6),helpcontext(9506),helpstring("method WriteBinaryData")] HRESULT  WriteBinaryData([in] BSTR ID, [in] SAFEARRAY(BYTE)* Array);
+};
+
+[
+	object,
+	uuid(20E24A12-DCB4-47af-A59C-37D7BB13BCC0),
+	dual,
+	helpstring("IMessageCollection Interface"),
+	helpcontext(7500),
+	pointer_default(unique)
+] 
+#line 51 "c:\\tapur_open\\actives com wrapper\\source code\\messagecollection.h"
+interface IMessageCollection : IDispatch {
+#line 53 "c:\\tapur_open\\actives com wrapper\\source code\\messagecollection.h"
+	[propget,helpcontext(7503),restricted,id(-4)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,helpcontext(7501),id(1)] HRESULT  Count([out,retval] long *pVal);
+	[propget,helpcontext(7502),id(0)] HRESULT  Item([in] VARIANT index, [out,retval] IMessage **pVal);
+};
+
+[
+	object,
+	uuid(B4E8AFEF-B5CE-4681-A0F5-53A32B168676),
+	dual,
+	helpstring("IMessage Interface"),
+	helpcontext(7000),
+	pointer_default(unique)
+] 
+#line 44 "c:\\tapur_open\\actives com wrapper\\source code\\message.h"
+interface IMessage : IDispatch {
+#line 46 "c:\\tapur_open\\actives com wrapper\\source code\\message.h"
+	[propget,id(1),helpcontext(7001),helpstring("property ID")] HRESULT  ID([out,retval] LONG *pVal);
+	[propget,id(2),helpcontext(7002),helpstring("property Status")] HRESULT  Status([out,retval] enum SkypeMessageStatus *pVal);
+	[propget,id(3),helpcontext(7003),helpstring("property Timestamp")] HRESULT  Timestamp([out,retval] DATE *pVal);
+	[propget,id(4),helpcontext(7004),helpstring("property PartnerHandle")] HRESULT  PartnerHandle([out,retval] BSTR *pVal);
+	[propget,id(5),helpcontext(7005),helpstring("property PartnerDisplayName")] HRESULT  PartnerDisplayName([out,retval] BSTR *pVal);
+	[propget,id(6),helpcontext(7006),helpstring("property ConferenceID")] HRESULT  ConferenceID([out,retval] LONG *pVal);
+	[propget,id(7),helpcontext(7007),helpstring("property Type")] HRESULT  Type([out,retval] enum SkypeMessageType *pVal);
+	[propget,id(8),helpcontext(7008),helpstring("property TypeAsText")] HRESULT  TypeAsText([out,retval] BSTR *pVal);
+	[propget,id(9),helpcontext(7009),helpstring("property Body")] HRESULT  Body([out,retval] BSTR *pVal);
+	[propget,id(10),helpcontext(7010),helpstring("property Seen")] HRESULT  Seen([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(10),helpcontext(7010),helpstring("property Seen")] HRESULT  Seen([in] VARIANT_BOOL newVal);
+};
+
+[
+	object,
+	uuid(FBA3551A-6AF4-4812-9660-CBB6DF041EB7),
+	dual,
+	helpstring("IChatMessageCollection Interface"),
+	helpcontext(6500),
+	pointer_default(unique)
+] 
+#line 51 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessagecollection.h"
+interface IChatMessageCollection : IDispatch {
+#line 53 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessagecollection.h"
+	[propget,helpcontext(6503),restricted,id(-4)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,helpcontext(6501),id(1)] HRESULT  Count([out,retval] long *pVal);
+	[propget,helpcontext(6502),id(0)] HRESULT  Item([in] VARIANT index, [out,retval] IChatMessage **pVal);
+};
+
+[
+	object,
+	uuid(5BF1A928-2A65-4482-892D-599047A57D2B),
+	dual,
+	helpstring("IChatMessage Interface"),
+	helpcontext(6000),
+	pointer_default(unique)
+] 
+#line 48 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessage.h"
+interface IChatMessage : IDispatch {
+#line 50 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessage.h"
+	[propget,id(1),helpcontext(6001),helpstring("property ID")] HRESULT  ID([out,retval] long *pVal);
+	[propget,id(2),helpcontext(6002),helpstring("property Chat")] HRESULT  Chat([out,retval] IChat **pVal);
+	[propget,id(3),helpcontext(6003),helpstring("property Timestamp")] HRESULT  Timestamp([out,retval] DATE *pVal);
+	[propget,id(4),helpcontext(6004),helpstring("property MessageFrom")] HRESULT  MessageFrom([out,retval] IUser **pVal);
+	[propget,id(5),helpcontext(6005),helpstring("property MessageType")] HRESULT  MessageType([out,retval] enum SkypeChatMessageType *pVal);
+	[propget,id(6),helpcontext(6006),helpstring("property Users")] HRESULT  Users([out,retval] IUserCollection **pVal);
+	[propget,id(7),helpcontext(6007),helpstring("property LeftReason")] HRESULT  LeftReason([out,retval] enum SkypeChatMessageLeftReason *pVal);
+	[propget,id(8),helpcontext(6008),helpstring("property Body")] HRESULT  Body([out,retval] BSTR *pVal);
+	[propget,id(9),helpcontext(6009),helpstring("property Status")] HRESULT  Status([out,retval] enum SkypeChatMessageStatus *pVal);
+	[propput,id(9),helpcontext(6009),helpstring("property Status")] HRESULT  Status([in] enum SkypeChatMessageStatus newVal);
+};
+
+[
+	object,
+	uuid(046D1967-46D1-4aad-A395-1AB1ADB8A15E),
+	dual,
+	helpstring("IChatCollection Interface"),
+	helpcontext(5500),
+	pointer_default(unique)
+] 
+#line 50 "c:\\tapur_open\\actives com wrapper\\source code\\chatcollection.h"
+interface IChatCollection : IDispatch {
+#line 52 "c:\\tapur_open\\actives com wrapper\\source code\\chatcollection.h"
+	[propget,helpcontext(5503),restricted,id(-4)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,helpcontext(5501),id(1)] HRESULT  Count([out,retval] long *pVal);
+	[propget,helpcontext(5502),id(0)] HRESULT  Item([in] VARIANT index, [out,retval] IChat **pVal);
+};
+
+[
+	object,
+	uuid(F3600A6E-3B69-4871-9AF7-AF0881B3A760),
+	dual,
+	helpstring("IChat Interface"),
+	helpcontext(5000),
+	pointer_default(unique)
+] 
+#line 45 "c:\\tapur_open\\actives com wrapper\\source code\\chat.h"
+interface IChat : IDispatch {
+#line 47 "c:\\tapur_open\\actives com wrapper\\source code\\chat.h"
+	[propget,id(1),helpcontext(5001),helpstring("property Name")] HRESULT  Name([out,retval] BSTR *pVal);
+	[propget,id(2),helpcontext(5002),helpstring("property Timestamp")] HRESULT  Timestamp([out,retval] DATE *pVal);
+	[propget,id(3),helpcontext(5003),helpstring("property Adder")] HRESULT  Adder([out,retval] IUser **pVal);
+	[propget,id(4),helpcontext(5004),helpstring("property Posters")] HRESULT  Posters([out,retval] IUserCollection **pVal);
+	[propget,id(5),helpcontext(5005),helpstring("property Members")] HRESULT  Members([out,retval] IUserCollection **pVal);
+	[propget,id(6),helpcontext(5006),helpstring("property Topic")] HRESULT  Topic([out,retval] BSTR *pVal);
+	[propput,id(6),helpcontext(5006),helpstring("property Topic")] HRESULT  Topic([in] BSTR Topic);
+	[propget,id(7),helpcontext(5007),helpstring("property ActiveMembers")] HRESULT  ActiveMembers([out,retval] IUserCollection **pVal);
+	[propget,id(8),helpcontext(5008),helpstring("property FriendlyName")] HRESULT  FriendlyName([out,retval] BSTR *pVal);
+	[propget,id(9),helpcontext(5009),helpstring("property Status")] HRESULT  Status([out,retval] enum SkypeChatStatus *pVal);
+	[id(10),helpcontext(5010),helpstring("method SendMessage")] HRESULT  SendMessageA([in] BSTR Message);
+	[id(11),helpcontext(5011),helpstring("method Leave")] HRESULT  Leave();
+	[id(12),helpcontext(5012),helpstring("method AddMembers")] HRESULT  AddMembers([in] SAFEARRAY(BSTR)* UserHandles);
+	[id(13),helpcontext(5013),helpstring("method LaunchChatWindow")] HRESULT  LaunchChatWindow();
+	[id(14),helpcontext(5014),helpstring("method GetChatMessageList")] HRESULT  GetChatMessageList([out,retval] IChatMessageCollection **List);
+	[id(15),helpcontext(5015),helpstring("method GetRecentChatMessageList")] HRESULT  GetRecentChatMessageList([out,retval] IChatMessageCollection **List);
+};
+
+[
+	object,
+	uuid(84228251-93C4-4132-A262-ECEA129FA6A8),
+	dual,
+	helpstring("IVoiceMailCollection Interface"),
+	helpcontext(8500),
+	pointer_default(unique)
+] 
+#line 51 "c:\\tapur_open\\actives com wrapper\\source code\\voicemailcollection.h"
+interface IVoiceMailCollection : IDispatch {
+#line 53 "c:\\tapur_open\\actives com wrapper\\source code\\voicemailcollection.h"
+	[propget,helpcontext(8503),restricted,id(-4)] HRESULT  _NewEnum([out,retval] IUnknown **ppUnk);
+	[propget,helpcontext(8501),id(1)] HRESULT  Count([out,retval] long *pVal);
+	[propget,helpcontext(8502),id(0)] HRESULT  Item([in] VARIANT index, [out,retval] IVoiceMail **pVal);
+};
+
+[
+	object,
+	uuid(5A45154B-09C9-4708-82F6-8D70F0FA6BC6),
+	dual,
+	helpstring("IVoiceMail Interface"),
+	helpcontext(8000),
+	pointer_default(unique)
+] 
+#line 44 "c:\\tapur_open\\actives com wrapper\\source code\\voicemail.h"
+interface IVoiceMail : IDispatch {
+#line 46 "c:\\tapur_open\\actives com wrapper\\source code\\voicemail.h"
+	[propget,id(1),helpstring("property ID"),helpcontext(8001)] HRESULT  ID([out,retval] LONG *pVal);
+	[propget,id(2),helpstring("property Type"),helpcontext(8002)] HRESULT  Type([out,retval] enum SkypeVoiceMailType *pVal);
+	[propget,id(3),helpstring("property PartnerHandle"),helpcontext(8003)] HRESULT  PartnerHandle([out,retval] BSTR *pVal);
+	[propget,id(4),helpstring("property PartnerDisplayName"),helpcontext(8004)] HRESULT  PartnerDisplayName([out,retval] BSTR *pVal);
+	[propget,id(5),helpstring("property Status"),helpcontext(8005)] HRESULT  Status([out,retval] enum SkypeVoiceMailStatus *pVal);
+	[propget,id(6),helpstring("property FailureReason"),helpcontext(8006)] HRESULT  FailureReason([out,retval] enum SkypeVoiceMailFailure *pVal);
+	[propget,id(7),helpstring("property Subject"),helpcontext(8007)] HRESULT  Subject([out,retval] BSTR *pVal);
+	[propget,id(8),helpstring("property Timestamp"),helpcontext(8008)] HRESULT  Timestamp([out,retval] DATE *pVal);
+	[propget,id(9),helpstring("property Duration"),helpcontext(8009)] HRESULT  Duration([out,retval] LONG *pVal);
+	[propget,id(10),helpstring("property AllowedDuration"),helpcontext(8010)] HRESULT  AllowedDuration([out,retval] LONG *pVal);
+	[id(11),helpstring("method OpenAndPlay"),helpcontext(8011)] HRESULT  OpenAndPlay();
+};
+
+[
+	object,
+	uuid(BE2A8840-5A65-49da-8DDF-F6A7C6D781E5),
+	dual,
+	helpstring("IUI Interface"),
+	pointer_default(unique)
+] 
+#line 41 "c:\\tapur_open\\actives com wrapper\\ui.h"
+interface IUI : IDispatch {
+#line 43 "c:\\tapur_open\\actives com wrapper\\ui.h"
+	[id(1),helpstring("method OpenProfile"),helpcontext(11001)] HRESULT  OpenProfile();
+	[id(2),helpstring("method OpenUserInfo"),helpcontext(11002)] HRESULT  OpenUserInfo([in] BSTR UserName);
+	[id(3),helpstring("method OpenConference"),helpcontext(11003)] HRESULT  OpenConference();
+	[id(4),helpstring("method OpenSearch"),helpcontext(11004)] HRESULT  OpenSearch();
+	[id(5),helpstring("method OpenOptions"),helpcontext(11005)] HRESULT  OpenOptions([in] enum SkypeOptionsPage Page);
+	[id(6),helpstring("method OpenCallHistory"),helpcontext(11006)] HRESULT  OpenCallHistory();
+	[id(7),helpstring("method OpenContacts"),helpcontext(11007)] HRESULT  OpenContacts();
+	[id(8),helpstring("method OpenDialpad"),helpcontext(11008)] HRESULT  OpenDialpad();
+	[id(9),helpstring("method OpenSendContacts"),helpcontext(11009)] HRESULT  OpenSendContacts();
+	[id(10),helpstring("method OpenBlockedUsers"),helpcontext(11010)] HRESULT  OpenBlockedUsers();
+	[id(11),helpstring("method OpenImportContacts"),helpcontext(11011)] HRESULT  OpenImportContacts();
+	[id(12),helpstring("method OpenGettingStarted"),helpcontext(11012)] HRESULT  OpenGettingStarted();
+	[id(13),helpstring("method OpenAuthorization"),helpcontext(11013)] HRESULT  OpenAuthorization([in] BSTR UserName);
+};
+
+[
+	uuid(1F2CC8D7-37CA-4e76-88DD-F79486265F59)
+] 
+#line 37 "c:\\tapur_open\\actives com wrapper\\profile.h"
+struct ForwardingRule {
+	LONG StartTime;
+	LONG EndTime;
+	BSTR Handle;
+};
+
+[
+	object,
+	uuid(5106D5C0-C57A-4ac7-A361-ECC530A55BDE),
+	dual,
+	helpstring("IProfile Interface"),
+	helpcontext(10000),
+	pointer_default(unique)
+] 
+#line 51 "c:\\tapur_open\\actives com wrapper\\profile.h"
+interface IProfile : IDispatch {
+#line 53 "c:\\tapur_open\\actives com wrapper\\profile.h"
+	[propget,id(1),helpstring("property FullName"),helpcontext(10001)] HRESULT  FullName([out,retval] BSTR *pVal);
+	[propput,id(1),helpstring("property FullName"),helpcontext(10001)] HRESULT  FullName([in] BSTR newVal);
+	[propget,id(2),helpstring("property Birthday"),helpcontext(10002)] HRESULT  Birthday([out,retval] DATE *pVal);
+	[propput,id(2),helpstring("property Birthday"),helpcontext(10002)] HRESULT  Birthday([in] DATE newVal);
+	[propget,id(3),helpstring("property Sex"),helpcontext(10003)] HRESULT  Sex([out,retval] enum SkypeUserSex *pVal);
+	[propput,id(3),helpstring("property Sex"),helpcontext(10003)] HRESULT  Sex([in] enum SkypeUserSex newVal);
+	[propget,id(4),helpstring("property Languages"),helpcontext(10004)] HRESULT  Languages([out,retval] SAFEARRAY(BSTR)* pVal);
+	[propput,id(4),helpstring("property Languages"),helpcontext(10004)] HRESULT  Languages([in] SAFEARRAY(BSTR) newVal);
+	[propget,id(5),helpstring("property Country"),helpcontext(10005)] HRESULT  Country([out,retval] BSTR *pVal);
+	[propput,id(5),helpstring("property Country"),helpcontext(10005)] HRESULT  Country([in] BSTR newVal);
+	[propget,id(6),helpstring("property Province"),helpcontext(10006)] HRESULT  Province([out,retval] BSTR *pVal);
+	[propput,id(6),helpstring("property Province"),helpcontext(10006)] HRESULT  Province([in] BSTR newVal);
+	[propget,id(7),helpstring("property City"),helpcontext(10007)] HRESULT  City([out,retval] BSTR *pVal);
+	[propput,id(7),helpstring("property City"),helpcontext(10007)] HRESULT  City([in] BSTR newVal);
+	[propget,id(8),helpstring("property HomePhone"),helpcontext(10008)] HRESULT  HomePhone([out,retval] BSTR *pVal);
+	[propput,id(8),helpstring("property HomePhone"),helpcontext(10008)] HRESULT  HomePhone([in] BSTR newVal);
+	[propget,id(9),helpstring("property OfficePhone")] HRESULT  OfficePhone([out,retval] BSTR *pVal);
+	[propput,id(9),helpstring("property OfficePhone")] HRESULT  OfficePhone([in] BSTR newVal);
+	[propget,id(10),helpstring("property MobilePhone"),helpcontext(10010)] HRESULT  MobilePhone([out,retval] BSTR *pVal);
+	[propput,id(10),helpstring("property MobilePhone"),helpcontext(10010)] HRESULT  MobilePhone([in] BSTR newVal);
+	[propget,id(11),helpstring("property Homepage"),helpcontext(10011)] HRESULT  Homepage([out,retval] BSTR *pVal);
+	[propput,id(11),helpstring("property Homepage"),helpcontext(10011)] HRESULT  Homepage([in] BSTR newVal);
+	[propget,id(12),helpstring("property About")] HRESULT  About([out,retval] BSTR *pVal);
+	[propput,id(12),helpstring("property About")] HRESULT  About([in] BSTR newVal);
+	[propget,id(13),helpstring("property MoodText"),helpcontext(10013)] HRESULT  MoodText([out,retval] BSTR *pVal);
+	[propput,id(13),helpstring("property MoodText"),helpcontext(10013)] HRESULT  MoodText([in] BSTR newVal);
+	[propget,id(14),helpstring("property Timezone"),helpcontext(10014)] HRESULT  Timezone([out,retval] LONG *pVal);
+	[propput,id(14),helpstring("property Timezone"),helpcontext(10014)] HRESULT  Timezone([in] LONG newVal);
+	[propget,id(15),helpstring("property ForwardingRules")] HRESULT  ForwardingRules([out,retval] SAFEARRAY(struct ForwardingRule)* pVal);
+	[propput,id(15),helpstring("property ForwardingRules")] HRESULT  ForwardingRules([in] SAFEARRAY(struct ForwardingRule) newVal);
+	[propget,id(16),helpstring("property NoAnswerTimeout"),helpcontext(10016)] HRESULT  NoAnswerTimeout([out,retval] LONG *pVal);
+	[propput,id(16),helpstring("property NoAnswerTimeout"),helpcontext(10016)] HRESULT  NoAnswerTimeout([in] LONG newVal);
+	[propget,id(17),helpstring("property CallForwardingEnabled"),helpcontext(10017)] HRESULT  CallForwardingEnabled([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(17),helpstring("property CallForwardingEnabled"),helpcontext(10017)] HRESULT  CallForwardingEnabled([in] VARIANT_BOOL newVal);
+	[propget,id(18),helpstring("property VoicemailEnabled"),helpcontext(10018)] HRESULT  VoicemailEnabled([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(18),helpstring("property VoicemailEnabled"),helpcontext(10018)] HRESULT  VoicemailEnabled([in] VARIANT_BOOL newVal);
+	[propget,id(19),helpcontext(10019),helpstring("property RingtoneStatus")] HRESULT  RingtoneStatus([in] enum SkypeRingtone Tone, [out,retval] VARIANT_BOOL *pVal);
+	[propget,id(20),helpcontext(10020),helpstring("property RingtoneFileName")] HRESULT  RingtoneFileName([in] enum SkypeRingtone Tone, [out,retval] BSTR *FileName);
+	[propput,id(20),helpcontext(10020),helpstring("property RingtoneFileName")] HRESULT  RingtoneFileName([in] enum SkypeRingtone Tone, [in] BSTR FileName);
+	[propput,id(21),helpcontext(10021),helpstring("property AvatarFileName")] HRESULT  AvatarFileName([in] LONG Index, [in] BSTR FileName);
+};
+
+[
+	object,
+	uuid(56559E11-B2E0-4251-991D-9DA23BFC1C18),
+	dual,
+	helpstring("IAccess Interface"),
+	helpcontext(1000),
+	pointer_default(unique)
+] 
+#line 84 "c:\\tapur_open\\actives com wrapper\\source code\\access.h"
+interface IAccess : IDispatch {
+#line 86 "c:\\tapur_open\\actives com wrapper\\source code\\access.h"
+	[id(1),helpcontext(1001),helpstring("method SendCommand")] HRESULT  SendCommand([in] BSTR Command);
+	[id(2),helpcontext(1002),helpstring("method GetCall")] HRESULT  GetCall([in] LONG CallID, [out,retval] ICall **Call);
+	[id(3),helpcontext(1003),helpstring("method PlaceCall")] HRESULT  PlaceCall([in] BSTR UserName, [out,retval] ICall **Call);
+	[id(4),helpcontext(1004),helpstring("method SearchForUser")] HRESULT  SearchForUser([in] BSTR UserName, [out,retval] IUserCollection **List);
+	[id(5),helpcontext(1005),helpstring("method GetCallList")] HRESULT  GetCallList([out,retval] ICallCollection **List);
+	[id(6),helpcontext(1006),helpstring("method GetFriendList")] HRESULT  GetFriendList([out,retval] IUserCollection **List);
+	[propget,id(7),helpcontext(1007),helpstring("property ConnectionStatus")] HRESULT  ConnectionStatus([out,retval] enum SkypeConnectionStatus *pVal);
+	[propget,id(8),helpcontext(1008),helpstring("property AudioIn")] HRESULT  AudioIn([out,retval] BSTR *pVal);
+	[propput,id(8),helpcontext(1008),helpstring("property AudioIn")] HRESULT  AudioIn([in] BSTR Val);
+	[propget,id(9),helpcontext(1009),helpstring("property AudioOut")] HRESULT  AudioOut([out,retval] BSTR *pVal);
+	[propput,id(9),helpcontext(1008),helpstring("property AudioOut")] HRESULT  AudioOut([in] BSTR Val);
+	[propget,id(10),helpcontext(1010),helpstring("property CurrentUserHandle")] HRESULT  CurrentUserHandle([out,retval] BSTR *pVal);
+	[propget,id(11),helpcontext(1011),helpstring("property CurrentUserStatus")] HRESULT  CurrentUserStatus([out,retval] enum SkypeOnlineStatus *pVal);
+	[propput,id(11),helpcontext(1011),helpstring("property CurrentUserStatus")] HRESULT  CurrentUserStatus([in] enum SkypeOnlineStatus newVal);
+	[propget,id(12),helpcontext(1012),helpstring("property Mute")] HRESULT  Mute([out,retval] VARIANT_BOOL *pVal);
+	[propput,id(12),helpcontext(1012),helpstring("property Mute")] HRESULT  Mute([in] VARIANT_BOOL newVal);
+	[id(13),helpcontext(1013),helpstring("method GetMessage")] HRESULT  GetMessageA([in] LONG MessageID, [out,retval] IMessage **Message);
+	[id(14),helpcontext(1014),helpstring("method SendMessage")] HRESULT  SendMessageA([in] BSTR UserHandle, [in] BSTR Text, [out,retval] IMessage **Message);
+	[id(15),helpcontext(1015),helpstring("method Connect")] HRESULT  Connect();
+	[id(16),helpcontext(1016),helpstring("method GetActiveCallList")] HRESULT  GetActiveCallList([out,retval] ICallCollection **List);
+	[id(17),helpcontext(1017),helpstring("method GetMissedCallList")] HRESULT  GetMissedCallList([out,retval] ICallCollection **List);
+	[id(18),helpcontext(1018),helpstring("method GetMessageList")] HRESULT  GetMessageList([out,retval] IMessageCollection **List);
+	[id(19),helpcontext(1019),helpstring("method GetMissedMessageList")] HRESULT  GetMissedMessageList([out,retval] IMessageCollection **List);
+	[id(20),helpcontext(1020),helpstring("method SearchForMessages")] HRESULT  SearchForMessages([in] BSTR UserHandle, [out,retval] IMessageCollection **List);
+	[propget,id(21),helpcontext(1021),helpstring("property Version")] HRESULT  Version([out,retval] BSTR *pVal);
+	[propget,id(22),helpcontext(1022),helpstring("property Privilege")] HRESULT  Privilege([in] BSTR Name, [out,retval] VARIANT_BOOL *pVal);
+	[id(23),helpcontext(1023),helpstring("method GetUser")] HRESULT  GetUser([in] BSTR Handle, [out,retval] IUser **User);
+	[propget,id(24),helpcontext(1024),helpstring("property SkypeExecutablePath")] HRESULT  SkypeExecutablePath([out,retval] BSTR *pVal);
+	[propget,id(25),helpcontext(1025),helpstring("property Protocol")] HRESULT  Protocol([out,retval] long *pVal);
+	[propput,id(25),helpcontext(1025),helpstring("property Protocol")] HRESULT  Protocol([in] long lngVal);
+	[id(26),helpcontext(1026),helpstring("method GetChatList")] HRESULT  GetChatList([out,retval] IChatCollection **List);
+	[id(27),helpcontext(1027),helpstring("method GetChat")] HRESULT  GetChat([in] BSTR Name, [out,retval] IChat **Chat);
+	[id(28),helpcontext(1028),helpstring("method GetChatMessageList")] HRESULT  GetChatMessageList([out,retval] IChatMessageCollection **List);
+	[id(29),helpcontext(1029),helpstring("method GetMissedChatMessageList")] HRESULT  GetMissedChatMessageList([out,retval] IChatMessageCollection **List);
+	[id(30),helpcontext(1030),helpstring("method GetChatMessage")] HRESULT  GetChatMessage([in] LONG ID, [out,retval] IChatMessage **Message);
+	[id(31),helpcontext(1031),helpstring("method CloseSkype")] HRESULT  CloseSkype();
+	[propget,id(32),helpcontext(1032),helpstring("property SkypeOutBalance")] HRESULT  SkypeOutBalance([out,retval] long *pVal);
+	[propget,id(33),helpcontext(1033),helpstring("property SkypeOutCurrency")] HRESULT  SkypeOutCurrency([out,retval] enum SkypeCurrencyType *pVal);
+	[propget,id(34),helpcontext(1034),helpstring("property APIAttachmentStatus")] HRESULT  APIAttachmentStatus([out,retval] enum SkypeAPIAttachmentStatus *APIStatus);
+	[id(35),helpcontext(1035),helpstring("method PlaceConferenceCall")] HRESULT  PlaceConferenceCall([in] SAFEARRAY(BSTR)* UserHandles, [out,retval] ICall **Call);
+	[id(36),helpcontext(1036),helpstring("method LaunchChat")] HRESULT  LaunchChat([in] SAFEARRAY(BSTR)* UserHandles, [out,retval] IChat **Chat);
+	[id(37),helpcontext(1037),helpstring("method OpenIMDialog")] HRESULT  OpenIMDialog([in] BSTR UserHandle, [in] BSTR Message);
+	[id(38),helpcontext(1038),helpstring("method FocusSkypeWindow")] HRESULT  FocusSkypeWindow();
+	[id(39),helpcontext(1039),helpstring("method LaunchAddAFriend")] HRESULT  LaunchAddAFriend([in] BSTR UserHandle);
+	[propget,id(40),helpcontext(1040),helpstring("property Conversion")] HRESULT  Conversion([out,retval] IConversion **pVal);
+	[id(41),helpcontext(1041),helpstring("method MinmizeSkype")] HRESULT  MinimizeSkype();
+	[id(42),helpcontext(1042),helpstring("method SearchForChatMessages")] HRESULT  SearchForChatMessages([in] BSTR UserHandle, [out,retval] IChatMessageCollection **List);
+	[id(43),helpcontext(1043),helpstring("method GetActiveChatList")] HRESULT  GetActiveChatList([out,retval] IChatCollection **pVal);
+	[id(44),helpcontext(1044),helpstring("method GetMissedChatList")] HRESULT  GetMissedChatList([out,retval] IChatCollection **pVal);
+	[id(45),helpcontext(1045),helpstring("method GetRecentChatList")] HRESULT  GetRecentChatList([out,retval] IChatCollection **pVal);
+	[id(46),helpcontext(1046),helpstring("method GetBookmarkedChatList")] HRESULT  GetBookmarkedChatList([out,retval] IChatCollection **pVal);
+	[id(47),helpcontext(1047),helpstring("method GetVoiceMailList")] HRESULT  GetVoiceMailList([out,retval] IVoiceMailCollection **pVal);
+	[id(48),helpcontext(1048),helpstring("method SendVoiceMail")] HRESULT  SendVoiceMail([in] BSTR UserHandle, [out,retval] IVoiceMail **pVal);
+	[id(49),helpcontext(1049),helpstring("method GetUsersWaitingForAuthorization")] HRESULT  GetUsersWaitingForAuthorization([out,retval] IUserCollection **pVal);
+	[id(50),helpcontext(1050),helpstring("method ClearChatHistory")] HRESULT  ClearChatHistory();
+	[id(51),helpcontext(1051),helpstring("method ClearVoiceMailHistory")] HRESULT  ClearVoiceMailHistory();
+	[id(52),helpcontext(1052),helpstring("method ClearCallHistory")] HRESULT  ClearCallHistory([in] enum SkypeClearCallHistory CallType);
+	[propget,id(53),helpcontext(1053),helpstring("property Ringer")] HRESULT  Ringer([out,retval] BSTR *pVal);
+	[propput,id(53),helpcontext(1053),helpstring("property Ringer")] HRESULT  Ringer([in] BSTR Val);
+	[id(54),helpcontext(1054),helpstring("method ConnectAndWait")] HRESULT  ConnectAndWait([in] LONG TimeoutInSeconds);
+	[id(55),helpcontext(1055),helpstring("method OpenFileTransferDialog")] HRESULT  OpenFileTransferDialog([in] SAFEARRAY(BSTR)* UserHandles, [in] BSTR Folder);
+	[id(56),helpcontext(1056),helpstring("method SendBlockingCommand")] HRESULT  SendBlockingCommand([in] BSTR Command, [out,retval] BSTR *pVal);
+	[propget,id(57),helpcontext(1057),helpstring("property CommandTimeout")] HRESULT  CommandTimeout([out,retval] LONG *pVal);
+	[propput,id(57),helpcontext(1057),helpstring("property CommandTimeout")] HRESULT  CommandTimeout([in] LONG Val);
+	[id(58),helpstring("method OpenApplication")] HRESULT  OpenApplication([in] BSTR ApplicationName, [out,retval] IApp2App **App);
+	[propget,id(59),helpcontext(1059),helpstring("property Profile")] HRESULT  Profile([out,retval] IProfile **pVal);
+	[propget,id(60),helpcontext(1060),helpstring("property UI")] HRESULT  UI([out,retval] IUI **pVal);
+	[propget,id(61),helpcontext(1061),helpstring("property VideoIn")] HRESULT  VideoIn([out,retval] BSTR *pVal);
+	[propput,id(61),helpcontext(1061),helpstring("property VideoIn")] HRESULT  VideoIn([in] BSTR Val);
+};
+
+
+[ version(1.0), uuid(16A67A72-20D4-409d-9FFA-703D39038FDC), helpstring("ActiveST 1.0 Type Library"), helpfile("ActiveS.chm") ]
+library SKYPEAPILib
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(AFFEF374-D73A-4e17-8CAC-72ABDA7008BC),
+		helpstring("Conversion Class")
+	] 
+#line 100 "c:\\tapur_open\\actives com wrapper\\source code\\conversion.h"
+	coclass Conversion {
+		[default]	interface IConversion;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(1703F3AD-0353-45b2-8077-6833B8252B90),
+		helpstring("CallCollection Class")
+	] 
+#line 73 "c:\\tapur_open\\actives com wrapper\\source code\\callcollection.h"
+	coclass CallCollection {
+		[default]	interface ICallCollection;
+	};
+
+	[
+		version(1.0),
+		uuid(4EE25E18-0517-4bfd-A74B-D35BC8DF9F6D),
+		helpstring("Call Class")
+	] 
+#line 92 "c:\\tapur_open\\actives com wrapper\\source code\\call.h"
+	coclass Call {
+		[default]	interface ICall;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(C2FA1611-6E4E-454d-8F21-BB149115F34C),
+		helpstring("UserCollection Class")
+	] 
+#line 70 "c:\\tapur_open\\actives com wrapper\\source code\\usercollection.h"
+	coclass UserCollection {
+		[default]	interface IUserCollection;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(79ED0EAF-91EF-4eef-A197-0A9374837836),
+		helpstring("User Class")
+	] 
+#line 95 "c:\\tapur_open\\actives com wrapper\\source code\\user.h"
+	coclass User {
+		[default]	interface IUser;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(C5155C83-C87A-4620-B63B-89584498DFA1),
+		helpstring("App2App Class")
+	] 
+#line 71 "c:\\tapur_open\\actives com wrapper\\source code\\app2app.h"
+	coclass App2App {
+		[default]	interface IApp2App;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(0CC09B21-449C-4d70-A304-5838500E108F),
+		helpstring("App2AppStream Class")
+	] 
+#line 70 "c:\\tapur_open\\actives com wrapper\\source code\\app2appstream.h"
+	coclass App2AppStream {
+		[default]	interface IApp2AppStream;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(D3C0355D-B186-48bc-9F3A-61EC0537D0D4),
+		helpstring("MessageCollection Class")
+	] 
+#line 74 "c:\\tapur_open\\actives com wrapper\\source code\\messagecollection.h"
+	coclass MessageCollection {
+		[default]	interface IMessageCollection;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(625229B6-53B2-4f05-9062-1E36C117B373),
+		helpstring("Message Class")
+	] 
+#line 74 "c:\\tapur_open\\actives com wrapper\\source code\\message.h"
+	coclass Message {
+		[default]	interface IMessage;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(6EBD5624-D4DE-441d-ABED-4CF8D487ECF9),
+		helpstring("ChatMessageCollection Class")
+	] 
+#line 74 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessagecollection.h"
+	coclass ChatMessageCollection {
+		[default]	interface IChatMessageCollection;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(A396E674-9241-463f-A71E-AD57BA579AD0),
+		helpstring("ChatMessage Class")
+	] 
+#line 78 "c:\\tapur_open\\actives com wrapper\\source code\\chatmessage.h"
+	coclass ChatMessage {
+		[default]	interface IChatMessage;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(B8B7C427-DF53-4807-808A-1D7866A3A185),
+		helpstring("ChatCollection Class")
+	] 
+#line 71 "c:\\tapur_open\\actives com wrapper\\source code\\chatcollection.h"
+	coclass ChatCollection {
+		[default]	interface IChatCollection;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(0FA5B4B9-DE42-4e96-9EEE-6515DB9DBA0E),
+		helpstring("Chat Class")
+	] 
+#line 81 "c:\\tapur_open\\actives com wrapper\\source code\\chat.h"
+	coclass Chat {
+		[default]	interface IChat;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(6D49D4A5-22A1-471e-A670-88BDFC2A533A),
+		helpstring("VoiceMailCollection Class")
+	] 
+#line 74 "c:\\tapur_open\\actives com wrapper\\source code\\voicemailcollection.h"
+	coclass VoiceMailCollection {
+		[default]	interface IVoiceMailCollection;
+	};
+
+	[
+		noncreatable,
+		version(1.0),
+		uuid(8B7ED723-0B44-4d6c-8E6B-1F1E424FD549),
+		helpstring("VoiceMail Class")
+	] 
+#line 75 "c:\\tapur_open\\actives com wrapper\\source code\\voicemail.h"
+	coclass VoiceMail {
+		[default]	interface IVoiceMail;
+	};
+
+	[
+		version(1.0),
+		uuid(D9770D9B-BB30-4a82-BC01-83B110408D5C),
+		helpcontext(11000),
+		helpstring("UI Class")
+	] 
+#line 72 "c:\\tapur_open\\actives com wrapper\\ui.h"
+	coclass UI {
+		interface IUI;
+	};
+
+	[
+		version(1.0),
+		uuid(154ED84A-F2A2-407a-BB81-BCFEAAAD463D),
+		helpstring("Profile Class")
+	] 
+#line 109 "c:\\tapur_open\\actives com wrapper\\profile.h"
+	coclass Profile {
+		interface IProfile;
+	};
+
+	[
+		uuid(F2858E1B-90D5-4457-A096-2B19898ADAB2),
+		helpcontext(1500),
+		helpstring("_IAccessEvents Interface")
+	] 
+#line 46 "c:\\tapur_open\\actives com wrapper\\source code\\access.h"
+	dispinterface _IAccessEvents {
+	properties:
+
+	methods:
+		[id(1),helpcontext(1501),helpstring("method Result")] HRESULT  Result([in] BSTR Description);
+		[id(2),helpcontext(1502),helpstring("method CallStatusChanged")] HRESULT  CallStatusChanged([in] ICall *ChangedCall, [in] enum SkypeCallProgress Status);
+		[id(3),helpcontext(1503),helpstring("method Command")] HRESULT  Command([in] BSTR SkypeCommand);
+		[id(4),helpcontext(1504),helpstring("method UserStatusChanged")] HRESULT  UserStatusChanged([in] enum SkypeOnlineStatus Status);
+		[id(5),helpcontext(1505),helpstring("method MuteChanged")] HRESULT  MuteChanged([in]VARIANT_BOOL Mute);
+		[id(6),helpcontext(1506),helpstring("method ConnectionStatusChanged")] HRESULT  ConnectionStatusChanged([in] enum SkypeConnectionStatus Status);
+		[id(7),helpcontext(1507),helpstring("method MessageReceived")] HRESULT  MessageReceived([in] IMessage *SkypeMessage);
+		[id(8),helpcontext(1508),helpstring("method MessageSent")] HRESULT  MessageSent([in] IMessage *SkypeMessage);
+		[id(9),helpcontext(1509),helpstring("method APIStatusChanged")] HRESULT  APIStatusChanged([in]enum SkypeAPIAttachmentStatus Status);
+		[id(10),helpcontext(1510),helpstring("method CallHistoryChanged")] HRESULT  CallHistoryChanged();
+		[id(11),helpcontext(1511),helpstring("method IMHistoryChanged")] HRESULT  IMHistoryChanged();
+		[id(12),helpcontext(1512),helpstring("method Error")] HRESULT  Error([in] LONG Number, [in] BSTR Description);
+		[id(13),helpcontext(1513),helpstring("method OnlineStatusChanged")] HRESULT  OnlineStatusChanged([in] IUser *SkypeUser, [in] enum SkypeOnlineStatus Status);
+		[id(14),helpcontext(1514),helpstring("method ChatMessageReceived")] HRESULT  ChatMessageReceived([in] IChatMessage *SkypeChatMessage);
+		[id(15),helpcontext(1515),helpstring("method ChatMessageSent")] HRESULT  ChatMessageSent([in] IChatMessage *SkypeChatMessage);
+		[id(16),helpcontext(1516),helpstring("method IncomingDTMF")] HRESULT  IncomingDTMF([in] ICall *ConnectedCall, [in] BSTR DTMF);
+		[id(17),helpcontext(1517),helpstring("method AppConnecting")] HRESULT  AppConnecting([in] IApp2App *Application, [in] IUserCollection *Users);
+		[id(18),helpcontext(1518),helpstring("method AppStreamOpened")] HRESULT  AppStreamOpened([in] IApp2App *Application, [in] IApp2AppStream *Stream);
+		[id(19),helpcontext(1519),helpstring("method AppDataReceived")] HRESULT  AppDataReceived([in] IApp2AppStream *Stream, [in] BSTR Data);
+		[id(20),helpcontext(1520),helpstring("method AppDatagramReceived")] HRESULT  AppDatagramReceived([in] IApp2AppStream *Stream, [in] BSTR Data);
+		[id(21),helpcontext(1521),helpstring("method AppStreamClosed")] HRESULT  AppStreamClosed([in] IApp2App *Application, [in] IApp2AppStream *Stream);
+		[id(22),helpcontext(1522),helpstring("method ContactFocused")] HRESULT  ContactFocused([in] IUser *Contact);
+		[id(23),helpcontext(1523),helpstring("method BinaryTransferStart")] HRESULT  BinaryTransferStart([in] BSTR TransferID, [in] LONG BytesTotal);
+		[id(24),helpcontext(1524),helpstring("method BinaryTransferData")] HRESULT  BinaryTransferData([in] BSTR TransferID, [in] LONG BytesTransferred, [in] LONG BytesTotal);
+		[id(25),helpcontext(1525),helpstring("method BinaryTransferEnd")] HRESULT  BinaryTransferEnd([in] BSTR TransferID, [in] SAFEARRAY(BYTE)* Data);
+		[id(26),helpcontext(1526),helpstring("method BinaryTransferError")] HRESULT  BinaryTransferError([in] BSTR TransferID, [in] BSTR Description);
+	};
+
+	[
+		version(1.0),
+		uuid(06406675-E635-4fe4-8B2C-82C5C0BA6F40),
+		helpstring("Access Class")
+	] 
+#line 171 "c:\\tapur_open\\actives com wrapper\\source code\\access.h"
+	coclass Access {
+		[default, source]	dispinterface _IAccessEvents;
+		interface IAccess;
+	};
+
+}
+

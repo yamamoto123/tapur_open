@@ -1,0 +1,1345 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 194, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TapurÀµ√˜"
+FONT 9, "£Õ£” £–•¥•∑•√•Ø"
+BEGIN
+    CONTROL         194,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN,81,7,28,33,WS_EX_TRANSPARENT
+    CTEXT           "Tapur Version 0.9.5.2 Beta",IDC_STATIC,7,72,180,8,
+                    SS_NOPREFIX,WS_EX_TRANSPARENT
+    CTEXT           "Copyright (C) 2004-2006  tapur.com",IDC_STATIC,7,87,180,
+                    8,0,WS_EX_TRANSPARENT
+    CTEXT           "SKYPE ”Ô“Ù≥Ã–Ú",IDC_STATIC,7,42,180,11,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    CTEXT           "All Rights Reserved",IDC_STATIC,7,97,180,8,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,77,150,37,14,BS_CENTER | BS_BOTTOM | BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CTEXT           "(Answering Agent for Skype)",IDC_STATIC,7,51,180,13,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "Icons courtesy of www.mienet.net/, used with permission.",
+                    IDC_STATIC_COPY,7,135,180,8
+    CTEXT           "This product uses the Skype API \nbut is not endorsed or certified by Skype.",
+                    IDC_STATIC_COPY2,7,115,180,17
+END
+
+IDD_RSF_CHAT DIALOG DISCARDABLE  0, 0, 210, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "•¡•„•√•»•·•√•ª©`•∏µ«Âh"
+FONT 9, "£Õ£” £–•¥•∑•√•Ø"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,68,50,14
+    PUSHBUTTON      "",IDCANCEL,153,68,50,14
+    EDITTEXT        IDC_EDIT_CHAT,7,7,196,55,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_FOLDER_NEW DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ï∂åèïÔ"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    LTEXT           "êVï∂åèïÔñºèÃÅF",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "?????",IDCANCEL,94,38,50,14
+END
+
+IDD_CONVERT_AUDIO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "íÒéÊ?âπêMëß"
+FONT 9, "£Õ£” £–????"
+BEGIN
+    LTEXT           "íÒéÊï∂åèñºÅF",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "≤Œ’’",IDC_BROWSETARGET,7,21,18,15
+    EDITTEXT        IDC_TARGET,27,22,191,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "»°œ˚",IDCANCEL,168,40,50,14
+END
+
+IDD_RSF_BEEP DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "???≠µµn?"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "éÊè¡",IDCANCEL,98,48,50,14
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "ê∫âπï∂åè(WAVE)",IDC_BTN_FILE,50,24,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,72,8
+END
+
+IDD_CONVERT_VIDEO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "íÒéÊ?ëúêMëß"
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+    LTEXT           "íÒéÊï∂åèñºÅF",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "éQè∆",IDC_BROWSETARGET,7,21,18,15
+    EDITTEXT        IDC_TARGET,27,22,191,14,ES_AUTOHSCROLL
+    CONTROL         "?âπ",IDC_CHK_AUDIO,"Button",BS_AUTOCHECKBOX | BS_LEFT | 
+                    BS_VCENTER | WS_TABSTOP,171,7,47,15
+    LTEXT           "ëÄçÏâ¬î\é˘óv?âπ",IDC_STATIC,7,41,93,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "éÊè¡",IDCANCEL,168,40,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_RSF_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_FOLDER_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_CONVERT_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_RSF_BEEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_CONVERT_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RSF_SIMPLEFORM DIALOGEX 0, 0, 182, 119
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "?µ™?????",IDC_STATIC,5,3,169,40,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "≠µ??µ™",IDC_CHK_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,18,9,11
+    PUSHBUTTON      "≠µ??µ™",IDC_BTN_AUDIO,24,16,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 00:00 ]",IDC_ST_SIZE_AUDIO,28,31,29,11,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "?????µ™",IDC_CHK_CHAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,18,9,11
+    PUSHBUTTON      "?????µ™",IDC_BTN_CHAT,92,16,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 0 bytes ]",IDC_ST_SIZE_CHAT,96,31,53,11,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "????µ™",IDC_CHK_VIDEO,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,14,41,9,11
+    PUSHBUTTON      "????µ™",IDC_BTN_VIDEO,24,42,46,14,NOT WS_VISIBLE | 
+                    WS_DISABLED,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "?§Ó??µ™",IDC_CHK_IMG,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,82,41,9,11
+    PUSHBUTTON      "?§Ó??µ™",IDC_BTN_IMG,92,42,46,14,NOT WS_VISIBLE | 
+                    WS_DISABLED,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "???≠µ",IDC_CHK_BEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,53,55,11
+    GROUPBOX        "∞O?ßŒ¶°",IDC_STATIC,5,74,169,28,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "?≠µ",IDC_RDO_REC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,85,31,12
+    CONTROL         "??/?≠µ",IDC_RDO_VREC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,48,85,44,12
+    CONTROL         "∞O????(§¡?)",IDC_RDO_DISCONNECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,99,85,63,12
+    GROUPBOX        "",IDC_STATIC,5,42,169,28,BS_FLAT,WS_EX_TRANSPARENT
+END
+
+IDD_FOLDERFORM DIALOG DISCARDABLE  0, 0, 176, 87
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+END
+
+IDD_MSGLISTFORM DIALOG DISCARDABLE  0, 0, 158, 84
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,0,0,158,
+                    84
+END
+
+IDD_RSF_NEW DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "∑s???µ™≥]©w"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    LTEXT           "*∞e´H™Ã?????¶W°]•≤∂∑°^°G",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "∞e´H™Ã?™Ì•‹¶W°G",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "?????",IDCANCEL,94,65,50,14
+END
+
+IDD_FOLDER_RENAME DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "????¶W??ßÛ"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    LTEXT           "∑s??????¶W°G",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "?????",IDCANCEL,94,38,50,14
+END
+
+IDD_MSGFORM DIALOGEX 0, 0, 182, 61
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    CONTROL         "≠µ?/∞ ?°G",IDC_STATIC_TITLE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP | WS_TABSTOP,6,7,35,11,WS_EX_TRANSPARENT
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,7,19,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,43,5,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,56,
+                    5,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,68,5,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "≠µ?????®˙•X?",IDC_BTN_FILE,43,23,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_PLAY",IDC_APP_PLAY,133,23,14,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "∞ ?????®˙•X?",IDC_BTN_VFILE,43,40,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_VPLAY",IDC_APP_VPLAY,133,40,14,15,BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    86,9,72,8
+    PUSHBUTTON      "PODCAST§Ω∂}",IDC_BTN_PODCAST,95,2,86,15,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_RSF_RENAME DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "∞e´H™Ã??ßÛ"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    LTEXT           "*∞e´H™Ã?????¶W°]•≤∂∑°^°G",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "∞e´H™Ã?™Ì•‹¶W°G",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "?????",IDCANCEL,94,65,50,14
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 241, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tapur - ≥]©w"
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+    PUSHBUTTON      "?????",IDCANCEL,125,281,50,14
+    DEFPUSHBUTTON   "æA•Œ",IDC_APPLY,184,281,50,14
+    DEFPUSHBUTTON   "OK",IDOK,66,281,50,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,7,7,227,265
+END
+
+IDD_TAB_PUB DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Ød¶uµf?µ™Æ…?∞ ß@",IDC_FRAME2,7,7,209,70,WS_TABSTOP
+    LTEXT           "¶€∞ ?µ™???´›æ˜Æ…∂°°]¨Ì°^°G",IDC_STATIC3,13,25,98,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_WAIT_ANSWER,112,22,30,127,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "?≠µÆ…∂°?®Ó≠≠°]§¿°^°G",IDC_STATIC1,13,43,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_MAX_RECORD,112,41,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "∞_∞ Æ…??µ™?µL????",IDC_CHK_DISABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,60,156,13
+    GROUPBOX        "≠µ?≥]©w",IDC_FRAME1,7,81,209,35,WS_TABSTOP
+    CONTROL         "????•X§O???????",IDC_CHK_MUTE,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED,60,53,156,14
+    CONTROL         "????????•H•~??´H???µ™???",IDC_CHK_CONTACT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED,60,63,156,
+                    14
+    LTEXT           "???≠µ??ßÛ°G",IDC_STATIC2,15,97,56,8,WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "≠µ?????µn?(WAVE)",IDC_BTN_BEEPFILE,71,94,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+END
+
+IDD_TAB_ADMIN DIALOG DISCARDABLE  0, 0, 223, 210
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+    GROUPBOX        "??????",IDC_FRAME1,7,7,209,48
+    CONTROL         "???•Õ¶®?¶≥????",IDC_CHK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,24,156,14
+END
+
+IDD_TAB_REC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "≥q∏‹?≠µÆ…?∞ ß@",IDC_FRAME3,7,7,209,116,WS_TABSTOP
+    LTEXT           "?≠µÆ…∂°?®Ó≠≠°]§¿°^°G",IDC_STATIC1,13,24,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_RECORD_LIMIT,82,22,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "?≠µ∂}©lÆ…??????(????)°G",IDC_STATIC4,13,39,109,8,
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_REC_WARNING,15,51,195,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "™Ï¥¡????????",IDC_BTN_REC_WARNING,122,36,78,13
+    LTEXT           "?≠µ≤◊§FÆ…??????(????)°G",IDC_STATIC5,13,86,108,8,
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_RECSTOP_WARNING,15,98,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "™Ï¥¡????????",IDC_BTN_RECSTOP_WARNING,122,83,78,13
+    GROUPBOX        "≠µΩË",IDC_STATIC,7,127,209,31,WS_TABSTOP
+    CONTROL         "????",IDC_RDO_MONORAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,17,140,39,12
+    CONTROL         "????",IDC_RDO_STEREO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,59,140,44,12
+END
+
+IDD_RSF_AUDIO DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "≠µ?µn?"
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "≠µ?????µn?(WAVE)",IDC_BTN_FILE,50,24,84,15
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "?????",IDCANCEL,98,48,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,97,8
+END
+
+IDD_VIDEO DIALOG DISCARDABLE  0, 0, 119, 125
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "???¶A•Õ"
+FONT 9, "¢€¢· ¢ﬁ????"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,7,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "?????",IDCANCEL,7,7,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_VIDEOGRAB,"{17066EFF-35D3-402E-AF85-83A8730E58BB}",
+                    0x0,7,7,105,111
+END
+
+IDD_TAB_VREC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "¢€¢· ¢ﬁ????", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "?????Æ…?∞ ß@",IDC_FRAME4,7,7,209,135,WS_TABSTOP
+    LTEXT           "??Æ…∂°?®Ó≠≠°]§¿°^°G",IDC_STATIC3,13,23,69,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_VRECORD_LIMIT,83,21,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "??∂}©lÆ…??????(????)°G",IDC_STATIC6,13,40,109,8,
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VREC_WARNING,15,52,195,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "™Ï¥¡????????",IDC_BTN_VREC_WARNING,122,36,78,13
+    LTEXT           "??≤◊§FÆ…??????(????)°G",IDC_STATIC7,13,86,109,8,
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VRECSTOP_WARNING,15,98,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "™Ï¥¡????????",IDC_BTN_VRECSTOP_WARNING,122,84,78,13
+    CONTROL         "??§§?????≠±?´e≠±???",IDC_CHK_VSETTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,123,156,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_RSF_SIMPLEFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+    END
+
+    IDD_RSF_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FOLDER_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_MSGFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+        HORZGUIDE, 17
+    END
+
+    IDD_RSF_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_TAB_PUB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_TAB_ADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_TAB_REC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_RSF_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_TAB_VREC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Chinese.rc2""  // Microsoft Visual C++ à»äOÇÃÉcÅ[?Ç≈ï“èWÇ≥ÇÍÇΩ?É\Å[ÉX\r\n"
+    "#include ""l.jpn\\afxres.rc""          // ïW?ÇÃÉR?É|Å[Él?Ég\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // àÛç¸/àÛç¸Év?Ér?Å[ ?É\Å[ÉX\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "..\\..\\res\\tapur.ico"
+IDR_TAPURTYPE           ICON    DISCARDABLE     "..\\..\\res\\TapurDoc.ico"
+IDI_F_MSG_CLOSE         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_CLOSE.ico"
+IDI_F_MSG_OPEN          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_OPEN.ico"
+IDI_F_RESP_CLOSE        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_CLOSE.ico"
+IDI_F_RESP_OPEN         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_OPEN.ico"
+IDI_RESP_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\RESP_SIMPLE.ico"
+IDI_F_ROOT              ICON    DISCARDABLE     "..\\..\\res\\F_ROOT.ico"
+IDI_F_MSG_TRASH         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_TRASH.ico"
+IDI_F_RESP_TRASH        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_TRASH.ico"
+IDI_F_RESP_DRAG         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_DRAG.ico"
+IDI_F_MSG_DRAG          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_DRAG.ico"
+IDI_MSG_SIMPLE          ICON    DISCARDABLE     "..\\..\\res\\MSG_SIMPLE.ico"
+IDI_T_RECORD            ICON    DISCARDABLE     "..\\..\\res\\T_RECORD.ico"
+IDI_T_RECORD_PAUSE      ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_PAUSE.ico"
+IDI_NEW                 ICON    DISCARDABLE     "..\\..\\res\\new32.ico"
+IDI_DISCON              ICON    DISCARDABLE     "..\\..\\res\\discon32.ico"
+IDI_VMSG_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\VMSG_SIMPLE.ico"
+IDI_T_RECORD_SND        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_SND.ico"
+IDI_T_RECORD_BOTH       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_BOTH.ico"
+IDI_T_RECORD_RCV        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_RCV.ico"
+IDI_T_RECORD_STOP       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_STOP.ico"
+IDI_T_VRECORD_STOP      ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_STOP.ico"
+IDI_T_VRECORD_PAUSE     ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_PAUSE.ico"
+IDI_T_VRECORD           ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD.ico"
+IDI_VMSG_RECORD         ICON    DISCARDABLE     "..\\..\\res\\VMSG_RECORD.ico"
+IDI_MSG_RECORD          ICON    DISCARDABLE     "..\\..\\res\\MSG_RECORD.ico"
+IDI_APP_VPLAY           ICON    DISCARDABLE     "..\\..\\res\\VPLAY_APP.ico"
+IDI_APP_PLAY            ICON    DISCARDABLE     "..\\..\\res\\PLAY_APP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAIN_TOOL           BITMAP  MOVEABLE PURE   "..\\..\\res\\Toolbar.bmp"
+STOPX                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPX.BMP"
+PAUSED                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSED.BMP"
+PAUSEU                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEU.BMP"
+PAUSEX                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEX.BMP"
+PLAYD                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYD.BMP"
+PLAYU                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYU.BMP"
+PLAYX                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYX.BMP"
+STOPD                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPD.BMP"
+STOPU                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPU.BMP"
+STOPF                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPF.BMP"
+PAUSEF                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEF.BMP"
+PLAYF                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYF.BMP"
+IDB_TAPUR               BITMAP  DISCARDABLE     "..\\..\\res\\tapur48.bmp"
+IDR_RECMOD_TOOL         BITMAP  DISCARDABLE     "..\\..\\res\\recmod_t.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAIN_TOOL TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    SEPARATOR
+    BUTTON      ID_VRECORD_START
+    BUTTON      ID_RECORD_START
+    BUTTON      ID_RECORD_PAUSE
+    BUTTON      ID_RECORD_STOP
+    BUTTON      ID_PLACEHOLDER
+    BUTTON      ID_RECORD_MOD
+END
+
+IDR_RECMOD_TOOL TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_RECMOD_BOTH
+    BUTTON      ID_RECMOD_RCV
+    BUTTON      ID_RECMOD_SND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "????(&F)"
+    BEGIN
+        MENUITEM "≥]©w(&S)",                    ID_TOOL_SETTING
+        MENUITEM SEPARATOR
+        MENUITEM "≥¨??(&C)",                    ID_APP_EXIT
+    END
+    POPUP "???(&T)"
+    BEGIN
+        MENUITEM "?????(&V)",                   ID_VRECORD_START
+        MENUITEM "?∏‹?≠µ(&R)",                  ID_RECORD_START
+        MENUITEM "?≠µ/??§@Æ…∞±§Ó(&T)",          ID_RECORD_PAUSE
+        MENUITEM "?≠µ/??≤◊§F(&E)",              ID_RECORD_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "?≠µ?∂H?≥]©w(&O)",             ID_RECORD_MOD
+    END
+    POPUP "???(&H)"
+    BEGIN
+        MENUITEM "??????????(&H)",              ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "SkypeIn/Out?¡ §J(&S)",        ID_APP_SKYPE
+        MENUITEM SEPARATOR
+        MENUITEM "Tapur????(&A)",               ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "main"
+    BEGIN
+        MENUITEM "∂}?(&O)",                     ID_POPUP_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "?µ™?¶≥?(&E)",                 ID_POPUP_ENABLE
+        MENUITEM SEPARATOR
+        MENUITEM "≤◊§F(&X)",                    ID_POPUP_CLOSE
+    END
+END
+
+IDR_POPUP_FOLDER MENU DISCARDABLE 
+BEGIN
+    POPUP "folder"
+    BEGIN
+        MENUITEM "∑s???????ß@¶®(&N)",           ID_POPUP_FOLDER_NEW
+        MENUITEM "?????¶W´e?ßÛ(&R)",            ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "?????´d∞£(&D)",               ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_SETUP MENU DISCARDABLE 
+BEGIN
+    POPUP "setup"
+    BEGIN
+        MENUITEM "?µ™≥]©w?∑s≥Wß@¶®(&W)",        ID_POPUP_SETUP_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "∑s???????ß@¶®(&N)",           ID_POPUP_FOLDER_NEW
+        MENUITEM "?????¶W´e?ßÛ(&R)",            ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "?????´d∞£(&D)",               ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_TRASHCAN MENU DISCARDABLE 
+BEGIN
+    POPUP "trashcan"
+    BEGIN
+        MENUITEM "??Ωc?™≈???(&B)",              ID_POPUP_TRASHCAN_CLEAR
+    END
+END
+
+IDR_POPUP_SETLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "setuplist"
+    BEGIN
+        MENUITEM "?µ™≥]©w?∑s≥Wß@¶®(&W)",        ID_POPUP_SETLIST_NEW
+        MENUITEM "∞e´H™Ã??ßÛ(&P)",              ID_POPUP_SETLIST_RENAME
+        MENUITEM "???(&C)",                     ID_POPUP_SETLIST_COPY
+        MENUITEM "∂K?•I?(&P)",                  ID_POPUP_SETLIST_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "∞e´H™Ã??´H??(&R)",            ID_POPUP_SETLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "?µ™≥]©w?´d∞£(&D)",            ID_POPUP_SETLIST_DEL
+    END
+END
+
+IDR_POPUP_MSGLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "msglist"
+    BEGIN
+        MENUITEM "∞e´H™Ã??´H??(&R)",            ID_POPUP_MSGLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "?µ™≥]©w?™Ì•‹(&O)",            ID_POPUP_MSGLIST_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "??????´d∞£(&D)",              ID_POPUP_MSGLIST_DEL
+    END
+END
+
+IDR_POPUP_TRASH MENU DISCARDABLE 
+BEGIN
+    POPUP "trash"
+    BEGIN
+        MENUITEM "§∏???(&E)",                   ID_POPUP_TRASH_RECOVER
+        MENUITEM SEPARATOR
+        MENUITEM "??Ωc??´d∞£(&D)",              ID_POPUP_TRASH_CLEAR
+    END
+END
+
+IDR_DROP_RECMOD MENU DISCARDABLE 
+BEGIN
+    POPUP "recmod"
+    BEGIN
+        MENUITEM "¶€§¿?¨€§‚????≠µ",             ID_RECMOD_BOTH
+        MENUITEM "¨€§‚?????≠µ",                 ID_RECMOD_RCV
+        MENUITEM "¶€§¿?????≠µ",                 ID_RECMOD_SND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,5,2
+ PRODUCTVERSION 0,9,5,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "Chinese resource for Tapur \0"
+            VALUE "CompanyName", "tapur.com\0"
+            VALUE "FileDescription", "jp.dll\0"
+            VALUE "FileVersion", "0, 9, 5, 2\0"
+            VALUE "InternalName", "jp\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2006\0"
+            VALUE "LegalTrademarks", "Tapur\0"
+            VALUE "OriginalFilename", "jp.dll\0"
+            VALUE "PrivateBuild", "b1\0"
+            VALUE "ProductName", "Tapur\0"
+            VALUE "ProductVersion", "0, 9, 5, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_TAPUR               REGISTRY DISCARDABLE    "..\\..\\Tapur.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODROP              CURSOR  DISCARDABLE     "..\\..\\res\\nodrop.cur"
+IDC_LINK                CURSOR  DISCARDABLE     "..\\..\\res\\link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VIDEO DLGINIT
+BEGIN
+    IDC_VIDEOGRAB, 0x376, 1439, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540d, 0x6956, 0x6564, 0x476f, 0x6172, 
+0x6262, 0x7265, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 
+0x5705, 0x6469, 0x6874, 0xb803, 0x0600, 0x6548, 0x6769, 0x7468, 0xa703, 
+0x0b00, 0x7546, 0x6c6c, 0x6552, 0x6170, 0x6e69, 0x0874, 0x411d, 0x4653, 
+0x654d, 0x6964, 0x5361, 0x7265, 0x6576, 0x5072, 0x6275, 0x696c, 0x6873, 
+0x6e69, 0x5067, 0x696f, 0x746e, 0x3106, 0x7468, 0x7074, 0x2f3a, 0x592f, 
+0x756f, 0x5772, 0x6e69, 0x6f64, 0x7377, 0x654d, 0x6964, 0x5361, 0x7265, 
+0x6576, 0x2f72, 0x6f59, 0x7275, 0x7550, 0x6c62, 0x7369, 0x6968, 0x676e, 
+0x6f50, 0x6e69, 0x0d74, 0x5341, 0x5646, 0x6469, 0x6f65, 0x6957, 0x7464, 
+0x0368, 0x0140, 0x410e, 0x7475, 0x466f, 0x6c69, 0x5065, 0x6572, 0x6966, 
+0x0678, 0x7602, 0x0c67, 0x6944, 0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 
+0x0a02, 0x440b, 0x7369, 0x6c70, 0x7961, 0x545f, 0x706f, 0x0a02, 0x441c, 
+0x6f72, 0x7070, 0x6465, 0x7246, 0x6d61, 0x7365, 0x6f50, 0x6c6c, 0x6e69, 
+0x4967, 0x746e, 0x7265, 0x6176, 0x026c, 0x100a, 0x7544, 0x6c61, 0x6944, 
+0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 0x9003, 0x0f01, 0x7544, 0x6c61, 
+0x6944, 0x7073, 0x616c, 0x5f79, 0x6f54, 0x0270, 0x150a, 0x5644, 0x6e45, 
+0x6f63, 0x6564, 0x5f72, 0x6956, 0x6564, 0x466f, 0x726f, 0x616d, 0x0774, 
+0x6408, 0x6676, 0x445f, 0x5356, 0x1944, 0x5644, 0x6e45, 0x6f63, 0x6564, 
+0x5f72, 0x6956, 0x6564, 0x526f, 0x7365, 0x6c6f, 0x7475, 0x6f69, 0x076e, 
+0x6407, 0x5f76, 0x7546, 0x6c6c, 0x4417, 0x4556, 0x636e, 0x646f, 0x7265, 
+0x565f, 0x6469, 0x6f65, 0x7453, 0x6e61, 0x6164, 0x6472, 0x0707, 0x7664, 
+0x5f73, 0x4150, 0x0d4c, 0x7243, 0x706f, 0x6970, 0x676e, 0x5a5f, 0x6f6f, 
+0x056d, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x4618, 0x7869, 0x6c46, 
+0x6369, 0x656b, 0x4f72, 0x4272, 0x616c, 0x6b63, 0x6143, 0x7470, 0x7275, 
+0x0865, 0x4c0d, 0x6369, 0x6e65, 0x6573, 0x7453, 0x6972, 0x676e, 0x2206, 
+0x3831, 0x3835, 0x3830, 0x3939, 0x3531, 0x3931, 0x3232, 0x3038, 0x2d33, 
+0x6154, 0x7473, 0x7975, 0x2061, 0x6159, 0x616d, 0x6f6d, 0x6f74, 0x4913, 
+0x616d, 0x6567, 0x764f, 0x7265, 0x616c, 0x4579, 0x616e, 0x6c62, 0x6465, 
+0x1308, 0x6f4d, 0x6974, 0x6e6f, 0x6544, 0x6574, 0x7463, 0x726f, 0x475f, 
+0x6972, 0x0664, 0x356e, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x1620, 0x754d, 0x746c, 0x7069, 0x656c, 0x6578, 
+0x5364, 0x6977, 0x6374, 0x4468, 0x6c65, 0x7961, 0x0002, 0x4d1d, 0x6c75, 
+0x6974, 0x6c70, 0x7865, 0x6465, 0x7453, 0x6261, 0x6c69, 0x7a69, 0x7461, 
+0x6f69, 0x446e, 0x6c65, 0x7961, 0x0102, 0x5010, 0x616c, 0x6579, 0x5372, 
+0x6570, 0x6465, 0x6152, 0x6974, 0x056f, 0x0000, 0x0000, 0x0000, 0x8000, 
+0x3fff, 0x5221, 0x6365, 0x726f, 0x6964, 0x676e, 0x6e4f, 0x6f4d, 0x6974, 
+0x6e6f, 0x4d5f, 0x746f, 0x6f69, 0x546e, 0x7268, 0x7365, 0x6f68, 0x646c, 
+0x0005, 0x4fe0, 0x978d, 0x126e, 0xf583, 0x143f, 0x6552, 0x6e65, 0x6f63, 
+0x6964, 0x676e, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xff80, 0x13bf, 0x6552, 0x6e65, 0x6f63, 0x6964, 0x676e, 
+0x535f, 0x6f74, 0x5470, 0x6d69, 0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 
+0xbfff, 0x5218, 0x7761, 0x6153, 0x706d, 0x656c, 0x6143, 0x7470, 0x7275, 
+0x4c65, 0x636f, 0x7461, 0x6f69, 0x076e, 0x720f, 0x5f6c, 0x6f53, 0x7275, 
+0x6563, 0x6f46, 0x6d72, 0x7461, 0x5415, 0x7865, 0x4f74, 0x6576, 0x6c72, 
+0x7961, 0x465f, 0x6e6f, 0x4374, 0x6c6f, 0x726f, 0x0607, 0x6c63, 0x7141, 
+0x6175, 0x5412, 0x7865, 0x4f74, 0x6576, 0x6c72, 0x7961, 0x535f, 0x7274, 
+0x6e69, 0x0c67, 0x0116, 0x0000, 0x6f4e, 0x6574, 0x203a, 0x6874, 0x2065, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x2065, 0x6f66, 0x6d72, 0x7461, 0x2073, 
+0x0a0d, 0x6163, 0x206e, 0x6562, 0x6520, 0x7361, 0x6c69, 0x2079, 0x6f6d, 
+0x6964, 0x6966, 0x6465, 0x0d2e, 0x0d0a, 0x730a, 0x7379, 0x6574, 0x206d, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7973, 0x5f73, 0x6974, 
+0x656d, 0x645b, 0x2f64, 0x6d6d, 0x792f, 0x2079, 0x6868, 0x6e3a, 0x3a6e, 
+0x7373, 0x255d, 0x0a0d, 0x5644, 0x7420, 0x6d69, 0x2065, 0x6f63, 0x6564, 
+0x203a, 0x7425, 0x6d69, 0x5f65, 0x6f63, 0x6564, 0x0d25, 0x440a, 0x2056, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7664, 0x745f, 0x6d69, 
+0x5b65, 0x6464, 0x6d2f, 0x2f6d, 0x7979, 0x6820, 0x3a68, 0x6e6e, 0x733a, 
+0x5d73, 0x0d25, 0x660a, 0x6172, 0x656d, 0x6320, 0x756f, 0x746e, 0x203a, 
+0x6625, 0x6172, 0x656d, 0x635f, 0x756f, 0x746e, 0x0d25, 0x740a, 0x6d69, 
+0x2065, 0x6628, 0x6c75, 0x296c, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x7566, 
+0x6c6c, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x7328, 0x6365, 0x3a29, 0x2520, 
+0x6974, 0x656d, 0x735f, 0x6365, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x6e28, 
+0x2973, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x3031, 0x6e30, 0x2573, 0x5618, 
+0x6469, 0x6f65, 0x6f43, 0x706d, 0x6572, 0x7373, 0x6f69, 0x5f6e, 0x7551, 
+0x6c61, 0x7469, 0x0579, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x561d, 
+0x6469, 0x6f65, 0x7246, 0x6d6f, 0x6d49, 0x6761, 0x7365, 0x545f, 0x6d65, 
+0x6f70, 0x6172, 0x7972, 0x6946, 0x656c, 0x1206, 0x6553, 0x4f74, 0x4266, 
+0x7469, 0x616d, 0x7370, 0x3130, 0x642e, 0x7461, 0x5615, 0x6469, 0x6f65, 
+0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 0x4f65, 0x5572, 0x4c52, 0x2606, 
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x642e, 0x7461, 0x7361, 0x6574, 
+0x6461, 0x632e, 0x6d6f, 0x642f, 0x6d65, 0x2f6f, 0x6564, 0x6f6d, 0x772e, 
+0x766d, 0x561f, 0x6469, 0x6f65, 0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 
+0x4f65, 0x5572, 0x4c52, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 
+0x0000, 0x0000, 0x0000, 0xff80, 0x1ebf, 0x6956, 0x6564, 0x536f, 0x756f, 
+0x6372, 0x5f65, 0x6946, 0x656c, 0x724f, 0x5255, 0x5f4c, 0x7453, 0x706f, 
+0x6954, 0x656d, 0x0005, 0x0000, 0x0000, 0x0000, 0xff80, 0x00bf, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Tapur\n\nTapur\n\n\nTapur.Document\nTapur Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Tapur"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        " "
+    ID_INDICATOR_CAPS       "        "
+    ID_INDICATOR_NUM        " "
+    ID_INDICATOR_SCRL       " "
+    ID_INDICATOR_OVR        " "
+    ID_INDICATOR_REC        " "
+    ID_INDICATOR_KANA       "        "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "∑s≥W??????ß@¶®\n∑s≥W????"
+    ID_FILE_OPEN            "¨J¶s??????∂}?\n∂}?"
+    ID_FILE_CLOSE           "ß@∑~§§??????≥¨??\n≥¨??"
+    ID_FILE_SAVE            "ß@∑~§§??????§WÆ—???´O¶s\n´O¶s"
+    ID_FILE_SAVE_AS         "ß@∑~§§??????∑s??¶W´e?´O¶s\n¶W´e????´O¶s"
+    ID_FILE_PAGE_SETUP      "¶L®Í????????ßÛ\n????? ??????≥]©w"
+    ID_FILE_PRINT_SETUP     "?????/¶L®Í????????ßÛ\n¶L®Í≥]©w"
+    ID_FILE_PRINT           "ß@∑~§§??????¶L®Í\n¶L®Í"
+    ID_FILE_PRINT_PREVIEW   "¶L®Í??????™Ì•‹\n¶L®Í???????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "?????°Bµ€ß@?µ•?™Ì•‹???\n?????"
+    ID_APP_EXIT             "???????±`æn???\n≥¨??"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE2       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE3       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE4       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE5       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE6       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE7       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE8       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE9       "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE10      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE11      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE12      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE13      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE14      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE15      "´¸©w??????∂}?"
+    ID_FILE_MRU_FILE16      "´¸©w??????∂}?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "¶∏????????§¡?¥¿??\n¶∏?????"
+    ID_PREV_PANE            "´e????????§¡?¥¿??\n´e?????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "ß@∑~§§????????§¿≥Œ\n§¿≥Œ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "øÔ?Ωd??Æ¯•h\nÆ¯•h"
+    ID_EDIT_CLEAR_ALL       "???Æ¯•h\n???Æ¯•h"
+    ID_EDIT_COPY            "øÔ?Ωd???????????????????´O¶s\n????"
+    ID_EDIT_CUT             "øÔ?Ωd??§¡?®˙?????????????´O¶s\n§¡?®˙?"
+    ID_EDIT_FIND            "´¸©w??§Â¶r¶C??Ø¡\n?Ø¡"
+    ID_EDIT_PASTE           "????????????Æe?∂K?•I?\n∂K?•I?"
+    ID_EDIT_REPEAT          "™Ω´e?¶Ê??∞ ß@?Ú≤?™?\nÚ≤?™?"
+    ID_EDIT_REPLACE         "´¸©w??§Â¶r¶C?•L?§Â¶r¶C?∏m¥´\n∏m¥´"
+    ID_EDIT_SELECT_ALL      "??????????øÔ?\n???øÔ?"
+    ID_EDIT_UNDO            "™Ω´e?¶Ê??∞ ß@?§∏???\n§∏???"
+    ID_EDIT_REDO            "™Ω´e?¶Ê??∞ ß@?Ú≤?™?\nÚ≤?™?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "??? ???? ™Ì•‹/´D™Ì•‹\n??? ????™Ì•‹§¡?¥¿?"
+    ID_VIEW_STATUS_BAR      "????? ???? ™Ì•‹/´D™Ì•‹\n????? ????™Ì•‹§¡?¥¿?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "?????????????ßÛ"
+    AFX_IDS_SCMOVE          "???????¶Ï∏m??ßÛ"
+    AFX_IDS_SCMINIMIZE      "???????≥Ã§p§∆??"
+    AFX_IDS_SCMAXIMIZE      "???????≥Ã§j§∆??"
+    AFX_IDS_SCNEXTWINDOW    "¶∏????????§¡?¥¿??"
+    AFX_IDS_SCPREVWINDOW    "´e????????§¡?¥¿??"
+    AFX_IDS_SCCLOSE         "ß@∑~§§????????≥¨?°B?ßÛ???????´O¶s?´¸•‹"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "???????≥q±`????????"
+    AFX_IDS_SCTASKLIST      "??????????§¡?¥¿?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "¶L®Í??????? ?????≤◊??\n?????????????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_MSG          "®¸´HΩc"
+    IDS_FOLDER_MSG_TRASH    "??Ωc(®¸´H)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_SETUP        "?µ™≥]©w"
+    IDS_FOLDER_SETUP_TRASH  "??Ωc(?µ™)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RSF_DEF             "(≥W©w??µ™)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX0             "?????±µ??????"
+    IDS_MSGBOX1             "•H§U???ΩTª{??????\n??????∞_∞ ????\n??????????∫ﬁ≤z?Tapur ???????≥\•i?????\n°@°]?????????°y???°z-°y≥]©w°z-°y??????≥]©w°z-°y???????????∫ﬁ≤z°z??∑”°^"
+    IDS_MSGBOX2             "?????±µ????????"
+    IDS_MSGBOX3             "?????±µ?????????°B??æ˜Ø‡?®œ•Œ?????"
+    IDS_MSGBOX5             "?????±µ?????"
+    IDS_MSGBOX6             "Windows???????????≥]©w?°uTapur Virtula Cable°v??ßÛ??????\n≥q±`®œ•Œ?????????????ßÛ??????\n\n°y?????????°z-°y????????????????????°z-°y?????°z???°B°y≠µ?¶A•Õ°z§Œ?°y?≠µ°z?°y≥W©w?????°z??ßÛ"
+    IDS_MSGBOX7             "Tapur??????•ø±`?±µ??????\n?????¶A∞_∞ ??´·°BTapur?∞_∞ ??????"
+    IDS_MSGBOX11            "°y????¶W°z?≠´Ω∆?????"
+    IDS_MSGBOX12            "°y????¶W°z?ßQ•Œ????§Â¶r?ßt??????"
+    IDS_MSGBOX13            "°y????¶W°z?§J§O???????"
+    IDS_MSGBOX14            "∞e´H™Ã?πq∏‹°]????°^?????\n???????°H"
+    IDS_MSGBOX15            "???????????∫A???????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX16            "≤{¶b°B≥q∏‹§§??"
+    IDS_MSGBOX17            "∞e´H™Ã?§£©˙???°B??æ˜Ø‡?®œ•Œ?????"
+    IDS_MSGBOX18            "?????Tapur•Œ??????????®œ•Œ?????\n???????????????≥]©w??ßÛ??????\n °]?????????°y???°z-°y≥]©w°z-°y?????????°z?°uWIndows?º–∑«????°v?≥]©w°^"
+    IDS_MSGBOX21            "°y????¶W°z?≠´Ω∆?????"
+    IDS_MSGBOX22            "°y????¶W°z?§J§O???????"
+    IDS_MSGBOX23            "?????´d∞£???\n???????°H"
+    IDS_MSGBOX31            "??Ωc?™≈????\n??Ωc??´d∞£??????§∏???????????\n???????°H"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX32            "???????Ωc??´d∞£???\n??Ωc??´d∞£???????§∏???????????\n???????°H"
+    IDS_MSGBOX33            "?????§∏?¶Ï∏m?????\n???????°H"
+    IDS_MSGBOX34            "??????Ωc??´d∞£???\n??Ωc??´d∞£??????§∏???????????\n???????°H"
+    IDS_MSGBOX41            "°y∞e´H™Ã¶W°z?≠´Ω∆?????"
+    IDS_MSGBOX42            "°y∞e´H¶W°z?§J§O???????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX51            "°]≥W©w??µ™°^?´d∞£??????????"
+    IDS_MSGBOX52            "∏”????µ™≥]©w??????\n∑s≥Wß@¶®????°H"
+    IDS_MSGBOX53            "?µ™≥]©w?´d∞£???\n???????°H"
+    IDS_MSGBOX54            "?µ™≥]©w?????•¢±—????"
+    IDS_MSGBOX60            "≠µ??????µn????\n???????°H"
+    IDS_MSGBOX61            "¶A•Õ????????\n≠µ??????Ø}∑l????•iØ‡© ?????"
+    IDS_MSGBOX62            "≠µ??????Ø}∑l????•iØ‡© ?????"
+    IDS_MSGBOX63            "≠µ??????•º??????????°B????Ø}∑l????•iØ‡© ?????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAPTION_CON         "Tapur (Skype±µ?)"
+    IDS_CAPTION_DISCON      "Tapur (Skype´D±µ?)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP             "Tapur - ?????Ød¶uµf"
+    IDS_TOOLTIP_DISABLE     "Tapur - ?????Ød¶uµf(?µ™µL?)"
+    IDS_TOOLTIP_DISCON      "Tapur - ?????±µ?´›æ˜§§???"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_TRASH_RECOVER  "??Ωc?????§∏?????\n¥_?"
+    ID_POPUP_SETLIST_NEW    "?µ™≥]©w?∑s≥Wß@¶®???\n∑s≥Wß@¶®"
+    ID_POPUP_SETLIST_RENAME "?µ™≥]©w?∞e´H™Ã??ßÛ???\n?ßÛ"
+    ID_POPUP_MSGLIST_SETUP  "??????∞e´H™Ã??????µ™≥]©w?™Ì•‹???\n?µ™≥]©w"
+    ID_POPUP_SETLIST_CALL   "?µ™≥]©w?∞e´H™Ã??????´H???\n?´H"
+    ID_POPUP_SETLIST_COPY   "?µ™≥]©w???????\n???"
+    ID_POPUP_SETLIST_PASTE  "??????µ™≥]©w????????\n∂K?•I?"
+    ID_TOOL_SETTING         "∞ ß@≥]©w°B???????µ•?¶Ê???\n≥]©w"
+    ID_RECORD_START         "?∏‹??≠µ?∂}©l???\n?∏‹?≠µ"
+    ID_RECORD_PAUSE         "?∏‹??≠µ/???§@Æ…∞±§Ó???\n?≠µ/??§@Æ…∞±§Ó"
+    ID_PLACEHOLDER          "?∏‹??≠µ/??Æ…∂°?™Ì•‹???\n?≠µ/??Æ…∂°"
+    ID_RECORD_STOP          "?∏‹??≠µ/???≤◊§F???\n?≠µ/??≤◊§F"
+    ID_TOOL_RECORD          "?∏‹??≠µ?∂}©l???\n?∏‹?≠µ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_PUB             "Ød¶uµf≥]©w"
+    IDS_TAB_ADMIN           "§WØ≈≥]©w"
+    IDS_TAB_REC             "?≠µ≥]©w"
+    IDS_TAB_VREC            "??≥]©w"
+    IDS_TAB_REC_WARNING     "≥q∏‹??≠µ???°C\r\n?≠µ?±Ê???≥ı¶X?°B≥q∏‹?≤◊§F???°B\r\n≥q∏‹¨€§‚??≠µ?§§§Ó?®Ã???????°C"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX64            "¶A•Õ????????\n????????Ø}∑l????•iØ‡© ?????"
+    IDS_MSGBOX69            "≠µ??????µn?????????"
+    IDS_MSGBOX70            "??æ˜Ø‡?≥q∏‹§§??¶≥???"
+    IDS_MSGBOX71            "?≠µ?????•X§O????????"
+    IDS_MSGBOX72            "??æ˜Ø‡????≥q∏‹§§??¶≥???"
+    IDS_MSGBOX73            "??æ˜Ø‡?Ød¶uµf?µ™§§?®œ•Œ?????"
+    IDS_MSGBOX74            "?≠µ≤◊§F"
+    IDS_MSGBOX75            "??≤◊§F"
+    IDS_MSGBOX76            "®Ó≠≠Æ…∂°?πF????°B?≠µ?≤◊§F????"
+    IDS_MSGBOX77            "®Ó≠≠Æ…∂°?πF????°B???≤◊§F????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_DEF             "(§£©˙?∞e´H™Ã)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX900           "????????µ™≠µ??ßÛ∑s?•¢±—????\n?µ™≠µ??¶Aµn???•≤≠n?????"
+    IDS_MSGBOX901           "??????????≠µ?ßÛ∑s?•¢±—????\n???≠µ?¶Aµn???•≤≠n?????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_RECPAUSE        "?∏‹??≠µ?§@Æ…∞±§Ó???\n?≠µ§@Æ…∞±§Ó"
+    ID_TOOL_RECSTOP         "?∏‹??≠µ?≤◊§F???\n?≠µ≤◊§F"
+    ID_APP_HELP             "???????????™Ì•‹???\n?????"
+    ID_VRECORD_START        "???????∂}©l???\n?????"
+    ID_RECMOD_BOTH          "¶€§¿?¨€§‚????≠µ???\n∞e®¸´H≠µ?"
+    ID_RECMOD_RCV           "¨€§‚??????≠µ???\n®¸´H≠µ?"
+    ID_RECMOD_SND           "¶€§¿??????≠µ???\n∞e´H≠µ?"
+    ID_RECORD_MOD           "?∏‹??≠µ?∂H?´¸©w???\n?≠µ?∂H"
+    ID_APP_PLAY             "•~≥°???????????≠µ??¶A•Õ???"
+    ID_APP_VPLAY            "•~≥°???????????????¶A•Õ???"
+    ID_APP_SKYPE            "?????????®Û§O????\nSkypeIn/Out"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_OPEN           "Tapur????≠±?∂}???\nTapur"
+    ID_POPUP_ENABLE         "Ød¶uµf?µ™?¶≥??µL??≥]©w???\n?µ™¶≥?"
+    ID_POPUP_CLOSE          "Tapur?≤◊§F???\n≤◊§F"
+    ID_POPUP_SETUP_NEW      "?µ™≥]©w?∑s≥Wß@¶®???\n∑s≥Wß@¶®"
+    ID_POPUP_FOLDER_NEW     "∑s???????ß@¶®???\n????ß@¶®"
+    ID_POPUP_FOLDER_RENAME  "????¶W???ßÛ???\n?????ßÛ"
+    ID_POPUP_FOLDER_DEL     "?????´d∞£???\n????´d∞£"
+    ID_POPUP_TRASH_CLEAR    "??Ωc?????ßπ•˛?´d∞£???\n´d∞£"
+    ID_POPUP_TRASHCAN_CLEAR "??Ωc?????ßπ•˛?´d∞£???\n´d∞£"
+    ID_POPUP_SETLIST_DEL    "?µ™≥]©w?´d∞£???\n´d∞£"
+    ID_POPUP_MSGLIST_CALL   "??????∞e´H™Ã??????´H???\n?´H"
+    ID_POPUP_MSGLIST_DEL    "??????´d∞£???\n´d∞£"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_URL_HELP            "http://www.tapur.com/manual.html"
+    IDS_URL_SKYPE           "http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2232000&pid=873311896"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX81            "•X§O????¶W?´¸©w???????"
+    IDS_MSGBOX82            "•X§O????¶W?????¶W?´¸©w??????"
+    IDS_MSGBOX83            "•X§O????¶W?≠´Ω∆?????\n§WÆ—?????°H"
+    IDS_MSGBOX84            "´¸©w??????±i§l??????????°C\n•X§O•iØ‡?????ßŒ¶°?•H§U?≥q???\nWAVE(*.wav)\nOggVorbis(*.ogg)\nMPEG3(*.mp3) (®Ó≠≠??)"
+    IDS_MSGBOX85            "??æ˜Ø‡??Fraunhofer MPEG3 Codec?•≤≠n??\nWindowsMediaPlayer10•H§W??≠µΩË?®Ó≠≠???MPEG3 Codec?ßt??????"
+    IDS_MSGBOX86            "´¸©w??????±i§l??????????°C\n•X§O•iØ‡?????ßŒ¶°?•H§U?≥q???\nAVI(*.avi)"
+    IDS_MSGBOX88            "•X§O???????????"
+    IDS_MSGBOX89            "•X§O?ßπ§F????"
+    IDS_MSGBOX90            "•X§O?•¢±—????"
+    IDS_MSGBOX91            "?????•X§O????????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_NEW         "Tapur - ∑s?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_RECSTOP_WARNING "≥q∏‹?≠µ?≤◊§F????°C"
+    IDS_TAB_VREC_WARNING    "???≥q∏‹??????°C\r\n???±Ê???≥ı¶X?°B≥q∏‹?≤◊§F???°B\r\n≥q∏‹¨€§‚????§§§Ó?®Ã???????°C"
+    IDS_TAB_VRECSTOP_WARNING "??????≤◊§F????°C"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX101           "??????????µn?????????"
+    IDS_MSGBOX102           "??????????∞e´H????????"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGLIST_HEAD        " , 20, 0; ∞e´H™Ã, 100, 0; §ÈÆ…, 110, 0"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Chinese.rc2"  // Microsoft Visual C++ à»äOÇÃÉcÅ[?Ç≈ï“èWÇ≥ÇÍÇΩ?É\Å[ÉX
+#include "l.jpn\afxres.rc"          // ïW?ÇÃÉR?É|Å[Él?Ég
+#include "l.jpn\afxprint.rc"        // àÛç¸/àÛç¸Év?Ér?Å[ ?É\Å[ÉX
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

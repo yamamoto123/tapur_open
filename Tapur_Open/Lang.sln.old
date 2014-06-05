@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Korean", "res\Korean\Korean.vcproj", "{99335006-E1DF-48AF-BD27-A44B5B98E839}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Japanese", "res\Japanese\Japanese.vcproj", "{D4ABED83-C3B3-4712-8E54-2D873EB3D7EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "English", "res\English\English.vcproj", "{D349083F-6978-4A18-A3D9-8272E8E6860C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99335006-E1DF-48AF-BD27-A44B5B98E839}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99335006-E1DF-48AF-BD27-A44B5B98E839}.Debug|Win32.Build.0 = Debug|Win32
+		{99335006-E1DF-48AF-BD27-A44B5B98E839}.Release|Win32.ActiveCfg = Release|Win32
+		{99335006-E1DF-48AF-BD27-A44B5B98E839}.Release|Win32.Build.0 = Release|Win32
+		{D4ABED83-C3B3-4712-8E54-2D873EB3D7EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D4ABED83-C3B3-4712-8E54-2D873EB3D7EF}.Debug|Win32.Build.0 = Debug|Win32
+		{D4ABED83-C3B3-4712-8E54-2D873EB3D7EF}.Release|Win32.ActiveCfg = Release|Win32
+		{D4ABED83-C3B3-4712-8E54-2D873EB3D7EF}.Release|Win32.Build.0 = Release|Win32
+		{D349083F-6978-4A18-A3D9-8272E8E6860C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D349083F-6978-4A18-A3D9-8272E8E6860C}.Debug|Win32.Build.0 = Debug|Win32
+		{D349083F-6978-4A18-A3D9-8272E8E6860C}.Release|Win32.ActiveCfg = Release|Win32
+		{D349083F-6978-4A18-A3D9-8272E8E6860C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

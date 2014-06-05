@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>ËŞÙÄŞ‚ÌÛ¸Ş</h1>
+<h3>
+--------------------\¬: Japanese - Win32 Release--------------------
+</h3>
+<h3>ºÏİÄŞ ×²İ</h3>
+Creating command line "rc.exe /l 0x411 /fo"Release/Japanese.res" /d "NDEBUG" /d "_AFXDLL" "D:\Tapur\res\Japanese\Japanese.rc"" 
+ºÏİÄŞ ×²İ "link.exe /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/jp.pdb" /machine:I386 /out:"D:\Tapur\Release\res\jp.dll" /implib:"Release/jp.lib" /NOENTRY  .\Release\Japanese.res " ‚Ìì¬’†
+<h3>±³ÄÌß¯Ä ³¨İÄŞ³</h3>
+Ø¿°½‚ğºİÊß²Ù’†...
+Øİ¸’†...
+
+
+
+<h3>Œ‹‰Ê</h3>
+jp.dll - ´×° 0AŒx 0
+</pre>
+</body>
+</html>

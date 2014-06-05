@@ -1,0 +1,118 @@
+11/17/04 - 1.0.0.5
+
+- Migrated to C++ 7
+- Allowed call collection to return no calls
+- Implement setting call status
+- Setting mute when not in a call returns an exception
+- Implemented Online Status change event
+- Fixed call progress text conversion 
+
+11/23/04 - 1.0.0.6
+
+- Fixed Item property in collections
+
+12/7/04 - 1.0.0.7
+
+- Fixed SendMessage command
+- Fixed Item property in user collection
+
+12/17/04 - 1.0.0.8
+
+- Support for UTF-8
+
+1/1/05 - 1.0.0.9
+
+- Connection works now if disconnected
+- Added (undocumented) LOGGEDOUT user and connection status
+- Added IsSkypeOut property to User object
+- User properties that are invalid for SkypeOut entries generate exceptions
+
+2/7/05 - 1.0.0.10
+
+- Added Protocol method and protocol check mechanism for ChatMessage calls
+- Added ChatMessage and ChatMessageCollection classes
+- Added ChatMessageReceived and ChatMessageSent events
+- Added GetChatMessageList, GetMissedChatMessageList and GetChatMessage methods
+- Reoganized headers so SkypeMessageQueue.cpp can be used in other apps
+
+2/18/05 - 1.0.0.11
+
+- Fixed User birthdate to parse yyyymmdd format
+- Chat message triggers get fired properly
+- Changed DestroyWindow to close message in message queue window
+
+2/22/05 - 1.0.0.12
+
+- Fixed birthdates (again)
+- API triggers redetection when connection status is logged out
+- Skype.exe is executed minimized and no-splash
+- Fixed CONNSTATUS and USERSTATUS events
+
+3/8/05 - 1.0.0.13
+
+- Improved resilience to Skype restart
+- Added automatic protocol check when API connects succesfully
+
+3/11/05 - 1.0.0.15
+
+- SendMessage now works with Beta version
+- Added CloseSkype method, works with Beta version
+- Added AddRef's to callbacks with objects
+- Command event no fires properly
+
+5/23/05 - 1.0.1.2
+
+- Changed LaunchChat command to run CreateChat
+- Fixed ChatMessageReceived event
+- Numerous 1.3 stuff
+- Added GetActiveChatsList, GetMissedChatsList, GetRecentChatsList, GetBookmarkedChatsList, GetVoiceMailList, SendVoiceMail, GetUsersWaitingForAuthorization, ClearChatHistory, ClearVoiceMailHistory, ClearCallHistory, ConnectAndWait methods to Access class
+- Added Ringer property to Access class
+- Added IncomingDTMF event to Access class
+- Added SendMessage, AddMembers, LaunchChatWindow, GetChatMessageList, GetRecentMessageList to Chat class
+- Added set Topic property to Chat class
+- Added ReceivedAuthorizationRequest, IsAuthorized, IsBlocked, set BuddyStatus properties to User class
+- Added SendDTMF method to User class
+- Added VoiceMail class
+- Added ReceivedAuthorizationRequest to User
+- Added IsAuthorized to User
+- Added IsBlocked to User
+- Added put_BuddyStatus to User
+- Added SendDTMF to User
+
+7/24/05 - 1.0.1.3
+
+- Fixed get_Privelege (thanks to Ryan Lin)
+- Change library name references to "ActiveSkype"
+
+8/8/05 - 1.0.1.4 
+
+- Fixed SendVoiceMail method to return a VoiceMail object
+
+8/24/05 - 1.0.1.5
+
+- Change library name references to "ActiveS"
+- Made siginificant changes to message pump, no longer uses timer
+- Library will no longer reopen Skype if Skype is closed until a command is sent
+- Added support of Command ID
+- Added SendBlockingCommand method to Access class
+- Added CommandTimeout property to Access class (thanks to Mike Gratsas)
+- Fixed LaunchAddAFriend method (thanks to Mike Gratsas)
+
+9/1/05 - 1.0.1.6
+
+- "Calmed down" the worker thread, CPU usage no longer at 100%  :")
+
+9/23/05 - 1.0.2.0
+
+- Reogranized code to use C++ attributes
+- Added App2App stuff
+- Fixed incoming DTMF
+- Reworked detection of Skype when shutdown
+- PlaceCall, PlaceConferenceCall work properly again (not using CmdID anymore)
+
+9/30/05 - 1.0.2.1
+
+- Added remaining 1.4 funcitonality 
+- Added Profile and UI classes
+- Added MSVC merge modules to installation
+- Fixed shutdown code to allow msg window to clean up in debug mode

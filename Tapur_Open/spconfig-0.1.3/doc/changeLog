@@ -1,0 +1,25 @@
+----------------------
+2003.05.23	v0.1.3
+----------------------
+   * build system was made useful (added autoconf, rewrote Makefile)
+   * fixed numerical attribute parsing
+   * fixed comment-in-quotes interpretation
+   * added [else] system directive
+   * removed rendered documentation from package (still available on website)
+      * (hmm..  added autoconf _and_ reduced package size.  these are strange
+         times indeed.)
+
+----------------------
+2002.08.19	v0.1.2
+----------------------
+   * Added official win32 support.
+   * cleaned up a few more leaks.
+   * fixed some rare bugs in escaped attributes
+   * fixed find functions
+   * added non-existant functions (oops :)
+
+----------------------
+2002.06.11      v0.1.0
+----------------------
+   * initial public release
+

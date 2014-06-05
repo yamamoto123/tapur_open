@@ -1,0 +1,44 @@
+AC_INIT(src/spconfig.c)
+
+AC_PROG_CC
+AC_HEADER_STDC
+if test $ac_cv_header_stdc = no; then
+  AC_MSG_ERROR([*** ANSI C header files required to compile ***])
+fi
+
+AC_CHECK_HEADERS(math.h,[],[AC_MSG_ERROR([spconfig requires <math.h> to compile])])
+
+AC_CHECK_PROGS(DVIPDF, dvipdf)
+AC_CHECK_PROGS(DVIPS, dvips)
+AC_CHECK_PROGS(LATEX2HTML, latex2html)
+AC_CHECK_PROGS(LATEX, latex)
+
+rm -f Makefile.config
+touch Makefile.config
+
+dnl here we append the appropriate documentation targets to the makefile
+
+if test -n "$DVIPDF" ; then
+	echo "DOCS+=doc/API.pdf" >> Makefile.config
+fi
+
+if test -n "$DVIPS" ; then
+	echo "DOCS+=doc/API.ps" >> Makefile.config
+fi
+
+if test -n "$LATEX2HTML" ; then
+	echo "DOCS+=doc/API.html doc/API.css" >> Makefile.config
+fi
+
+if test -n "$LATEX" ; then
+	echo "DOCS+=doc/API.dvi" >> Makefile.config
+fi
+
+echo "   * Compiling with $CC $CFLAGS"
+if test $prefix = "NONE" ; then
+	echo "   * Installing to /usr/local"
+else
+	echo "   * Installing to $prefix"
+fi
+
+AC_OUTPUT(Makefile)

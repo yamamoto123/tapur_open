@@ -1,0 +1,28 @@
+[What's Tapur?]
+[Tapur] is answering service, recording voice & movie for Skype.
+
+[System Requirements]
+Before you install Tapur, your computer must meet the following requirements:
++Supported Operating Systems: Windows XP SP3/Vista/2003 Server/Win7
++Skype (Ver3.0 or later required) needs to be installed beforehand.
+
+[How to Install Tapur]
++If you already have previous versions of Tapur installed,  you had better remove it first. 
+Your data in the previous versions of Tapur will be saved even if removing it.
+1.Download the file and Save the file to your hard disc and double-click the (EXE) program file. 
+2.Follow the instructions on the screen to complete the installation.
+3.By clicking the [Delete all user data] option button, you can delete all of your data made by previous versions of Tapur. Please note that you can't recover any data deleted by this action.
+4.After completing the installation, a dialog box will appear to connect with Skype. Click [Allows access]. A small icon of Tapur will appear in Task Tray (usually in the right bottom of screen).
+
+[How to Remove Tapur]
+Before removing Tapur, make sure to end Tapur and Skype.
+You have to remove Tapur by same user who installed Tapur.
+On the [Start Menu], point to Settings and then click [Control Panel]. Double-click [Add/Remove Programs]. In the list of currently installed programs, select Tapur and then click Remove. Follow the instructions on the screen to complete to remove this program.
+
+[How to Install Codecs]
+You can install Lagarith Lossless Video Codec and Ut Video Codec Suite with Tapur. Both are best suitable for Tapur.
+Both are GPL software. Source code is placed in Tapur installed folder.
+
+[Copyright]
+tapur.com, Tokyo, Japan (www.tapur.com)
+(c) Tapur - Last revised: May 2011.

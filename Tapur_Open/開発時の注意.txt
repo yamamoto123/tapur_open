@@ -1,0 +1,158 @@
+
+◎VCランタイムの静的リンク/動的リンクはリンクする全てのライブラリで統一する必要がある。
+
+・DirectShowのログはHKLM/Software/Microsoft/DirectShow/Debug で指定
+
+・MFC、VCP以外のランタイムはOS上のものが優先。WAVEやHTML関連機能が動作しなくなる場合がある
+
+・Vista/Win7では、UACのため管理者でも管理者権限に移行してDLLのレジスト(regsvr32)が必要。コマンドプロンプトを管理者権限で実行、等。
+
+・MFCプロジェクトでは、プロジェクト設定で「ATLの使用」は行わない。
+
+・静的リンクの場合、MFCをCRTより先にリンクする必要がある。
+stdafx.hを使用しないモジュールではForcelib.hをincludeする。
+
+・C言語ソース/ライブラリとの混在は、MFCとのリンクエラーになりやすので行わない。
+
+<デバッグ版>
+・実行プログラムを長時間常駐させている場合、メモリの使用が累積していくが、リリース版では問題ない。(デバッグなし実行でも累積する。)
+・PC起動時にアプリケーションエラーが出る（for 4.0）。リリース版では出ない。
+
+<リリース版>
+・最適化を「速度」にするとエラーになる→「デフォルト」に設定
+・2003では最適化でRuntime errorになり易い？
+
+・アイコン
+EXEのアイコン、メインフォーム左上アイコン：Empty.rcのIDI_MAIN（リソースDLL読み込み前に取得されるのでEmpty.rcで登録）
+デスクトップアイコン：tapmgr.exeのアイコンを32,48の階層アイコンで作成（Vista用）
+
+・WorkerThreadを終了する場合、AfxEndThreadは使用しない（returnでOK）
+AfxEndThreadはスレッド内で定義したオブジェクトのデストラクタを呼ばないため。
+
+・スタックは16M必要（VCのデフォルトは１M）
+VideoGrabberのせい？
+
+・リソースがDLL化されているため、ClassWizardではイベントの追加しかできない。現状のクラス構成を正確に反映させるには、Empty.clwを削除して、ClassWizardで再構築する。
+
+<連携プログラム追加時>
+①言語DLLのstring tableにプログラム名を追加
+②RsfSimpleForm.cppのOnInitialUpdate()に追記
+
+<VC8(2008)への対応>
+・多重継承しているクラスではMESSAGE_MAPの割り当てができなくなった。
+
+・INTSAFE_E_ARITHMETIC_OVERFLOWマクロの再定義警告：VS2008の問題。仕方ない。
+
+
+
+＜ActiveSTへの対応＞
+・無駄なイベントを発生させないように、なるべくAPIを使用しない。（コールなどの情報はまとめて取得する）
+・イベント内での滞留時間が長いとSkypeとの接続がタイムアウトするため、なるべく早く抜ける。Sleepはなるべく避ける。
+・ReturnのあるAPIをコールする場合、SendBlockingCommand()はなるべく使わない方がよい
+・CPUがフルの状態だとメッセージの受け渡しが正常に行われない場合がある。→リリースビルドでは速度最適化を有効にする
+
+
+＜TVideoGrabberへの対応＞
+＊205を採用
+・Build174,206,208では起動時に例外エラーとなる
+・205：VirtualCamera用の画像フレームの生成でPAUSEが動作しない問題がある。(今のところ不要)
+・211：録画時のPauseが動作しない、クロッピングが動作しない
+・「D3D9 Helper: Enhanced D3DDebugging disabled; Application was not compiled with D3D_DEBUG_INFO」は問題ない
+・OSのハードウェアアクセラレータを無効にするとエラーが発生する
+・レジスト/アンレジスト
+regsvr32 /u c:\windows\system32\vidgrab_VC6.ocx
+・Wiun7+Divx環境で再生も動作しないことがある
+
+＜ファイアウォール対応＞
+・Windowsファイアウォール
+ポートListne時にファイアウォール確認メッセージは出るが、処理は割り込みされず、受信もブロックされない。
+・ウィルスバスターファイアウォール
+ポートListne時にファイアウォール確認メッセージが出て処理待ちとなる。受信自体はブロックされない。
+
+
+＜他国語対応＞ (ex, English)
+①Japanese\resource.h→English\resource.hコピー
+②Japanese.rc→English.rcを比較し、フォント名、日本語文字列等を変更
+③文字列によりコントロールサイズが変わるので、目視で調整
+※resource.hの以下の値は変更しないこと
+#define IDR_MAINFRAME                   127
+#define IDI_MAIN                        127
+#define IDR_MAIN_TOOL                   127
+④VersionInfoの変更
+
+※新規に言語を導入する場合（ex, Chinese）
+①Japaneseフォルダ全体をコピー
+②ファイル名を全て変更　Japanese→Chinese
+③テキスト形式のファイル内全てを置換　Japanese→Chinese, JAPANESE→CHINESE
+④VisualStudioで、Releaseモードのリンク生成ファイル名を変更 jp.dll→cn.dll
+⑤プロジェクトの「カルチャー」を該当言語に変更
+⑥Chinese.rcファイルを手作業で修正
+・code_pageを対応する言語の値に書き換える。
+・AFX_TARG_～を対応する言語に書き換える。 
+・LANGUAGE LANG_XXXを対応する言語に書き換える。 
+⑥Chinese.rcファイルを直接修正（ダイアログ等VSで修正すると文字化けしやすい）
+
+※リソースDLLのコンパイルは、VS2005で行う（それ以下ではVSで入力できない）
+
+<インストーラ>
+◎インストーラInnoSetupのインストール
+・isetup-xxx.exe をインストール
+・WinVistaにインストールする場合、インストーラからのTapur.exeの起動時にエラーが発生する。
+これはVista UACの管理者レベルでインストーラを実行した場合、Tapur.exe自体も管理者レベルで実行されるため。（これがなぜエラーになるかは不明）
+・インストーラを一般ユーザで実行するためには、InnoSetup5.2.2以上が必要。
+
+＜PC-Talkerへの対応＞
+・ラベルはTAB指定をすると読み上げ可
+・コントロールの直前のTAB指定ラベルは、コントロール選択時に同時に読み上げられる。（確実ではない）
+・タブパネルタイトルは読み上げ不可
+・フレームタイトルは読み上げ不可
+・ツールボタンは読み上げ不可
+
+
+--------------------------------------------- 以下は旧バージョンオンリー ----------------------------------------------
+
+・NewMenuクラスはVer1.18を使用する。
+最新は1.2xだが、Win2000以上の半透明設定がVC6でリンクできない。
+
+・PlathomeSDKをインストールし、VC++の「オプション」「ディレクトリパス」で最初のパスに指定する。
+PlathomeSDKは最新版だとVC6とのデバッグリンクでエラー（uuid.libエラー）になる。正常にリンクするためには「Microsoft Platform SDK February 2003」が必要だが、Microsoftのサイトからダウンロードできない（MSDN会員か、あるいはCD注文）
+現状ではインクルードパスのみディレクトリパスの先頭にし、ライブラリパスは最後にして回避。
+
+・DirectX SDKをインストールし、VC++の「オプション」「ディレクトリパス」「ライブラリパス」で最初のパスに指定する。
+
+<VC7への対応>
+・以下のエラーは将来削除される機能の警告なので無視してよい
+「c:\Tapur\CnvAudioDlg.cpp(83) : warning C4995: '_tcscpy': 名前が避けられた #pragma として記述されています。」
+
+＜VACがPreferredデバイスになる問題＞
+①VACインストール前
+・レジストリをバックアップ
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaResources\SetupPreferredAudioDevices\SetupPreferredAudioDevicesCount
+HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\SetupPreferredAudioDevicesCount
+HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\Playback
+HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\Record
+HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\UserPlayback
+HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\UserRecord
+*UserPlayback,UserRecordが存在しない場合は、Playback,Recordと同じとする。
+*Playback,Recordが存在しない場合は、UserPlayback,UserRecordと同じとする。
+*Playback,Record,UserPlayback,UserRecordが存在しない場合は、WAVEのデフォルトデバイスと同じとする。
+②VACインストール後
+・バックアップしたレジストリを戻す（値が変更されたもののみ）
+・HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Sound Mapper\PreferredOnly=1とする（Preferredデバイスが保持されている確証がないので、「規定のデバイスのみ使用」を強制設定する）
+
+＜Tapur Virtual Cameraへの対応＞
+・アンインストールしても、Skypeのカメラリストには表示されてしまう。（名前のみで実際には標準デバイスが使用される）Skypeの問題かもしれない。
+
+<インストーラ>
+◎インストーラのインストール
+・InnoEditXのインストール
+・isetup-xxx.exe をインストールしてから
+・ispack-xxx.exe をインストールする(不要？)
+ispack-xxx.exeのインストールについては、InnoEditXのヘルプの指示に従う。
+・WinVistaにインストールする場合、インストーラからのTapur.exeの起動時にエラーが発生する。これはVista UACの管理者レベルでインストーラを実行した場合、Tapur.exe自体も管理者レベルで実行されるため。（これがなぜエラーになるかは不明）
+インストーラを一般ユーザで実行するためには、InnoSetup5.2.2以上が必要。
+◎Skype.exeはインストール後再起動する必要がある。（VACがデバイスリストに反映しないため）実際は、インストール前に強制終了、インストール後起動している。
+◎SkypePublishのアンインストーラは英語限定→英語インストール時に作成されたunins000.exe/unins000.datを使用する。
+	Your Account No is 1272
+	Your login name is tapur
+	Your password is paak1085

@@ -1,0 +1,1321 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\English.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // 印刷/印刷プレビュー リソース\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "..\\..\\res\\tapur.ico"
+IDR_TAPURTYPE           ICON    DISCARDABLE     "..\\..\\res\\TapurDoc.ico"
+IDI_F_MSG_CLOSE         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_CLOSE.ico"
+IDI_F_MSG_OPEN          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_OPEN.ico"
+IDI_F_RESP_CLOSE        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_CLOSE.ico"
+IDI_F_RESP_OPEN         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_OPEN.ico"
+IDI_RESP_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\RESP_SIMPLE.ico"
+IDI_F_ROOT              ICON    DISCARDABLE     "..\\..\\res\\F_ROOT.ico"
+IDI_F_MSG_TRASH         ICON    DISCARDABLE     "..\\..\\res\\F_MSG_TRASH.ico"
+IDI_F_RESP_TRASH        ICON    DISCARDABLE     "..\\..\\res\\F_RESP_TRASH.ico"
+IDI_F_RESP_DRAG         ICON    DISCARDABLE     "..\\..\\res\\F_RESP_DRAG.ico"
+IDI_F_MSG_DRAG          ICON    DISCARDABLE     "..\\..\\res\\F_MSG_DRAG.ico"
+IDI_MSG_SIMPLE          ICON    DISCARDABLE     "..\\..\\res\\MSG_SIMPLE.ico"
+IDI_T_RECORD            ICON    DISCARDABLE     "..\\..\\res\\T_RECORD.ico"
+IDI_T_RECORD_PAUSE      ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_PAUSE.ico"
+IDI_NEW                 ICON    DISCARDABLE     "..\\..\\res\\new32.ico"
+IDI_DISCON              ICON    DISCARDABLE     "..\\..\\res\\discon32.ico"
+IDI_VMSG_SIMPLE         ICON    DISCARDABLE     "..\\..\\res\\VMSG_SIMPLE.ico"
+IDI_T_RECORD_SND        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_SND.ico"
+IDI_T_RECORD_BOTH       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_BOTH.ico"
+IDI_T_RECORD_RCV        ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_RCV.ico"
+IDI_T_RECORD_STOP       ICON    DISCARDABLE     "..\\..\\res\\T_RECORD_STOP.ico"
+IDI_T_VRECORD_STOP      ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_STOP.ico"
+IDI_T_VRECORD_PAUSE     ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD_PAUSE.ico"
+IDI_T_VRECORD           ICON    DISCARDABLE     "..\\..\\res\\T_VRECORD.ico"
+IDI_VMSG_RECORD         ICON    DISCARDABLE     "..\\..\\res\\VMSG_RECORD.ico"
+IDI_MSG_RECORD          ICON    DISCARDABLE     "..\\..\\res\\MSG_RECORD.ico"
+IDI_APP_VPLAY           ICON    DISCARDABLE     "..\\..\\res\\VPLAY_APP.ico"
+IDI_APP_PLAY            ICON    DISCARDABLE     "..\\..\\res\\PLAY_APP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAIN_TOOL           BITMAP  MOVEABLE PURE   "..\\..\\res\\Toolbar.bmp"
+STOPX                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPX.BMP"
+PAUSED                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSED.BMP"
+PAUSEU                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEU.BMP"
+PAUSEX                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEX.BMP"
+PLAYD                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYD.BMP"
+PLAYU                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYU.BMP"
+PLAYX                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYX.BMP"
+STOPD                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPD.BMP"
+STOPU                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPU.BMP"
+STOPF                   BITMAP  DISCARDABLE     "..\\..\\res\\STOPF.BMP"
+PAUSEF                  BITMAP  DISCARDABLE     "..\\..\\res\\PAUSEF.BMP"
+PLAYF                   BITMAP  DISCARDABLE     "..\\..\\res\\PLAYF.BMP"
+IDB_TAPUR               BITMAP  DISCARDABLE     "..\\..\\res\\tapur48.bmp"
+IDR_RECMOD_TOOL         BITMAP  DISCARDABLE     "..\\..\\res\\recmod_t.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAIN_TOOL TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    BUTTON      ID_DUMMY
+    SEPARATOR
+    BUTTON      ID_VRECORD_START
+    BUTTON      ID_RECORD_START
+    BUTTON      ID_RECORD_PAUSE
+    BUTTON      ID_RECORD_STOP
+    BUTTON      ID_PLACEHOLDER
+    BUTTON      ID_RECORD_MOD
+END
+
+IDR_RECMOD_TOOL TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_RECMOD_BOTH
+    BUTTON      ID_RECMOD_RCV
+    BUTTON      ID_RECMOD_SND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Options(&S)",                 ID_TOOL_SETTING
+        MENUITEM SEPARATOR
+        MENUITEM "Close(&C)",                   ID_APP_EXIT
+    END
+    POPUP "Tools(&T)"
+    BEGIN
+        MENUITEM "Start recording movie(&V)",   ID_VRECORD_START
+        MENUITEM "Start recording voice(&R)",   ID_RECORD_START
+        MENUITEM "Pause(&T)",                   ID_RECORD_PAUSE
+        MENUITEM "Stop recording(&E)",          ID_RECORD_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Voice to be recorded(&O)",    ID_RECORD_MOD
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "Online Manual(&H)",           ID_APP_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Purchase SkypeIn/Out(&S)",    ID_APP_SKYPE
+        MENUITEM SEPARATOR
+        MENUITEM "About Tapur(&A)",             ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "Main"
+    BEGIN
+        MENUITEM "Open(&O)",                    ID_POPUP_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Validate answering service(&E)", ID_POPUP_ENABLE
+        MENUITEM SEPARATOR
+        MENUITEM "End(&X)",                     ID_POPUP_CLOSE
+    END
+END
+
+IDR_POPUP_FOLDER MENU DISCARDABLE 
+BEGIN
+    POPUP "Folder"
+    BEGIN
+        MENUITEM "Create new folder(&N)",       ID_POPUP_FOLDER_NEW
+        MENUITEM "Rename folder(&R)",           ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Delete folder&D)",            ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_SETUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Setup"
+    BEGIN
+        MENUITEM "New setting of answering service...(&W)", 
+                                                ID_POPUP_SETUP_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Create new folder(&N)",       ID_POPUP_FOLDER_NEW
+        MENUITEM "Rename folder(&R)",           ID_POPUP_FOLDER_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Delete folder(&D)",           ID_POPUP_FOLDER_DEL
+    END
+END
+
+IDR_POPUP_TRASHCAN MENU DISCARDABLE 
+BEGIN
+    POPUP "Trashcan"
+    BEGIN
+        MENUITEM "Empty trash box(&B)",         ID_POPUP_TRASHCAN_CLEAR
+    END
+END
+
+IDR_POPUP_SETLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Setuplist"
+    BEGIN
+        MENUITEM "New setting of answering service...(&W)", 
+                                                ID_POPUP_SETLIST_NEW
+        MENUITEM "Change sender's name(&P)",    ID_POPUP_SETLIST_RENAME
+        MENUITEM "Copy(&C)",                    ID_POPUP_SETLIST_COPY
+        MENUITEM "Paste(&P)",                   ID_POPUP_SETLIST_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Call sender(&R)",             ID_POPUP_SETLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "Delete setting of answering service(&D)", 
+                                                ID_POPUP_SETLIST_DEL
+    END
+END
+
+IDR_POPUP_MSGLIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Msglist"
+    BEGIN
+        MENUITEM "Call sender(&R)",             ID_POPUP_MSGLIST_CALL
+        MENUITEM SEPARATOR
+        MENUITEM "Show setting of answering service(&O)", 
+                                                ID_POPUP_MSGLIST_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Delete message(&D)",          ID_POPUP_MSGLIST_DEL
+    END
+END
+
+IDR_POPUP_TRASH MENU DISCARDABLE 
+BEGIN
+    POPUP "Trash"
+    BEGIN
+        MENUITEM "Return it to where it was(&E)", ID_POPUP_TRASH_RECOVER
+        MENUITEM SEPARATOR
+        MENUITEM "Delete from trash box(&D)",   ID_POPUP_TRASH_CLEAR
+    END
+END
+
+IDR_DROP_RECMOD MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "recmod"
+    BEGIN
+        MENUITEM "Record both your and caller's voices", ID_RECMOD_BOTH
+        MENUITEM "Record only caller's voice",  ID_RECMOD_RCV
+        MENUITEM "Record only your voice",      ID_RECMOD_SND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 194, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Tapur"
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         194,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN,81,7,28,33,WS_EX_TRANSPARENT
+    CTEXT           "Tapur Version 0.9.5.3 Beta",IDC_STATIC,7,72,180,8,
+                    SS_NOPREFIX,WS_EX_TRANSPARENT
+    CTEXT           "Copyright (C) 2004-2006  tapur.com",IDC_STATIC,7,87,180,
+                    8,0,WS_EX_TRANSPARENT
+    CTEXT           "Tapur",IDC_STATIC,7,42,180,11,SS_CENTERIMAGE,
+                    WS_EX_TRANSPARENT
+    CTEXT           "All Rights Reserved",IDC_STATIC,7,97,180,8,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,77,150,37,14,BS_CENTER | BS_BOTTOM | BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CTEXT           "(Answering Agent for Skype)",IDC_STATIC,7,51,180,13,
+                    SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    CTEXT           "Icons courtesy of www.mienet.net/, used with permission.",
+                    IDC_STATIC_COPY,7,135,180,8
+    CTEXT           "This product uses the Skype API \nbut is not endorsed or certified by Skype.",
+                    IDC_STATIC_COPY2,7,115,180,17
+END
+
+IDD_RSF_SIMPLEFORM DIALOGEX 0, 0, 182, 119
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Answer by",IDC_STATIC,5,3,169,40,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Answering Voice Message",IDC_CHK_AUDIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,18,9,11
+    PUSHBUTTON      "Voice",IDC_BTN_AUDIO,24,16,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 00:00 ]",IDC_ST_SIZE_AUDIO,28,31,29,11,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "Chat Answer",IDC_CHK_CHAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,18,9,11
+    PUSHBUTTON      "Chat",IDC_BTN_CHAT,92,16,46,14,0,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "[ 0 bytes ]",IDC_ST_SIZE_CHAT,96,31,53,11,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    CONTROL         "Video Answer",IDC_CHK_VIDEO,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,14,41,9,11
+    PUSHBUTTON      "Video",IDC_BTN_VIDEO,24,42,46,14,NOT WS_VISIBLE | 
+                    WS_DISABLED,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Image Answer",IDC_CHK_IMG,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,82,41,9,11
+    PUSHBUTTON      "Image",IDC_BTN_IMG,92,42,46,14,NOT WS_VISIBLE | 
+                    WS_DISABLED,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         " Beep",IDC_CHK_BEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,53,55,11
+    GROUPBOX        "What to record",IDC_STATIC,5,72,169,29,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Voice",IDC_RDO_REC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,85,31,12
+    CONTROL         "Movie(Voice)",IDC_RDO_VREC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,45,85,48,12
+    CONTROL         "None(Disconnected)",IDC_RDO_DISCONNECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,99,85,73,12
+    GROUPBOX        "",IDC_STATIC,5,42,169,28,BS_FLAT,WS_EX_TRANSPARENT
+END
+
+IDD_FOLDERFORM DIALOG DISCARDABLE  0, 0, 176, 87
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+END
+
+IDD_MSGLISTFORM DIALOG DISCARDABLE  0, 0, 158, 84
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,0,0,158,
+                    84
+END
+
+IDD_RSF_NEW DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New setting of answering service..."
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "*Sender's Skype name(must):",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sender's name shown:",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,65,50,14
+END
+
+IDD_FOLDER_NEW DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create new folder"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "Name new folder:",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,38,50,14
+END
+
+IDD_FOLDER_RENAME DIALOGEX 0, 0, 151, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename folder"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "Name new folder:",IDC_STATIC_ID,7,7,137,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FOLDER,7,17,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,38,50,14
+END
+
+IDD_MSGFORM DIALOGEX 0, 0, 182, 61
+STYLE WS_CHILD | WS_BORDER
+EXSTYLE WS_EX_TRANSPARENT
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "Voice/Movie:",IDC_STATIC_TITLE,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP | WS_TABSTOP,4,7,44,11,
+                    WS_EX_TRANSPARENT
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,7,19,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,50,5,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,63,
+                    5,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,75,5,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Save voice file",IDC_BTN_FILE,50,23,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_PLAY",IDC_APP_PLAY,140,23,14,15,BS_ICON | BS_CENTER | 
+                    BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Save movie file",IDC_BTN_VFILE,50,40,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "APP_VPLAY",IDC_APP_VPLAY,140,40,14,15,BS_ICON | 
+                    BS_CENTER | BS_VCENTER | BS_NOTIFY,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    93,9,72,8
+    PUSHBUTTON      "OPEN PODCAST",IDC_BTN_PODCAST,96,2,86,15,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP,WS_EX_TRANSPARENT | 
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_RSF_RENAME DIALOGEX 0, 0, 151, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename sender"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "*Sender's Skype name（must）:",IDC_STATIC_ID,7,7,137,8,
+                    0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_ID,7,17,137,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sender's display name:",IDC_STATIC_NAME,7,35,93,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NAME,7,45,137,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,65,50,14
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 241, 302
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tapur - Options"
+FONT 9, "MS UI Gothic"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,125,281,50,14
+    DEFPUSHBUTTON   "Apply",IDC_APPLY,184,281,50,14
+    DEFPUSHBUTTON   "OK",IDOK,66,281,50,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",WS_TABSTOP,7,7,227,265
+END
+
+IDD_TAB_PUB DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Setup to answer",IDC_FRAME2,7,7,209,74,WS_TABSTOP
+    LTEXT           "Automatically start to answer after(sec):",IDC_STATIC3,
+                    13,25,127,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_WAIT_ANSWER,143,22,30,127,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Max recording duration(min):",IDC_STATIC1,13,43,90,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_MAX_RECORD,143,41,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Automatically invalidate the function of the answering service when starting Tapur",
+                    IDC_CHK_DISABLE,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,13,59,203,18
+    GROUPBOX        "Sound",IDC_FRAME1,7,83,209,33,WS_TABSTOP
+    CONTROL         "Mute volume when answering calls",IDC_CHK_MUTE,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED,60,53,156,
+                    14
+    CONTROL         "Disable answering of non Buddy list callers",
+                    IDC_CHK_CONTACT,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_DISABLED,60,63,156,14
+    LTEXT           "Change Beep:",IDC_STATIC2,15,98,45,8,WS_TABSTOP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Choose beep file(WAVE)",IDC_BTN_BEEPFILE,64,96,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+END
+
+IDD_TAB_ADMIN DIALOG DISCARDABLE  0, 0, 223, 210
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Maintenance",IDC_FRAME1,7,7,209,48
+    CONTROL         "Enable formation of Log",IDC_CHK_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,24,156,14
+END
+
+IDD_CONVERT_AUDIO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save voice file"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "File Name:",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Browse",IDC_BROWSETARGET,7,21,27,15
+    EDITTEXT        IDC_TARGET,35,22,183,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,40,50,14
+END
+
+IDD_TAB_REC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Setup for voice recording",IDC_FRAME3,7,7,209,116,
+                    WS_TABSTOP
+    LTEXT           "Max recording duration(min):",IDC_STATIC1,13,24,89,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_RECORD_LIMIT,103,22,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Message sent to the other party when starting:",
+                    IDC_STATIC4,13,39,139,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Reset",IDC_BTN_REC_WARNING,158,36,51,13
+    EDITTEXT        IDC_EDIT_REC_WARNING,14,51,196,29,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Message sent to the other party when stopping:",
+                    IDC_STATIC5,13,86,143,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_RECSTOP_WARNING,15,98,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Reset",IDC_BTN_RECSTOP_WARNING,158,83,51,13
+    GROUPBOX        "Voice quality",IDC_STATIC,7,127,209,31,WS_TABSTOP
+    CONTROL         "Monoral",IDC_RDO_MONORAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,17,140,39,12
+    CONTROL         "Stereo",IDC_RDO_STEREO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,59,140,44,12
+END
+
+IDD_RSF_AUDIO DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register voice message"
+FONT 9, "MS UI Gothic"
+BEGIN
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Choose voice file(WAVE)",IDC_BTN_FILE,50,24,84,15
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,48,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,97,8
+END
+
+IDD_RSF_BEEP DIALOGEX 0, 0, 155, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register beep"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,48,50,14
+    CTEXT           "[ 00:00 ]",IDC_STATIC_TIME,13,24,29,11
+    CONTROL         "PLAY",IDC_PLAY,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,
+                    13,14,WS_EX_TRANSPARENT
+    CONTROL         "PAUSE",IDC_PAUSE,"Button",BS_OWNERDRAW | WS_TABSTOP,21,
+                    7,13,14,WS_EX_TRANSPARENT
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW | WS_TABSTOP,33,7,
+                    13,14,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Choose voice file(WAVE)",IDC_BTN_FILE,50,24,86,15,0,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    51,11,72,8
+END
+
+IDD_RSF_CHAT DIALOG DISCARDABLE  0, 0, 210, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter chat message for answering service"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,68,50,14
+    EDITTEXT        IDC_EDIT_CHAT,7,7,196,55,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_VIDEO DIALOG DISCARDABLE  0, 0, 119, 125
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Play movie"
+FONT 9, "MS UI Gothic"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,7,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,7,7,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_VIDEOGRAB,"{17066EFF-35D3-402E-AF85-83A8730E58BB}",
+                    0x0,7,7,105,111
+END
+
+IDD_CONVERT_VIDEO DIALOG DISCARDABLE  0, 0, 225, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save movie file"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "File name:",IDC_STATIC,7,7,51,13,SS_CENTERIMAGE | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Browse",IDC_BROWSETARGET,7,21,26,15
+    EDITTEXT        IDC_TARGET,35,22,183,14,ES_AUTOHSCROLL
+    CONTROL         "With voice",IDC_CHK_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | WS_TABSTOP,171,7,47,15
+    LTEXT           "(*It may take a long time.)",IDC_STATIC,7,41,93,13,
+                    SS_CENTERIMAGE | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,109,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,168,40,50,14
+END
+
+IDD_TAB_VREC DIALOGEX 0, 0, 223, 248
+STYLE WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    GROUPBOX        "Setup for movie recording",IDC_FRAME4,7,7,209,135,
+                    WS_TABSTOP
+    LTEXT           "Max recording duration(min):",IDC_STATIC3,13,23,84,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CMB_VRECORD_LIMIT,106,21,30,121,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Message sent to the other party when starting:",
+                    IDC_STATIC6,13,40,138,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VREC_WARNING,15,52,195,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Reset",IDC_BTN_VREC_WARNING,156,36,52,13
+    LTEXT           "Message sent to the other party when stopping:",
+                    IDC_STATIC7,13,87,141,8,WS_TABSTOP,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_VRECSTOP_WARNING,15,99,195,18,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Reset",IDC_BTN_VRECSTOP_WARNING,157,84,52,13
+    CONTROL         "Keep Skype video on the top of screen during recording",
+                    IDC_CHK_VSETTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,
+                    123,203,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,9,5,3
+ PRODUCTVERSION 0,9,5,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "Comments", "English resource for Tapur \0"
+            VALUE "CompanyName", "tapur.com\0"
+            VALUE "FileDescription", "en.dll\0"
+            VALUE "FileVersion", "0, 9, 5, 3\0"
+            VALUE "InternalName", "en\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2006\0"
+            VALUE "LegalTrademarks", "Tapur\0"
+            VALUE "OriginalFilename", "en.dll\0"
+            VALUE "PrivateBuild", "b1\0"
+            VALUE "ProductName", "Tapur\0"
+            VALUE "ProductVersion", "0, 9, 5, 3\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_RSF_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FOLDER_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_FOLDER_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_MSGFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 181
+        HORZGUIDE, 17
+    END
+
+    IDD_RSF_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_TAB_PUB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_TAB_ADMIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CONVERT_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_TAB_REC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_RSF_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_RSF_BEEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_RSF_CHAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_CONVERT_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_TAB_VREC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_TAPUR               REGISTRY DISCARDABLE    "..\\..\\Tapur.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODROP              CURSOR  DISCARDABLE     "..\\..\\res\\nodrop.cur"
+IDC_LINK                CURSOR  DISCARDABLE     "..\\..\\res\\link.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VIDEO DLGINIT
+BEGIN
+    IDC_VIDEOGRAB, 0x376, 1439, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540d, 0x6956, 0x6564, 0x476f, 0x6172, 
+0x6262, 0x7265, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 
+0x5705, 0x6469, 0x6874, 0xb803, 0x0600, 0x6548, 0x6769, 0x7468, 0xa703, 
+0x0b00, 0x7546, 0x6c6c, 0x6552, 0x6170, 0x6e69, 0x0874, 0x411d, 0x4653, 
+0x654d, 0x6964, 0x5361, 0x7265, 0x6576, 0x5072, 0x6275, 0x696c, 0x6873, 
+0x6e69, 0x5067, 0x696f, 0x746e, 0x3106, 0x7468, 0x7074, 0x2f3a, 0x592f, 
+0x756f, 0x5772, 0x6e69, 0x6f64, 0x7377, 0x654d, 0x6964, 0x5361, 0x7265, 
+0x6576, 0x2f72, 0x6f59, 0x7275, 0x7550, 0x6c62, 0x7369, 0x6968, 0x676e, 
+0x6f50, 0x6e69, 0x0d74, 0x5341, 0x5646, 0x6469, 0x6f65, 0x6957, 0x7464, 
+0x0368, 0x0140, 0x410e, 0x7475, 0x466f, 0x6c69, 0x5065, 0x6572, 0x6966, 
+0x0678, 0x7602, 0x0c67, 0x6944, 0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 
+0x0a02, 0x440b, 0x7369, 0x6c70, 0x7961, 0x545f, 0x706f, 0x0a02, 0x441c, 
+0x6f72, 0x7070, 0x6465, 0x7246, 0x6d61, 0x7365, 0x6f50, 0x6c6c, 0x6e69, 
+0x4967, 0x746e, 0x7265, 0x6176, 0x026c, 0x100a, 0x7544, 0x6c61, 0x6944, 
+0x7073, 0x616c, 0x5f79, 0x654c, 0x7466, 0x9003, 0x0f01, 0x7544, 0x6c61, 
+0x6944, 0x7073, 0x616c, 0x5f79, 0x6f54, 0x0270, 0x150a, 0x5644, 0x6e45, 
+0x6f63, 0x6564, 0x5f72, 0x6956, 0x6564, 0x466f, 0x726f, 0x616d, 0x0774, 
+0x6408, 0x6676, 0x445f, 0x5356, 0x1944, 0x5644, 0x6e45, 0x6f63, 0x6564, 
+0x5f72, 0x6956, 0x6564, 0x526f, 0x7365, 0x6c6f, 0x7475, 0x6f69, 0x076e, 
+0x6407, 0x5f76, 0x7546, 0x6c6c, 0x4417, 0x4556, 0x636e, 0x646f, 0x7265, 
+0x565f, 0x6469, 0x6f65, 0x7453, 0x6e61, 0x6164, 0x6472, 0x0707, 0x7664, 
+0x5f73, 0x4150, 0x0d4c, 0x7243, 0x706f, 0x6970, 0x676e, 0x5a5f, 0x6f6f, 
+0x056d, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x4618, 0x7869, 0x6c46, 
+0x6369, 0x656b, 0x4f72, 0x4272, 0x616c, 0x6b63, 0x6143, 0x7470, 0x7275, 
+0x0865, 0x4c0d, 0x6369, 0x6e65, 0x6573, 0x7453, 0x6972, 0x676e, 0x2206, 
+0x3831, 0x3835, 0x3830, 0x3939, 0x3531, 0x3931, 0x3232, 0x3038, 0x2d33, 
+0x6154, 0x7473, 0x7975, 0x2061, 0x6159, 0x616d, 0x6f6d, 0x6f74, 0x4913, 
+0x616d, 0x6567, 0x764f, 0x7265, 0x616c, 0x4579, 0x616e, 0x6c62, 0x6465, 
+0x1308, 0x6f4d, 0x6974, 0x6e6f, 0x6544, 0x6574, 0x7463, 0x726f, 0x475f, 
+0x6972, 0x0664, 0x356e, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 0x3535, 0x3520, 
+0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 0x3535, 0x3535, 
+0x3535, 0x3520, 0x3535, 0x3535, 0x3535, 0x3535, 0x2035, 0x3535, 0x3535, 
+0x3535, 0x3535, 0x3535, 0x1620, 0x754d, 0x746c, 0x7069, 0x656c, 0x6578, 
+0x5364, 0x6977, 0x6374, 0x4468, 0x6c65, 0x7961, 0x0002, 0x4d1d, 0x6c75, 
+0x6974, 0x6c70, 0x7865, 0x6465, 0x7453, 0x6261, 0x6c69, 0x7a69, 0x7461, 
+0x6f69, 0x446e, 0x6c65, 0x7961, 0x0102, 0x5010, 0x616c, 0x6579, 0x5372, 
+0x6570, 0x6465, 0x6152, 0x6974, 0x056f, 0x0000, 0x0000, 0x0000, 0x8000, 
+0x3fff, 0x5221, 0x6365, 0x726f, 0x6964, 0x676e, 0x6e4f, 0x6f4d, 0x6974, 
+0x6e6f, 0x4d5f, 0x746f, 0x6f69, 0x546e, 0x7268, 0x7365, 0x6f68, 0x646c, 
+0x0005, 0x4fe0, 0x978d, 0x126e, 0xf583, 0x143f, 0x6552, 0x6e65, 0x6f63, 
+0x6964, 0x676e, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xff80, 0x13bf, 0x6552, 0x6e65, 0x6f63, 0x6964, 0x676e, 
+0x535f, 0x6f74, 0x5470, 0x6d69, 0x0565, 0x0000, 0x0000, 0x0000, 0x8000, 
+0xbfff, 0x5218, 0x7761, 0x6153, 0x706d, 0x656c, 0x6143, 0x7470, 0x7275, 
+0x4c65, 0x636f, 0x7461, 0x6f69, 0x076e, 0x720f, 0x5f6c, 0x6f53, 0x7275, 
+0x6563, 0x6f46, 0x6d72, 0x7461, 0x5415, 0x7865, 0x4f74, 0x6576, 0x6c72, 
+0x7961, 0x465f, 0x6e6f, 0x4374, 0x6c6f, 0x726f, 0x0607, 0x6c63, 0x7141, 
+0x6175, 0x5412, 0x7865, 0x4f74, 0x6576, 0x6c72, 0x7961, 0x535f, 0x7274, 
+0x6e69, 0x0c67, 0x0116, 0x0000, 0x6f4e, 0x6574, 0x203a, 0x6874, 0x2065, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x2065, 0x6f66, 0x6d72, 0x7461, 0x2073, 
+0x0a0d, 0x6163, 0x206e, 0x6562, 0x6520, 0x7361, 0x6c69, 0x2079, 0x6f6d, 
+0x6964, 0x6966, 0x6465, 0x0d2e, 0x0d0a, 0x730a, 0x7379, 0x6574, 0x206d, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7973, 0x5f73, 0x6974, 
+0x656d, 0x645b, 0x2f64, 0x6d6d, 0x792f, 0x2079, 0x6868, 0x6e3a, 0x3a6e, 
+0x7373, 0x255d, 0x0a0d, 0x5644, 0x7420, 0x6d69, 0x2065, 0x6f63, 0x6564, 
+0x203a, 0x7425, 0x6d69, 0x5f65, 0x6f63, 0x6564, 0x0d25, 0x440a, 0x2056, 
+0x6164, 0x6574, 0x742f, 0x6d69, 0x3a65, 0x2520, 0x7664, 0x745f, 0x6d69, 
+0x5b65, 0x6464, 0x6d2f, 0x2f6d, 0x7979, 0x6820, 0x3a68, 0x6e6e, 0x733a, 
+0x5d73, 0x0d25, 0x660a, 0x6172, 0x656d, 0x6320, 0x756f, 0x746e, 0x203a, 
+0x6625, 0x6172, 0x656d, 0x635f, 0x756f, 0x746e, 0x0d25, 0x740a, 0x6d69, 
+0x2065, 0x6628, 0x6c75, 0x296c, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x7566, 
+0x6c6c, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x7328, 0x6365, 0x3a29, 0x2520, 
+0x6974, 0x656d, 0x735f, 0x6365, 0x0d25, 0x740a, 0x6d69, 0x2065, 0x6e28, 
+0x2973, 0x203a, 0x7425, 0x6d69, 0x5f65, 0x3031, 0x6e30, 0x2573, 0x5618, 
+0x6469, 0x6f65, 0x6f43, 0x706d, 0x6572, 0x7373, 0x6f69, 0x5f6e, 0x7551, 
+0x6c61, 0x7469, 0x0579, 0x0000, 0x0000, 0x0000, 0x8000, 0x3fff, 0x561d, 
+0x6469, 0x6f65, 0x7246, 0x6d6f, 0x6d49, 0x6761, 0x7365, 0x545f, 0x6d65, 
+0x6f70, 0x6172, 0x7972, 0x6946, 0x656c, 0x1206, 0x6553, 0x4f74, 0x4266, 
+0x7469, 0x616d, 0x7370, 0x3130, 0x642e, 0x7461, 0x5615, 0x6469, 0x6f65, 
+0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 0x4f65, 0x5572, 0x4c52, 0x2606, 
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x642e, 0x7461, 0x7361, 0x6574, 
+0x6461, 0x632e, 0x6d6f, 0x642f, 0x6d65, 0x2f6f, 0x6564, 0x6f6d, 0x772e, 
+0x766d, 0x561f, 0x6469, 0x6f65, 0x6f53, 0x7275, 0x6563, 0x465f, 0x6c69, 
+0x4f65, 0x5572, 0x4c52, 0x535f, 0x6174, 0x7472, 0x6954, 0x656d, 0x0005, 
+0x0000, 0x0000, 0x0000, 0xff80, 0x1ebf, 0x6956, 0x6564, 0x536f, 0x756f, 
+0x6372, 0x5f65, 0x6946, 0x656c, 0x724f, 0x5255, 0x5f4c, 0x7453, 0x706f, 
+0x6954, 0x656d, 0x0005, 0x0000, 0x0000, 0x0000, 0xff80, 0x00bf, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Tapur\n\nTapur\n\n\nTapur.Document\nTapur Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Tapur"
+    AFX_IDS_IDLEMESSAGE     " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        " "
+    ID_INDICATOR_CAPS       "        "
+    ID_INDICATOR_NUM        " "
+    ID_INDICATOR_SCRL       " "
+    ID_INDICATOR_OVR        " "
+    ID_INDICATOR_REC        " "
+    ID_INDICATOR_KANA       "        "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new file\nNew File"
+    ID_FILE_OPEN            "Open existing file\nOpen"
+    ID_FILE_CLOSE           "Close operating file\nClose"
+    ID_FILE_SAVE            "Overwrite and save operating file\nSave"
+    ID_FILE_SAVE_AS         "Save operating file with a new name\nSave with a name"
+    ID_FILE_PAGE_SETUP      "Change print options\nSetting of page layout"
+    ID_FILE_PRINT_SETUP     "Change printer/print options\nprint options"
+    ID_FILE_PRINT           "Print operating file\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display print image\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display version and copyright\nInformation"
+    ID_APP_EXIT             "Stay in task tray\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open slected file"
+    ID_FILE_MRU_FILE2       "Open slected file"
+    ID_FILE_MRU_FILE3       "Open slected file"
+    ID_FILE_MRU_FILE4       "Open slected file"
+    ID_FILE_MRU_FILE5       "Open slected file"
+    ID_FILE_MRU_FILE6       "Open slected file"
+    ID_FILE_MRU_FILE7       "Open slected file"
+    ID_FILE_MRU_FILE8       "Open slected file"
+    ID_FILE_MRU_FILE9       "Open slected file"
+    ID_FILE_MRU_FILE10      "Open slected file"
+    ID_FILE_MRU_FILE11      "Open slected file"
+    ID_FILE_MRU_FILE12      "Open slected file"
+    ID_FILE_MRU_FILE13      "Open slected file"
+    ID_FILE_MRU_FILE14      "Open slected file"
+    ID_FILE_MRU_FILE15      "Open slected file"
+    ID_FILE_MRU_FILE16      "Open slected file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to next window\nNext Pane"
+    ID_PREV_PANE            "Switch to previous window\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split operating windows\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Clear selected range\nClear"
+    ID_EDIT_CLEAR_ALL       "Clear all\nClear all"
+    ID_EDIT_COPY            "Copy selected range and save it to clip board\nCopy"
+    ID_EDIT_CUT             "Cut selected range and save it to clip board\nCut"
+    ID_EDIT_FIND            "Find specified character string\nFind"
+    ID_EDIT_PASTE           "Paste content of clip board\nPaste"
+    ID_EDIT_REPEAT          "Iterate operation just directly before\nIterate"
+    ID_EDIT_REPLACE         "Replace selected character string with other one\nReplace"
+    ID_EDIT_SELECT_ALL      "Select all of files\nSelete all"
+    ID_EDIT_UNDO            "Return operation just before to original state \nReturn to original state"
+    ID_EDIT_REDO            "Iterate operation just directly before\nIterate"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Display/or Not toolbar\nSwitch the display of toolbar"
+    ID_VIEW_STATUS_BAR      "Display/or Not status bar\nSwitch the display of status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change size of window"
+    AFX_IDS_SCMOVE          "Change position of window"
+    AFX_IDS_SCMINIMIZE      "Minimize window"
+    AFX_IDS_SCMAXIMIZE      "Maximize window"
+    AFX_IDS_SCNEXTWINDOW    "Switch to next window"
+    AFX_IDS_SCPREVWINDOW    "Switch to previous window"
+    AFX_IDS_SCCLOSE         "Close operating window and indicate saving changed file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Return window to normal size"
+    AFX_IDS_SCTASKLIST      "Switch application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_MSG          "Inbox"
+    IDS_FOLDER_MSG_TRASH    "Trash box (for Inbox)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FOLDER_SETUP        "Setup to Answer"
+    IDS_FOLDER_SETUP_TRASH  "Trash box (for Setup)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RSF_DEF             "(Initial setting of answering service)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX0             "It is not possible to connect with Skype."
+    IDS_MSGBOX1             "Please confirm the items below\n・Skype is started\n・Permission to accese the Skype is gived in  administration of Skype\n　(Refer to Skype Menu [Tools]-[Options]-[Privacy]-[Manage accesee to Skype])"
+    IDS_MSGBOX2             "Not connected with Skype"
+    IDS_MSGBOX3             "This function cann't be used because Skype isn't connected."
+    IDS_MSGBOX5             "Connected with Skype"
+    IDS_MSGBOX6             "The setting of the Windows audio device is changed to ""Tapur Virtula Cable"". \nChange it to a audio device used usually. \n\nchange [ Regural device ] of [ Sound replay ] and [ Voice recording ] by [ Control panel ]-[ Property of sound and audio device ]-[ Audio ] tab, "
+    IDS_MSGBOX7             "Tapur can't be connected normally with Skype. \nStart Tapur after you restart Skype. "
+    IDS_MSGBOX11            "[Skype Name] is duplex"
+    IDS_MSGBOX12            "There are codes that cann't be used for [Skype Name]"
+    IDS_MSGBOX13            "[Skype Name] isn't input"
+    IDS_MSGBOX14            "Phone to caller by Skype\nOk？"
+    IDS_MSGBOX15            "Please set Skype to online status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX16            "Now is calling"
+    IDS_MSGBOX17            "This function cann't be used because caller is unidentified"
+    IDS_MSGBOX18            "The audio device for Tapur is now used by Skype\nPlease change  options of Skype's audio device\n (Set skype's menu [Tool]-[Options]-[Sound Devices] to [WIndows default device])"
+    IDS_MSGBOX21            "[File Name] is duplex"
+    IDS_MSGBOX22            "[File Name] isn't input"
+    IDS_MSGBOX23            "Delete the folder\nOk？"
+    IDS_MSGBOX31            "Empty the Trash\nThe data deleted from the trash can't be returned.\nOk？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX32            "Delete folder from the Trash\nThe folder deleted from the trash can't be returned.\nOk？"
+    IDS_MSGBOX33            "Return folder to original position\nOk？"
+    IDS_MSGBOX34            "Delete the data from Trash.\nThe data deleted from the trash can't be returned.\nOk？"
+    IDS_MSGBOX41            "[Caller Name] is duplex"
+    IDS_MSGBOX42            "[Caller Name] isn't input"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX51            "Cann't delete （Regular greeting message）"
+    IDS_MSGBOX52            "There isn't hit greeting message setting\nCreate a new one？"
+    IDS_MSGBOX53            "Delete greeting message setting\nOk？"
+    IDS_MSGBOX54            "The copy of answer setting is failed.."
+    IDS_MSGBOX60            "Register voice message file\nOk？"
+    IDS_MSGBOX61            "Coundn't play\nVoice message file maybe is broken"
+    IDS_MSGBOX62            "Voice message file maybe is broken"
+    IDS_MSGBOX63            "Voice message file maybe is format by unsupported or broken"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAPTION_CON         "Tapur (Skype connected)"
+    IDS_CAPTION_DISCON      "Tapur (Skype unconnected)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP             "Tapur - Answering Agnet for Skype"
+    IDS_TOOLTIP_DISABLE     "Tapur - Answering Agnet for Skype(disable)"
+    IDS_TOOLTIP_DISCON      "Tapur - Connectiing with Skype..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_TRASH_RECOVER  "Return it to where it was\nReturn"
+    ID_POPUP_SETLIST_NEW    "Create new setting of answering service\nCreate new setting"
+    ID_POPUP_SETLIST_RENAME "Change sender of setting\nChange"
+    ID_POPUP_MSGLIST_SETUP  "Display Setup to answer associated with message\nShow setting of answering service"
+    ID_POPUP_SETLIST_CALL   "Call sender setting by Skype\nCall"
+    ID_POPUP_SETLIST_COPY   "Copy greeting message setting\nCopy"
+    ID_POPUP_SETLIST_PASTE  "Paste greeting message setting\nPaste"
+    ID_TOOL_SETTING         "Practice operating setting and customize\nOptions"
+    ID_RECORD_START         "Start recording voice\nStart recording voice"
+    ID_RECORD_PAUSE         "Pause\nPause"
+    ID_PLACEHOLDER          "Display time of Recorded message\nTime of Recording"
+    ID_RECORD_STOP          "Stop Recording\nStop Recording"
+    ID_TOOL_RECORD          "Start recording message\nRecord Message"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_PUB             "Setup to Answer"
+    IDS_TAB_ADMIN           "Advanced"
+    IDS_TAB_REC             "Voice Recording"
+    IDS_TAB_VREC            "Movie Recording"
+    IDS_TAB_REC_WARNING     "Your caller is starting to record your voice. \r\nPlease hang up or ask the caller to stop it\r\n if you don't want to. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX64            "It couldn't replayed. Vvideo file myabe is damaged. "
+    IDS_MSGBOX69            "Coundn't register voice message file"
+    IDS_MSGBOX70            "This function is only available on line."
+    IDS_MSGBOX71            "A recording file is being output・・・"
+    IDS_MSGBOX72            "This function is only available on movie."
+    IDS_MSGBOX73            "This function cann't be used during answering"
+    IDS_MSGBOX74            "Voice recording finished"
+    IDS_MSGBOX75            "Video recording finished"
+    IDS_MSGBOX76            "Voice Recording was finished because it reached the time limit. "
+    IDS_MSGBOX77            "Video Recording was finished because it reached the time limit. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_DEF             "(Unidentified caller)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX900           "Renewing greeting message of old version failed \nIt is necessary to register greeting message again"
+    IDS_MSGBOX901           "Renewing beep of old version failed  \nIt is necessary to register beep again"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_RECPAUSE        "Stop recording message for a while\nStop recording for a while"
+    ID_TOOL_RECSTOP         "End recording message\nEnd Recording"
+    ID_APP_HELP             "Show the online manual\nManual"
+    ID_VRECORD_START        "Start recording movie.\nStart recording movie"
+    ID_RECMOD_BOTH          "Record both your and your caller's voices\nRecord both your and caller's voices"
+    ID_RECMOD_RCV           "Record only your caller's voice\nRecord only caller's voice"
+    ID_RECMOD_SND           "Record only your voice\nRecord only your voice"
+    ID_RECORD_MOD           "Voice to be recorded.\nVoice to be recorded"
+    ID_APP_PLAY             "Play the voice with the another application"
+    ID_APP_VPLAY            "Play the video with the another application"
+    ID_APP_SKYPE            "Cooperate with affiliate\nSkypeIn/Out"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_OPEN           "Open main screen of Tapur\nTapur"
+    ID_POPUP_ENABLE         "Validate answering service\nValidate answering service"
+    ID_POPUP_CLOSE          "End Tapur\nEnd"
+    ID_POPUP_SETUP_NEW      "Create new setting of answering service\nCreate"
+    ID_POPUP_FOLDER_NEW     "Create new folder\nCreate folder"
+    ID_POPUP_FOLDER_RENAME  "Rename folder\nRename folder"
+    ID_POPUP_FOLDER_DEL     "Delete folder\nDelete folder"
+    ID_POPUP_TRASH_CLEAR    "Delete from trash box\nDelete"
+    ID_POPUP_TRASHCAN_CLEAR "Empty trash box completely\nEmpty"
+    ID_POPUP_SETLIST_DEL    "Delete setting of answering service\nDelete setting"
+    ID_POPUP_MSGLIST_CALL   "Phone to caller of message by Skype\nCall"
+    ID_POPUP_MSGLIST_DEL    "Delete message\nDelete"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_URL_HELP            "http://www.tapur.com/en/manual.html"
+    IDS_URL_SKYPE           "http://www.tkqlhce.com/click-1824898-10386654"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX81            "Output file name isn't secleted "
+    IDS_MSGBOX82            "Folder name is selected by Output file name"
+    IDS_MSGBOX83            "Output file names are duplex\nOverwrite？"
+    IDS_MSGBOX84            "Extension of output file isn't support\nThere are effective file formats below \nWAVE(*.wav)\nOggVorbis(*.ogg)\nMPEG3(*.mp3)(There is a limitation.) "
+    IDS_MSGBOX85            "Fraunhofer MPEG3 Codec is necessary for this function. \n\nMPEG3Codec that the quality of sound is restricted beyond WindowsMediaPlayer10 is contained. "
+    IDS_MSGBOX86            "It doesn't cope with the extension of the designated file. \nThe file format which can be output is as the following. \nAVI (*.avi) "
+    IDS_MSGBOX88            "Output canceled"
+    IDS_MSGBOX89            "Output finished"
+    IDS_MSGBOX90            "Output failed"
+    IDS_MSGBOX91            " File is now outputting・・・"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_RECSTOP_WARNING "Your caller has stopped recording your voice."
+    IDS_TAB_VREC_WARNING    "Your caller is starting to record movie. \r\nPlease hang up or ask the caller to stop it\r\n if you don't want to. "
+    IDS_TAB_VRECSTOP_WARNING "Your caller has stopped recording movie."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_NEW         "Tapur - New message"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGBOX101           "Chat messeage couldn't be registered."
+    IDS_MSGBOX102           "Chat messeage couldn't be sent."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSGLIST_HEAD        " , 20, 0; Sender, 100, 0; Date, 110, 0"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\English.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#include "l.jpn\afxprint.rc"        // 印刷/印刷プレビュー リソース
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

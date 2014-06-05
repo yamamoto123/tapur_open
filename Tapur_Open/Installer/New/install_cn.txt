@@ -1,0 +1,23 @@
+[Tapur是？]
+Tapur 是对应与SKYPE具有自动留言，录音，录像功能的应用程序。
+
+[使用条件]
+Tapur安装之前，请确认以下项目.
+1 电脑操作系统为Windows 2000或者XP
+2 SKYPE(版本1。4以上推荐)安装完毕，并且通话功能可以正常使用
+
+[Tapur的安装]
+# 必须以拥有管理者权限的用户身份来运行
+# 如果正在使用旧版本的Tapur，请先将其卸载。卸载后，以前的数据仍然处于保存状态。
+
+1 运行下载完成的文件。Tapur的安装启动画面将被显示。
+2 指定安装文件包路径，然后点击[Next]。
+3 [Delete all user data] 被选定的情况下，以前版本的Tapur所做成的用户数据将被删除。注意删除的数据将不能再还原。
+4 安装完成后启动Tapur，与SKYPE连接的许可画面将被显示。这里请选择[Allows this program to use Skype]，点击[OK]。Tapur的图标将会显示与任务栏（通常在画面右下方）上。
+
+[Tapur的卸载]
+必须关闭Tapur之后，以安装Tapur时的用户身份进行卸载。从开始菜单选择[Uninstall Tapur]，或者[控制面板]-[应用程序的添加或删除]进行卸载。
+
+[Author]
+tapur.com Tokyo, Japan (www.tapur.com)
+(c) Tapur - Last revised: February 2006.

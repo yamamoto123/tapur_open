@@ -1,0 +1,7 @@
+; Japanese.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "Japanese"
+DESCRIPTION  'Japanese Windows Dynamic Link Library'
+
+EXPORTS
+    ; 明示的なエクスポートはここへ記述できます

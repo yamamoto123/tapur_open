@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: spconfiglib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\Temp\RSP10D.tmp" を作成し、次の内容を記録します
+[
+/nologo /ML /W3 /GX /O2 /D "_LIB" /D "WIN32" /D "NDEBUG" /D "_MBCS" /Fp"Release/spconfiglib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Tapur\spconfig-0.1.3\src\debug.c"
+"D:\Tapur\spconfig-0.1.3\src\find.c"
+"D:\Tapur\spconfig-0.1.3\src\load.c"
+"D:\Tapur\spconfig-0.1.3\src\mcd.c"
+"D:\Tapur\spconfig-0.1.3\src\mem.c"
+"D:\Tapur\spconfig-0.1.3\src\message.c"
+"D:\Tapur\spconfig-0.1.3\src\path.c"
+"D:\Tapur\spconfig-0.1.3\src\save.c"
+"D:\Tapur\spconfig-0.1.3\src\spconfig.c"
+"D:\Tapur\spconfig-0.1.3\src\stack.c"
+]
+Creating command line "cl.exe @C:\Temp\RSP10D.tmp" 
+一時ﾌｧｲﾙ "C:\Temp\RSP10E.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"../lib\spconfig.lib" 
+".\Release\debug.obj"
+".\Release\find.obj"
+".\Release\load.obj"
+".\Release\mcd.obj"
+".\Release\mem.obj"
+".\Release\message.obj"
+".\Release\path.obj"
+".\Release\save.obj"
+".\Release\spconfig.obj"
+".\Release\stack.obj"
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\Temp\RSP10E.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+debug.c
+find.c
+load.c
+mcd.c
+mem.c
+message.c
+path.c
+save.c
+spconfig.c
+stack.c
+ﾗｲﾌﾞﾗﾘを作成中...
+
+
+
+<h3>結果</h3>
+spconfig.lib - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

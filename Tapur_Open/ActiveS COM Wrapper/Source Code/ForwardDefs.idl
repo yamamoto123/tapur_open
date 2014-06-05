@@ -1,0 +1,15 @@
+dispinterface _IAccessEvents;
+interface ICall;
+interface ICallCollectionl;
+interface IUser;
+interface IUserCollection;
+interface IChat;
+interface IChatCollection;
+interface IChatMessage;
+interface IChatMessageCollection;
+interface IMessage;
+interface IMessageCollection;
+interface IVoiceMail;
+interface IVoiceMailCollection;
+interface IApp2App;
+interface IApp2AppStream;

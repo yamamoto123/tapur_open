@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tapur", "Tapur.vcproj", "{5559FD47-EDF5-45BE-8EB8-1F92CEF24749}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SkypeAPI", "ActiveS COM Wrapper\Source Code\SkypeAPI.vcproj", "{AA9273EF-105F-40D7-A113-47028DE449E3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spconfiglib", "spconfig-0.1.3\vc\spconfiglib.vcproj", "{116F98A8-94B7-4AB0-AFE6-2898C55D992D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5559FD47-EDF5-45BE-8EB8-1F92CEF24749}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5559FD47-EDF5-45BE-8EB8-1F92CEF24749}.Debug|Win32.Build.0 = Debug|Win32
+		{5559FD47-EDF5-45BE-8EB8-1F92CEF24749}.Release|Win32.ActiveCfg = Release|Win32
+		{5559FD47-EDF5-45BE-8EB8-1F92CEF24749}.Release|Win32.Build.0 = Release|Win32
+		{AA9273EF-105F-40D7-A113-47028DE449E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AA9273EF-105F-40D7-A113-47028DE449E3}.Debug|Win32.Build.0 = Debug|Win32
+		{AA9273EF-105F-40D7-A113-47028DE449E3}.Release|Win32.ActiveCfg = Release|Win32
+		{AA9273EF-105F-40D7-A113-47028DE449E3}.Release|Win32.Build.0 = Release|Win32
+		{116F98A8-94B7-4AB0-AFE6-2898C55D992D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{116F98A8-94B7-4AB0-AFE6-2898C55D992D}.Debug|Win32.Build.0 = Debug|Win32
+		{116F98A8-94B7-4AB0-AFE6-2898C55D992D}.Release|Win32.ActiveCfg = Release|Win32
+		{116F98A8-94B7-4AB0-AFE6-2898C55D992D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

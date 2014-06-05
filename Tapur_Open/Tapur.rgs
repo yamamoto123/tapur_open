@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{A59B63BB-C901-4F25-9E9E-D42029318BCA} = s 'Tapur'
+		'Tapur.EXE'
+		{
+			val AppID = s {A59B63BB-C901-4F25-9E9E-D42029318BCA}
+		}
+	}
+}

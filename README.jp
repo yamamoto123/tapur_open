@@ -1,0 +1,23 @@
+
+[ライセンスについて]
+Apache License Version 2.0 で公開します。
+ただし、以下の例外に留意してください。
+
+・Tapur icon (C) Hiko Nakamura (http://www.1st-stage.jp/)
+TapurアイコンはHiko Nakamura氏に著作権があり、Apache Licenseは適用されません。
+Tapurアイコンを使用したい場合は、tapur.com及びHiko Nakamura氏に許諾を得る必要があります。
+
+・Icons courtesy of www.mienet.net/, used with permission.
+いくつかのアイコンはIcons courtesy of www.mienet.netに権利があり、使用規定に従う必要があります。
+
+・留守番応答用の音声ファイルにはApache Licenseは適用されません。
+音声ファイルを使用した場合は、tapur.comに許諾を得る必要があります。
+
+・既存のオープンソースを使用している部分については、ソースに記載された著作権者の規定に従ってください。
+
+
+[その他]
+・ビデオ再生部分に有償のTVideoGrabber(http://www.datastead.com/)を使用していますが、ライセンスコードを削除しているため動作しません。
+しかし、この機能はWindowsMediaPlayer等で代替できるため、問題にはならないでしょう。
+
+====
